@@ -54,7 +54,21 @@ internal fun CoachScreen(starting: Boolean, onStart: (String, String, String?) -
     }
     val readiness = state.readiness
     LazyColumn(Modifier.fillMaxSize().testTag(if (state.loading) "coach_loading" else if (state.error && state.readiness == null) "coach_error" else "coach_ready").padding(horizontal = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        item { Text("TrainPilot Coach", color = colors.text, style = MaterialTheme.typography.headlineSmall) }
+        item {
+            Row(
+                Modifier.fillMaxWidth().padding(top = 4.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = androidx.compose.ui.Alignment.CenterVertically
+            ) {
+                Text("TrainPilot Coach", color = colors.text, style = MaterialTheme.typography.headlineSmall)
+                OutlinedButton(
+                    onClick = onProgress,
+                    modifier = Modifier.heightIn(min = 48.dp).testTag("coach_open_progress")
+                ) {
+                    Text(words[18], color = colors.accentText)
+                }
+            }
+        }
         item {
             if (state.loading) CircularProgressIndicator()
             if (state.error) Text(words[0], color = colors.dangerText)

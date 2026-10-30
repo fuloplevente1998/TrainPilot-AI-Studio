@@ -49,6 +49,7 @@ data class JournalUiState(
     val query: String = "",
     val month: java.time.YearMonth? = null,
     val day: java.time.LocalDate? = null,
+    val quickFilter: JournalQuickFilter = JournalQuickFilter.ALL,
     val selectedWorkoutId: String? = null,
     val detail: WorkoutHistoryWithDetails? = null,
     val detailLoading: Boolean = false, val detailError: Boolean = false,
@@ -103,6 +104,10 @@ class JournalViewModel(application: Application) : AndroidViewModel(application)
     fun setSearch(value: String) {
         _uiState.update { it.copy(query = value) }
         filters.value = filters.value.copy(query = value, zone = java.time.ZoneId.systemDefault())
+    }
+    fun setQuickFilter(value: JournalQuickFilter) {
+        _uiState.update { it.copy(quickFilter = value) }
+        filters.value = filters.value.copy(quickFilter = value, zone = java.time.ZoneId.systemDefault())
     }
     fun setMonth(value: java.time.YearMonth?) {
         _uiState.update { it.copy(month = value, day = null) }

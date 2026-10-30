@@ -87,6 +87,7 @@ import java.time.format.DateTimeFormatter
 @Composable
 fun ProgressScreen(
     onWeightJournal: () -> Unit,
+    onJournal: () -> Unit = {},
     initialSection: String? = null,
     onInitialSectionConsumed: () -> Unit = {},
     viewModel: ProgressViewModel = viewModel(),
@@ -105,7 +106,7 @@ fun ProgressScreen(
     LaunchedEffect(initialSection, state.loading, state.loadError, state.periodTotals) {
         if (initialSection == "photos" && !state.loading && !state.loadError) {
             studioSection.intValue = 0
-            val photoIndex = if (state.periodTotals != null) 5 else 4
+            val photoIndex = if (state.periodTotals != null) 6 else 5
             listState.scrollToItem(photoIndex)
             onInitialSectionConsumed()
         }
@@ -153,12 +154,57 @@ fun ProgressScreen(
         }
     }
 
+    fun tr(hu: String, en: String, de: String, ro: String) = when (state.language) {
+        "en" -> en; "de" -> de; "ro" -> ro; else -> hu
+    }
+
     LazyColumn(
         modifier = Modifier.fillMaxSize().padding(horizontal = 12.dp).testTag("progress_list"),
         state = listState,
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         item { Spacer(Modifier.height(8.dp)) }
+        item(key = "progress_journal_switcher") {
+            Row(
+                Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                androidx.compose.material3.Surface(
+                    onClick = onJournal,
+                    modifier = Modifier.weight(1f).heightIn(min = 48.dp).testTag("progress_open_journal"),
+                    shape = RoundedCornerShape(12.dp),
+                    color = colors.card,
+                    border = androidx.compose.foundation.BorderStroke(1.dp, colors.line)
+                ) {
+                    Box(Modifier.padding(horizontal = 10.dp, vertical = 10.dp), contentAlignment = Alignment.Center) {
+                        Text(
+                            tr("📋 Edzésnapló", "📋 Workout Log", "📋 Trainingstagebuch", "📋 Jurnal antrenament"),
+                            style = androidx.compose.material3.MaterialTheme.typography.labelMedium,
+                            fontWeight = FontWeight.SemiBold,
+                            color = colors.text,
+                            maxLines = 1
+                        )
+                    }
+                }
+                androidx.compose.material3.Surface(
+                    modifier = Modifier.weight(1f).heightIn(min = 48.dp).testTag("progress_mode_stats"),
+                    shape = RoundedCornerShape(12.dp),
+                    color = colors.accent.copy(alpha = 0.22f),
+                    border = androidx.compose.foundation.BorderStroke(1.5.dp, colors.accent)
+                ) {
+                    Box(Modifier.padding(horizontal = 10.dp, vertical = 10.dp), contentAlignment = Alignment.Center) {
+                        Text(
+                            tr("📈 Fejlődés & PR", "📈 Progress & PRs", "📈 Fortschritt & PR", "📈 Progres & PR"),
+                            style = androidx.compose.material3.MaterialTheme.typography.labelMedium,
+                            fontWeight = FontWeight.Bold,
+                            color = colors.accentText,
+                            maxLines = 1
+                        )
+                    }
+                }
+            }
+        }
         if (state.loading) item {
             Text(strings.getString(R.string.native_progress_loading), color = colors.muted)
         }

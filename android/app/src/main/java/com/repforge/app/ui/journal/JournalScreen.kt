@@ -71,7 +71,12 @@ import java.time.format.TextStyle
 import java.util.Locale
 
 @Composable
-fun JournalScreen(navController: NavController, language: String = "hu", viewModel: JournalViewModel = viewModel()) {
+fun JournalScreen(
+    navController: NavController,
+    language: String = "hu",
+    onProgress: () -> Unit = {},
+    viewModel: JournalViewModel = viewModel()
+) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val editor by viewModel.editor.collectAsStateWithLifecycle()
     val workouts = viewModel.workouts.collectAsLazyPagingItems()
@@ -80,7 +85,7 @@ fun JournalScreen(navController: NavController, language: String = "hu", viewMod
     val colors = LocalTrainPilotColors.current
     val locale = remember(language) { Locale.forLanguageTag(language) }
     val listState = rememberLazyListState()
-    LaunchedEffect(state.query, state.month, state.day) { listState.scrollToItem(0) }
+    LaunchedEffect(state.query, state.month, state.day, state.quickFilter) { listState.scrollToItem(0) }
     var monthPickerOpen by rememberSaveable { mutableStateOf(false) }
     var pickerMonthKey by rememberSaveable {
         mutableStateOf(
@@ -274,8 +279,63 @@ fun JournalScreen(navController: NavController, language: String = "hu", viewMod
         )
     }
 
+    fun tr(hu: String, en: String, de: String, ro: String) = when (language) {
+        "en" -> en; "de" -> de; "ro" -> ro; else -> hu
+    }
+
     Column(Modifier.fillMaxSize().background(colors.bg)
         .padding(horizontal = 16.dp).padding(top = 8.dp)) {
+        // 5+3 Navigation requirement: Fejlődés/Progresszió stays directly reachable from Napló.
+        Row(
+            Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Surface(
+                modifier = Modifier.weight(1f).heightIn(min = 48.dp).testTag("journal_mode_log"),
+                shape = RoundedCornerShape(12.dp),
+                color = colors.accent.copy(alpha = 0.22f),
+                border = BorderStroke(1.5.dp, colors.accent)
+            ) {
+                Row(
+                    Modifier.padding(horizontal = 10.dp, vertical = 10.dp),
+                    horizontalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterHorizontally),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(Icons.Default.History, contentDescription = null, tint = colors.accent, modifier = Modifier.size(18.dp))
+                    Text(
+                        tr("Edzésnapló", "Workout Log", "Trainingstagebuch", "Jurnal antrenament"),
+                        style = MaterialTheme.typography.labelMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = colors.accentText,
+                        maxLines = 1
+                    )
+                }
+            }
+            Surface(
+                onClick = onProgress,
+                modifier = Modifier.weight(1f).heightIn(min = 48.dp).testTag("journal_open_progress"),
+                shape = RoundedCornerShape(12.dp),
+                color = colors.card,
+                border = BorderStroke(1.dp, colors.line)
+            ) {
+                Row(
+                    Modifier.padding(horizontal = 10.dp, vertical = 10.dp),
+                    horizontalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterHorizontally),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(Icons.Default.EmojiEvents, contentDescription = null, tint = colors.accentText, modifier = Modifier.size(18.dp))
+                    Text(
+                        tr("Fejlődés & PR", "Progress & PRs", "Fortschritt & PR", "Progres & PR"),
+                        style = MaterialTheme.typography.labelMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = colors.text,
+                        maxLines = 1
+                    )
+                }
+            }
+        }
+        Spacer(Modifier.height(8.dp))
         // Exact approved Studio composition: independent 16dp search input,
         // 40dp circular month arrows and a central 14dp outlined picker.
         OutlinedTextField(
@@ -286,7 +346,27 @@ fun JournalScreen(navController: NavController, language: String = "hu", viewMod
                 tint = colors.muted) },
             shape = RoundedCornerShape(16.dp), singleLine = true
         )
-        Spacer(Modifier.height(10.dp))
+        Spacer(Modifier.height(8.dp))
+        // PR277 07-journal-pr.png quick filter chips (Összes / 🏆 PR edzések / 📍 GPS Kardió)
+        LazyRow(
+            modifier = Modifier.fillMaxWidth().testTag("journal_quick_filters"),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            val quickFilters = listOf(
+                Triple(JournalQuickFilter.ALL, tr("Összes", "All", "Alle", "Toate"), "journal_quick_filter_all"),
+                Triple(JournalQuickFilter.PR_ONLY, tr("🏆 PR edzések", "🏆 PR workouts", "🏆 PR-Trainings", "🏆 Antrenamente PR"), "journal_quick_filter_pr"),
+                Triple(JournalQuickFilter.GPS_CARDIO, tr("📍 GPS Kardió", "📍 GPS Cardio", "📍 GPS-Cardio", "📍 Cardio GPS"), "journal_quick_filter_gps")
+            )
+            items(quickFilters, key = { it.first.name }) { (qf, label, tag) ->
+                FilterChip(
+                    selected = state.quickFilter == qf,
+                    onClick = { viewModel.setQuickFilter(qf) },
+                    label = { Text(label, maxLines = 1) },
+                    modifier = Modifier.heightIn(min = 48.dp).testTag(tag)
+                )
+            }
+        }
+        Spacer(Modifier.height(8.dp))
         Row(Modifier.fillMaxWidth().testTag("journal_filters"),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -339,7 +419,7 @@ fun JournalScreen(navController: NavController, language: String = "hu", viewMod
             if (workouts.loadState.refresh is LoadState.Loading) item { JournalLoading(text) }
             if (workouts.loadState.refresh is LoadState.Error) item { JournalRetry(text) { workouts.retry() } }
             if (workouts.itemCount == 0 && workouts.loadState.refresh is LoadState.NotLoading) item {
-                Text(text.getString(if (state.query.isBlank() && state.month == null) R.string.journal_empty else R.string.journal_no_matches),
+                Text(text.getString(if (state.query.isBlank() && state.month == null && state.quickFilter == JournalQuickFilter.ALL) R.string.journal_empty else R.string.journal_no_matches),
                     color = colors.muted, modifier = Modifier.padding(vertical = 24.dp).testTag("journal_empty"))
             }
             items(workouts.itemCount, key = workouts.itemKey { it.id }) { index ->
@@ -445,6 +525,7 @@ private fun JournalDetailDialog(state: JournalUiState, text: Resources, language
                     else -> {
                         val detail = state.detail
                         val workout = detail.workout
+                        val prRecords = remember(workout.prRecordsJson226) { model.parsePrRecords(workout.prRecordsJson226) }
                         Text(workout.dayName, style = MaterialTheme.typography.headlineSmall)
                         val tabs = listOf(R.string.journal_exercises, R.string.journal_statistics, R.string.journal_source)
                         TabRow(tab) { tabs.forEachIndexed { index, label ->
@@ -453,6 +534,28 @@ private fun JournalDetailDialog(state: JournalUiState, text: Resources, language
                         } }
                         LazyColumn(Modifier.weight(1f).testTag("journal_details_list"), verticalArrangement = Arrangement.spacedBy(12.dp),
                             contentPadding = PaddingValues(vertical = 12.dp)) {
+                            if (tab == 0 && prRecords.isNotEmpty()) {
+                                item(key = "journal_detail_pr_banner") {
+                                    Card(
+                                        modifier = Modifier.fillMaxWidth().testTag("journal_detail_pr_card"),
+                                        colors = CardDefaults.cardColors(containerColor = colors.accent.copy(alpha = 0.14f)),
+                                        border = BorderStroke(1.dp, colors.accent)
+                                    ) {
+                                        Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                                            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                                                Icon(Icons.Default.EmojiEvents, contentDescription = null, tint = colors.accentText, modifier = Modifier.size(18.dp))
+                                                Text(text.getString(R.string.journal_pr), color = colors.accentText, fontWeight = FontWeight.Bold)
+                                            }
+                                            for (record in prRecords) {
+                                                Text("${record.exerciseName}: ${record.value}", color = colors.text, fontWeight = FontWeight.SemiBold)
+                                                if (record.previous.isNotBlank()) {
+                                                    Text(text.getString(R.string.journal_previous_record, record.previous), color = colors.muted, style = MaterialTheme.typography.bodySmall)
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             if (tab == 0) items(detail.exercises.sortedBy { it.exercise.orderIndex }, key = { it.exercise.rowId }) { exercise ->
                                 Card(colors = CardDefaults.cardColors(containerColor = colors.card)) {
                                     Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -484,7 +587,7 @@ private fun JournalDetailDialog(state: JournalUiState, text: Resources, language
                                         modifier = Modifier.fillMaxWidth().testTag("journal_edit_feedback")) {
                                         Text(text.getString(R.string.journal_feedback_edit))
                                     }
-                                    for (record in model.parsePrRecords(workout.prRecordsJson226)) {
+                                    for (record in prRecords) {
                                         Text("${text.getString(R.string.journal_pr)} · ${record.exerciseName}: ${record.value}")
                                         Text(text.getString(R.string.journal_previous_record, record.previous), color = colors.muted)
                                     }

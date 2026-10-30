@@ -275,43 +275,48 @@ internal fun NativeStudioShellHeader(
 
             // User-approved 5+3 shell: secondary shortcuts never replace the real NavHost.
             // All three use the existing guarded destination selector and native screens.
-            Row(
-                modifier = Modifier.fillMaxWidth()
-                    .horizontalScroll(rememberScrollState())
-                    .padding(top = 2.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                val utilities = listOf(
-                    Triple("settings", Icons.Default.Settings, onSettings),
-                    Triple("calendar", Icons.Default.DateRange, onCalendar),
-                    Triple("coach", Icons.Default.TrendingUp, onCoach)
-                )
-                utilities.forEach { (destination, icon, action) ->
-                    val active = route == destination
-                    val shape = RoundedCornerShape(10.dp)
-                    Surface(
-                        modifier = Modifier.widthIn(min = 110.dp).heightIn(min = 48.dp)
-                            .border(if (active) 1.5.dp else 1.dp,
-                                if (active) colors.accent else colors.line, shape)
-                            .clip(shape)
-                            .clickable(enabled = enabled && !active, role = Role.Button,
-                                onClick = action)
-                            .testTag("navigation_$destination"),
-                        shape = shape,
-                        color = if (active) colors.accent.copy(alpha = .22f) else colors.card2
-                    ) {
-                        Row(
-                            Modifier.padding(horizontal = 10.dp, vertical = 10.dp),
-                            horizontalArrangement = Arrangement.spacedBy(6.dp),
-                            verticalAlignment = Alignment.CenterVertically
+            BoxWithConstraints(Modifier.fillMaxWidth().padding(top = 2.dp)) {
+                val compactUtilities = maxWidth < 340.dp || LocalDensity.current.fontScale > 1.2f
+                Row(
+                    modifier = Modifier.fillMaxWidth()
+                        .then(if (compactUtilities) Modifier.horizontalScroll(rememberScrollState()) else Modifier),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    val utilities = listOf(
+                        Triple("settings", Icons.Default.Settings, onSettings),
+                        Triple("calendar", Icons.Default.DateRange, onCalendar),
+                        Triple("coach", Icons.Default.TrendingUp, onCoach)
+                    )
+                    utilities.forEach { (destination, icon, action) ->
+                        val active = route == destination
+                        val shape = RoundedCornerShape(10.dp)
+                        Surface(
+                            modifier = (if (compactUtilities) Modifier.widthIn(min = 108.dp) else Modifier.weight(1f))
+                                .heightIn(min = 48.dp)
+                                .border(if (active) 1.5.dp else 1.dp,
+                                    if (active) colors.accent else colors.line, shape)
+                                .clip(shape)
+                                .clickable(enabled = enabled && !active, role = Role.Button,
+                                    onClick = action)
+                                .testTag("navigation_$destination"),
+                            shape = shape,
+                            color = if (active) colors.accent.copy(alpha = .22f) else colors.card2
                         ) {
-                            Icon(icon, contentDescription = null,
-                                tint = if (active) colors.accent else colors.muted,
-                                modifier = Modifier.size(18.dp))
-                            Text(NativeMainMenu.title(destination, language),
-                                style = MaterialTheme.typography.labelSmall,
-                                color = if (active) colors.accentText else colors.text,
-                                maxLines = 1)
+                            Row(
+                                Modifier.padding(horizontal = 10.dp, vertical = 10.dp),
+                                horizontalArrangement = Arrangement.spacedBy(6.dp, Alignment.CenterHorizontally),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Icon(icon, contentDescription = null,
+                                    tint = if (active) colors.accent else colors.muted,
+                                    modifier = Modifier.size(18.dp))
+                                Text(NativeMainMenu.title(destination, language),
+                                    style = MaterialTheme.typography.labelSmall,
+                                    fontWeight = if (active) FontWeight.Bold else FontWeight.Medium,
+                                    color = if (active) colors.accentText else colors.text,
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis)
+                            }
                         }
                     }
                 }

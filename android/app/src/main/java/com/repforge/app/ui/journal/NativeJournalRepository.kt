@@ -22,10 +22,13 @@ import java.util.Locale
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.coroutines.coroutineContext
 
+enum class JournalQuickFilter { ALL, PR_ONLY, GPS_CARDIO }
+
 internal data class JournalFilter(
     val query: String = "",
     val month: YearMonth? = null,
     val day: LocalDate? = null,
+    val quickFilter: JournalQuickFilter = JournalQuickFilter.ALL,
     val zone: ZoneId = ZoneId.systemDefault()
 ) {
     val fromEpoch: Long get() = when {
@@ -84,11 +87,19 @@ internal class JournalSource(private val database: TrainPilotDatabase, private v
             while (result.size < wanted && !end) {
                 coroutineContext.ensureActive()
                 if (invalid) return@withContext LoadResult.Invalid()
-                val batchLimit = if (terms.isEmpty()) wanted else 128
+                val batchLimit = if (terms.isEmpty() && filter.quickFilter == JournalQuickFilter.ALL) wanted else 128
                 val dao = database.workoutHistoryDao()
-                val rows = if (terms.isEmpty()) dao.scanJournalSummaries(filter.fromEpoch, filter.toEpoch,
-                    cursor?.epoch, cursor?.id.orEmpty(), batchLimit).map { JournalSearchRow(it, "") }
-                    else dao.scanJournal(filter.fromEpoch, filter.toEpoch, cursor?.epoch, cursor?.id.orEmpty(), batchLimit)
+                val rows = when {
+                    filter.quickFilter != JournalQuickFilter.ALL -> dao.scanJournalWithQuickFilter(
+                        filter.fromEpoch, filter.toEpoch,
+                        if (filter.quickFilter == JournalQuickFilter.PR_ONLY) 1 else 0,
+                        if (filter.quickFilter == JournalQuickFilter.GPS_CARDIO) 1 else 0,
+                        cursor?.epoch, cursor?.id.orEmpty(), batchLimit
+                    )
+                    terms.isEmpty() -> dao.scanJournalSummaries(filter.fromEpoch, filter.toEpoch,
+                        cursor?.epoch, cursor?.id.orEmpty(), batchLimit).map { JournalSearchRow(it, "") }
+                    else -> dao.scanJournal(filter.fromEpoch, filter.toEpoch, cursor?.epoch, cursor?.id.orEmpty(), batchLimit)
+                }
                 if (rows.isEmpty()) { end = true; break }
                 for ((index, row) in rows.withIndex()) {
                     cursor = JournalCursor(row.summary.startedEpochMs, row.summary.id)

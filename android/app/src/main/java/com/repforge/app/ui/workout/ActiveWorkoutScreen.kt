@@ -417,6 +417,58 @@ fun ActiveWorkoutScreen(
                             }
                         }
                     }
+                    if (selectedIndex < state.exercises.lastIndex) {
+                        val nextExercise = state.exercises[selectedIndex + 1]
+                        val nextTarget = navigationTargets.getOrNull(selectedIndex + 1)
+                        val nextPrefilledWeight = nextExercise.sets.firstOrNull()?.weight.orEmpty()
+                        Card(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .testTag("active_workout_next_exercise_card")
+                                .clickable(enabled = nextTarget != null && state.timerOwner == "phone" && !state.isFinishing) {
+                                    nextTarget?.let(viewModel::selectExercise)
+                                },
+                            shape = RoundedCornerShape(14.dp),
+                            colors = CardDefaults.cardColors(containerColor = colors.card2),
+                            border = androidx.compose.foundation.BorderStroke(1.dp, colors.line)
+                        ) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 12.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                                    Text(
+                                        "${strings.getString(R.string.native_workout_next)} (${selectedIndex + 2}/${state.exercises.size})",
+                                        color = colors.muted,
+                                        fontSize = 11.sp,
+                                        fontWeight = FontWeight.SemiBold
+                                    )
+                                    Text(
+                                        nextExercise.name,
+                                        color = colors.text,
+                                        fontSize = 14.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        maxLines = 1
+                                    )
+                                    Text(
+                                        buildString {
+                                            append("${nextExercise.sets.size}×${nextExercise.targetReps} ${nextExercise.repUnit}")
+                                            if (nextPrefilledWeight.isNotBlank()) append(" • $nextPrefilledWeight kg")
+                                        },
+                                        color = colors.accentText,
+                                        fontSize = 11.sp
+                                    )
+                                }
+                                Text(
+                                    strings.getString(R.string.native_workout_next),
+                                    color = colors.accent,
+                                    fontSize = 12.sp,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+                        }
+                    }
                 }
 
                 // + Gyakorlat hozzáadása gomb
@@ -752,6 +804,8 @@ fun ExerciseCardItem(
     val strings = remember(context, language) { nativeResources(context, language) }
     val isDistance = exercise.measurementType == "distance" || exercise.repUnit.trim().lowercase() in setOf("m", "km")
     var manualDistance by remember(exercise.sets.firstOrNull()?.setId) { mutableStateOf(false) }
+    val hasPrefilledWeight = exercise.sets.any { it.weight.isNotBlank() && it.weight != "0" && it.weight != "0.0" }
+    val activeSetIndex = exercise.sets.indexOfFirst { !it.isCompleted }.let { if (it >= 0) it else exercise.sets.lastIndex }
     Card(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(16.dp),
@@ -764,8 +818,29 @@ fun ExerciseCardItem(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(exercise.name, color = colors.text, fontSize = 15.sp, fontWeight = FontWeight.Bold)
-                Text(strings.getString(R.string.native_workout_component_sets_done, exercise.sets.count { it.isCompleted }, exercise.sets.size), color = colors.accentText, fontSize = 12.sp)
+                Column(modifier = Modifier.weight(1f).padding(end = 8.dp)) {
+                    Text(exercise.name, color = colors.text, fontSize = 15.sp, fontWeight = FontWeight.Bold)
+                    if (exercise.targetReps.isNotBlank()) {
+                        Text(
+                            "${exercise.sets.size}×${exercise.targetReps} ${exercise.repUnit}",
+                            color = colors.muted,
+                            fontSize = 11.sp
+                        )
+                    }
+                }
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    if (hasPrefilledWeight) {
+                        Box(
+                            modifier = Modifier
+                                .clip(RoundedCornerShape(6.dp))
+                                .background(colors.accent.copy(alpha = 0.14f))
+                                .padding(horizontal = 6.dp, vertical = 2.dp)
+                        ) {
+                            Text("Auto-prefill ✓", color = colors.accentText, fontSize = 10.sp, fontWeight = FontWeight.SemiBold)
+                        }
+                    }
+                    Text(strings.getString(R.string.native_workout_component_sets_done, exercise.sets.count { it.isCompleted }, exercise.sets.size), color = colors.accentText, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                }
             }
             Spacer(Modifier.height(10.dp))
 
@@ -805,6 +880,44 @@ fun ExerciseCardItem(
                     onRirChange = { onSetRir(sIdx, it) },
                     onDelete = { onRemoveSet(sIdx) }
                 )
+                }
+            }
+
+            if (exercise.setRirEnabled && activeSetIndex >= 0) {
+                val activeRir = exercise.sets.getOrNull(activeSetIndex)?.rir
+                Spacer(Modifier.height(8.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth().testTag("active_workout_rir_quick_pills"),
+                    horizontalArrangement = Arrangement.spacedBy(6.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        "RIR (#${activeSetIndex + 1}):",
+                        color = colors.muted,
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                    listOf(0 to "0", 1 to "1", 2 to "2", 3 to "3", 4 to "4+").forEach { (rirValue, label) ->
+                        val selected = if (rirValue == 4) (activeRir != null && activeRir >= 4) else activeRir == rirValue
+                        Box(
+                            modifier = Modifier
+                                .weight(1f)
+                                .heightIn(min = 36.dp)
+                                .clip(RoundedCornerShape(8.dp))
+                                .background(if (selected) colors.accent else colors.card2)
+                                .border(1.dp, if (selected) colors.accent else colors.line, RoundedCornerShape(8.dp))
+                                .clickable { onSetRir(activeSetIndex, if (selected) null else rirValue) }
+                                .testTag("active_workout_rir_pill_$rirValue"),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                label,
+                                color = if (selected) colors.onAccent else colors.text,
+                                fontSize = 12.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
                 }
             }
 

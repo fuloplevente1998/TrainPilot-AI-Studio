@@ -219,6 +219,7 @@ internal fun TrainingProgramsScreen(
                     expandedPrograms[id] = !(expandedPrograms[id] ?: isActive)
                 },
                 language = language,
+                exerciseChoices = state.exerciseChoices,
                 onActivate = { viewModel.activateProgram(programWithDays.program.id) },
                 onStartDay = { dayId -> onStartProgramDay(programWithDays.program.id, dayId) },
                 onRestoreDay = { dayId -> viewModel.previewRestoreDay(programWithDays, dayId) },
@@ -326,6 +327,7 @@ internal fun TrainingProgramsScreen(
         } })
 }
 
+@OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
 @Composable
 fun ProgramCardItem(
     programWithDays: ProgramWithDays,
@@ -333,6 +335,7 @@ fun ProgramCardItem(
     expanded: Boolean,
     onToggleExpanded: () -> Unit,
     language: String = "hu",
+    exerciseChoices: List<com.repforge.app.data.db.ExerciseLibraryEntity> = emptyList(),
     onActivate: () -> Unit,
     onStartDay: (String) -> Unit,
     onRestoreDay: (String) -> Unit = {},
@@ -345,13 +348,16 @@ fun ProgramCardItem(
     fun name(hu: String, en: String, de: String, ro: String) = when (language) {
         "en" -> en; "de" -> de; "ro" -> ro; else -> hu
     }.ifBlank { hu }
+    val locationMeta = com.repforge.app.data.db.NativeBuiltinCatalog.programMetadata(prog, "location", language)
+    val levelMeta = com.repforge.app.data.db.NativeBuiltinCatalog.programMetadata(prog, "level", language)
+    val exercisesById = remember(exerciseChoices) { exerciseChoices.associateBy { it.id } }
 
     Card(
         modifier = Modifier.fillMaxWidth().testTag("program_${prog.id}"),
         shape = RoundedCornerShape(18.dp),
         colors = CardDefaults.cardColors(containerColor = colors.card),
         border = androidx.compose.foundation.BorderStroke(
-            1.dp,
+            if (isActive) 1.5.dp else 1.dp,
             if (isActive) colors.selectedBorder else colors.line
         )
     ) {
@@ -368,7 +374,7 @@ fun ProgramCardItem(
                             .background(colors.card2)
                             .padding(horizontal = 8.dp, vertical = 4.dp)
                     ) {
-                        Text(com.repforge.app.data.db.NativeBuiltinCatalog.programMetadata(prog, "location", language), color = colors.accent2, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                        Text(locationMeta, color = colors.accent2, fontSize = 10.sp, fontWeight = FontWeight.Bold)
                     }
                     Spacer(Modifier.width(6.dp))
                     Box(
@@ -377,11 +383,22 @@ fun ProgramCardItem(
                             .background(colors.card2)
                             .padding(horizontal = 8.dp, vertical = 4.dp)
                     ) {
-                        Text(com.repforge.app.data.db.NativeBuiltinCatalog.programMetadata(prog, "level", language), color = colors.muted, fontSize = 10.sp)
+                        Text(levelMeta, color = colors.muted, fontSize = 10.sp)
                     }
                 }
                 if (isActive) {
-                    Text(strings.getString(R.string.native_program_active), color = colors.accentText, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                    Box(
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(999.dp))
+                            .background(colors.accent.copy(alpha = 0.22f))
+                            .border(1.dp, colors.accent, RoundedCornerShape(999.dp))
+                            .padding(horizontal = 10.dp, vertical = 4.dp)
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                            Icon(Icons.Default.Check, contentDescription = null, tint = colors.accentText, modifier = Modifier.size(12.dp))
+                            Text(strings.getString(R.string.native_program_active), color = colors.accentText, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                        }
+                    }
                 } else {
                     OutlinedButton(
                         onClick = onActivate,
@@ -394,7 +411,9 @@ fun ProgramCardItem(
             }
             Spacer(Modifier.height(8.dp))
             Text(name(prog.nameHu, prog.nameEn, prog.nameDe, prog.nameRo), color = colors.text, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-            Text(prog.description, color = colors.muted, fontSize = 12.sp)
+            if (prog.description.isNotBlank()) {
+                Text(prog.description, color = colors.muted, fontSize = 12.sp)
+            }
             OutlinedButton(onClick = onEdit, modifier = Modifier.fillMaxWidth()
                 .testTag("program_edit_${prog.id}")) {
                 Text(strings.getString(if (prog.builtin) R.string.native_program_copy_edit else R.string.native_program_edit))
@@ -425,7 +444,15 @@ fun ProgramCardItem(
             AnimatedVisibility(visible = expanded) {
                 Column(modifier = Modifier.padding(top = 12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     programWithDays.days.sortedBy { it.sortOrder }.forEach { day ->
-                        val exCount = runCatching { JSONArray(day.exercisesJson).length() }.getOrDefault(0)
+                        val dayExerciseIds = remember(day.exercisesJson) {
+                            runCatching {
+                                val arr = JSONArray(day.exercisesJson)
+                                (0 until arr.length()).mapNotNull { i ->
+                                    runCatching { com.repforge.app.NativeProgramEditor.exerciseId(arr.optString(i)) }.getOrNull()
+                                }
+                            }.getOrDefault(emptyList())
+                        }
+                        val exCount = dayExerciseIds.size
                         Row(
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -435,30 +462,60 @@ fun ProgramCardItem(
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Column {
+                            Column(modifier = Modifier.weight(1f).padding(end = 8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                                 Text(name(day.nameHu, day.nameEn, day.nameDe, day.nameRo), color = colors.text, fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
                                 Text(strings.getString(R.string.native_program_exercises, exCount), color = colors.muted, fontSize = 11.sp)
-                            }
-                            Column(horizontalAlignment = Alignment.End) {
-                            Button(
-                                onClick = { onStartDay(day.dayId) },
-                                enabled = exCount > 0,
-                                shape = RoundedCornerShape(8.dp),
-                                colors = ButtonDefaults.buttonColors(containerColor = colors.accent)
-                            ) {
-                                Icon(Icons.Default.PlayArrow, contentDescription = null, tint = colors.onAccent)
-                                Spacer(Modifier.width(4.dp))
-                                Text(strings.getString(R.string.native_program_start), color = colors.onAccent, fontSize = 11.sp, fontWeight = FontWeight.Bold)
-                            }
-                            if (!prog.builtin && prog.sourceTemplateId == "home-basic" &&
-                                day.dayId in setOf("A", "B")) {
-                                OutlinedButton(onClick = { onRestoreDay(day.dayId) },
-                                    modifier = Modifier.heightIn(min = 48.dp)
-                                        .testTag("program_restore_${prog.id}_${day.dayId}")) {
-                                    Text(strings.getString(R.string.native_program_actions_restore),
-                                        color = colors.accentText, fontSize = 11.sp)
+                                if (dayExerciseIds.isNotEmpty() && exercisesById.isNotEmpty()) {
+                                    androidx.compose.foundation.layout.FlowRow(
+                                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                                        verticalArrangement = Arrangement.spacedBy(4.dp)
+                                    ) {
+                                        dayExerciseIds.take(3).forEach { exId ->
+                                            val ex = exercisesById[exId]
+                                            val label = ex?.let { name(it.nameHu, it.nameEn, it.nameDe, it.nameRo) } ?: exId
+                                            Box(
+                                                modifier = Modifier
+                                                    .clip(RoundedCornerShape(6.dp))
+                                                    .background(colors.card)
+                                                    .border(0.5.dp, colors.line, RoundedCornerShape(6.dp))
+                                                    .padding(horizontal = 6.dp, vertical = 2.dp)
+                                            ) {
+                                                Text(label, color = colors.muted, fontSize = 10.sp, maxLines = 1)
+                                            }
+                                        }
+                                        if (dayExerciseIds.size > 3) {
+                                            Box(
+                                                modifier = Modifier
+                                                    .clip(RoundedCornerShape(6.dp))
+                                                    .background(colors.accent.copy(alpha = 0.14f))
+                                                    .padding(horizontal = 6.dp, vertical = 2.dp)
+                                            ) {
+                                                Text("+${dayExerciseIds.size - 3}", color = colors.accentText, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                                            }
+                                        }
+                                    }
                                 }
                             }
+                            Column(horizontalAlignment = Alignment.End) {
+                                Button(
+                                    onClick = { onStartDay(day.dayId) },
+                                    enabled = exCount > 0,
+                                    shape = RoundedCornerShape(8.dp),
+                                    colors = ButtonDefaults.buttonColors(containerColor = colors.accent)
+                                ) {
+                                    Icon(Icons.Default.PlayArrow, contentDescription = null, tint = colors.onAccent)
+                                    Spacer(Modifier.width(4.dp))
+                                    Text(strings.getString(R.string.native_program_start), color = colors.onAccent, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                                }
+                                if (!prog.builtin && prog.sourceTemplateId == "home-basic" &&
+                                    day.dayId in setOf("A", "B")) {
+                                    OutlinedButton(onClick = { onRestoreDay(day.dayId) },
+                                        modifier = Modifier.heightIn(min = 48.dp)
+                                            .testTag("program_restore_${prog.id}_${day.dayId}")) {
+                                        Text(strings.getString(R.string.native_program_actions_restore),
+                                            color = colors.accentText, fontSize = 11.sp)
+                                    }
+                                }
                             }
                         }
                     }

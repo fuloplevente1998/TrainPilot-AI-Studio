@@ -254,6 +254,33 @@ interface WorkoutHistoryDao {
     suspend fun scanJournalSummaries(fromEpoch: Long, toEpoch: Long, beforeEpoch: Long?, beforeId: String,
         limit: Int): List<JournalWorkoutSummary>
 
+    @Query("""
+        SELECT w.id, w.startedEpochMs, w.programName, w.dayName, w.durationSeconds,
+            w.completedSetsCount, w.totalSetsCount, w.hasPr226,
+            w.programName || ' ' || w.dayName || ' ' || COALESCE((
+                SELECT group_concat(e.nameHu || ' ' || e.nameEn || ' ' ||
+                    COALESCE(l.nameDe, '') || ' ' || COALESCE(l.nameRo, ''), ' ')
+                FROM workout_history_exercises e LEFT JOIN exercise_library l ON l.id = e.exerciseId
+                WHERE e.workoutHistoryId = w.id), '') AS searchText
+        FROM workout_history w
+        WHERE w.startedEpochMs >= :fromEpoch AND w.startedEpochMs < :toEpoch
+            AND (:prOnly = 0 OR w.hasPr226 = 1)
+            AND (:gpsCardioOnly = 0 OR EXISTS (
+                SELECT 1 FROM workout_history_exercises e
+                LEFT JOIN workout_history_sets s ON s.historyExerciseRowId = e.rowId
+                WHERE e.workoutHistoryId = w.id
+                  AND (e.measurementType IN ('distance', 'gps', 'cardio')
+                       OR (s.distanceMeters IS NOT NULL AND s.distanceMeters > 0)
+                       OR (s.gpsRouteKey193 IS NOT NULL AND TRIM(s.gpsRouteKey193) <> '')
+                       OR (s.gpsRouteKey163 IS NOT NULL AND TRIM(s.gpsRouteKey163) <> ''))
+            ))
+            AND (:beforeEpoch IS NULL OR w.startedEpochMs < :beforeEpoch
+                OR (w.startedEpochMs = :beforeEpoch AND w.id < :beforeId))
+        ORDER BY w.startedEpochMs DESC, w.id DESC LIMIT :limit
+    """)
+    suspend fun scanJournalWithQuickFilter(fromEpoch: Long, toEpoch: Long, prOnly: Int, gpsCardioOnly: Int,
+        beforeEpoch: Long?, beforeId: String, limit: Int): List<JournalSearchRow>
+
     @Transaction
     @Query("SELECT * FROM workout_history WHERE id = :id")
     fun observeWorkoutDetails(id: String): Flow<WorkoutHistoryWithDetails?>

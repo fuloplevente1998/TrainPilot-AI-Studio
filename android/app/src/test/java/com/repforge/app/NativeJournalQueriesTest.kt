@@ -48,4 +48,32 @@ class NativeJournalQueriesTest {
             assertEquals(40, dao.getWorkoutCount())
         } finally { db.close() }
     }
+
+    @Test fun quickFiltersReturnOnlyPrWorkoutsAndGpsCardioWorkouts() = runBlocking {
+        val db = Room.inMemoryDatabaseBuilder(RuntimeEnvironment.getApplication(), TrainPilotDatabase::class.java).build()
+        try {
+            val dao = db.workoutHistoryDao()
+            dao.insertWorkout(row(1).copy(id = "w-normal", hasPr226 = false, startedEpochMs = 1000))
+            dao.insertWorkout(row(2).copy(id = "w-pr", hasPr226 = true, startedEpochMs = 2000))
+            dao.insertWorkout(row(3).copy(id = "w-gps", hasPr226 = false, startedEpochMs = 3000))
+            val exId = dao.insertExercise(com.repforge.app.data.db.WorkoutHistoryExerciseEntity(
+                workoutHistoryId = "w-gps", orderIndex = 0, exerciseId = "run-outdoor",
+                nameHu = "Futás", nameEn = "Running", targetSets = 1, targetReps = "3000",
+                repUnit = "m", restSeconds = 0, loadType = "bodyweight",
+                measurementType = "distance", bilateral = false
+            ))
+            dao.insertSets(listOf(com.repforge.app.data.db.WorkoutHistorySetEntity(
+                workoutHistoryId = "w-gps", historyExerciseRowId = exId, exerciseId = "run-outdoor",
+                setId = "s-1", setNumber = 1, done = true, reps = "900", weight = null,
+                leftSeconds = null, rightSeconds = null, distanceMeters = 3200.0,
+                gpsRouteKey163 = null, gpsRouteKey193 = "route-193"
+            )))
+
+            val prRows = dao.scanJournalWithQuickFilter(Long.MIN_VALUE, Long.MAX_VALUE, 1, 0, null, "", 32)
+            assertEquals(listOf("w-pr"), prRows.map { it.summary.id })
+
+            val gpsRows = dao.scanJournalWithQuickFilter(Long.MIN_VALUE, Long.MAX_VALUE, 0, 1, null, "", 32)
+            assertEquals(listOf("w-gps"), gpsRows.map { it.summary.id })
+        } finally { db.close() }
+    }
 }
