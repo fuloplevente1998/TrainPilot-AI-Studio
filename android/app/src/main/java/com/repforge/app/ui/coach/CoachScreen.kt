@@ -65,7 +65,7 @@ internal fun CoachScreen(starting: Boolean, onStart: (String, String, String?) -
                     onClick = onProgress,
                     modifier = Modifier.heightIn(min = 48.dp).testTag("coach_open_progress")
                 ) {
-                    Text(words[18], color = colors.accentText)
+                    Text(words[19], color = colors.accentText)
                 }
             }
         }

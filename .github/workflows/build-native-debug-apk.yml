@@ -1,0 +1,83 @@
+name: Build isolated TrainPilot native debug APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-native-debug-apk.yml"
+      - "android/app/build.gradle"
+      - "android/app/src/main/**"
+      - "android/app/src/test/**"
+      - "android/shared/**"
+      - "android/build.gradle"
+      - "android/settings.gradle"
+      - "android/gradle/**"
+
+permissions:
+  contents: read
+
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Verify Android SDK availability
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
+          test -d "$SDK"
+          echo "Android SDK: $SDK"
+          echo "Source revision: $GITHUB_SHA"
+      - name: Verify native navigation and journal database tests
+        shell: bash
+        working-directory: android
+        run: |
+          set -euo pipefail
+          chmod +x ./gradlew
+          ./gradlew :app:testDebugUnitTest \
+            --tests com.repforge.app.NativeMainMenuTest \
+            --tests com.repforge.app.NativeJournalQueriesTest \
+            --no-daemon --stacktrace
+      - name: Assemble separate-installable native phone debug APK
+        shell: bash
+        working-directory: android
+        run: |
+          set -euo pipefail
+          ./gradlew :app:assembleDebug -PisolatedAiStudioDebug --no-daemon --stacktrace
+      - name: Verify APK file and isolated application ID
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK="android/app/build/outputs/apk/debug/app-debug.apk"
+          test -s "$APK"
+          SDK="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
+          AAPT="$(find "$SDK/build-tools" -mindepth 2 -maxdepth 2 -name aapt -type f | sort -V | tail -1)"
+          test -x "$AAPT"
+          "$AAPT" dump badging "$APK" | head -n 8
+          "$AAPT" dump badging "$APK" | grep -F "package: name='com.repforge.app.aistudio'"
+          sha256sum "$APK"
+          ls -lh "$APK"
+      - name: Publish APK as downloadable GitHub Actions artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: trainpilot-native-aistudio-debug-${{ github.sha }}
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 21
+      - name: Publish JVM test reports when available
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trainpilot-native-jvm-test-reports-${{ github.run_id }}
+          path: |
+            android/app/build/test-results/testDebugUnitTest/**
+            android/app/build/reports/tests/testDebugUnitTest/**
+          if-no-files-found: ignore
+          retention-days: 14

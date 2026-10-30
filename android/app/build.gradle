@@ -82,6 +82,12 @@ android {
     buildTypes {
         debug {
             versionNameSuffix "-dev"
+            // Opt-in CI variant: installs separately from the existing production TrainPilot.
+            // Never apply this suffix to release or to ordinary local debug builds.
+            if (project.hasProperty('isolatedAiStudioDebug')) {
+                applicationIdSuffix ".aistudio"
+                versionNameSuffix "-dev-aistudio"
+            }
         }
         release {
             signingConfig signingConfigs.release

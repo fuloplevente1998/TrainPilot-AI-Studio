@@ -145,7 +145,8 @@ class NativeHomeMetricLayoutUiTest {
                         if (studioShell) com.repforge.app.ui.navigation.NativeStudioShellHeader(
                             route, "home", "de", "graphite_gold", route != "programs",
                             onHome = { route = "home" }, onSelect = { route = it },
-                            onSelectLanguage = {}, onTheme = {}, onSettings = {})
+                            onSelectLanguage = {}, onTheme = {}, onSettings = {},
+                            onCalendar = {}, onCoach = {})
                         else com.repforge.app.ui.navigation.NativeTopNavigation(route, "home", "de",
                             enabled = route != "programs", onSelect = { route = it })
                     }
