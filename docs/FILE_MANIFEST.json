@@ -1,5 +1,5 @@
 {
-  "file_count_including_manifest": 882,
+  "file_count_including_manifest": 883,
   "max_files": 950,
   "source_import_native": "648e971034201511d69585cd5deecaa27eddf942",
   "source_import_pr279": "5ff8cbd0da6533d04e0696229cb013936ae39619",
@@ -10,6 +10,11 @@
       "path": ".github/workflows/build-ai-studio-bundle.yml",
       "sha256": "44ae59eb941300787d59a5ee31065457492001051ec8e65a7449651072d475b6",
       "size": 1748
+    },
+    {
+      "path": ".github/workflows/build-native-debug-apk.yml",
+      "sha256": "cc0ca2b6189cb3a4e8ffec8f82b7e6ab4b8485f6b07e44cfa35ec28bd529c8cb",
+      "size": 2958
     },
     {
       "path": ".github/workflows/native-navigation-qa.yml",
@@ -43,8 +48,8 @@
     },
     {
       "path": "android/app/build.gradle",
-      "sha256": "7ee933c098e53546eb28197de323621b5717b6025ddb116a68bb4335a0e66ab2",
-      "size": 8093
+      "sha256": "149b87982296728f1209607ce88baedd5f5ac5c03a8450bd141d4e51fa29029d",
+      "size": 8449
     },
     {
       "path": "android/app/build.gradle.kts",
@@ -593,7 +598,7 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/coach/CoachScreen.kt",
-      "sha256": "4723d8f6d8107e6a0fbed0a383e816d5c97724a79728d6740ca42bd186956d8f",
+      "sha256": "254324b8d36cce6a17714e15a700f16d530a237c7d79ba60da41b084df53666d",
       "size": 13312
     },
     {
@@ -1878,8 +1883,8 @@
     },
     {
       "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeHomeMetricLayoutUiTest.kt",
-      "sha256": "d50555cac0a949cf20c47ba109969251829910666304b01bc6c9c3d0592df2e4",
-      "size": 10088
+      "sha256": "2927a44a8015e9d32029acba215e928ac72d2e6230422392b37dcb771a151c73",
+      "size": 10147
     },
     {
       "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeHomeRecoveryUiTest.kt",
