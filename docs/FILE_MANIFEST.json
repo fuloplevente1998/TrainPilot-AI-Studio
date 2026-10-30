@@ -1,11 +1,51 @@
 {
-  "file_count_including_manifest": 881,
+  "file_count_including_manifest": 903,
   "max_files": 950,
   "source_import_native": "648e971034201511d69585cd5deecaa27eddf942",
   "source_import_pr279": "5ff8cbd0da6533d04e0696229cb013936ae39619",
   "source_import_pr277": "9aa3721ca675cd66b4fa04d1c91e2b6a871c04ed",
   "hashes_reflect": "current repository files, not only original imported snapshots",
   "files": [
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368255266_b32d9a59.png",
+      "sha256": "583fc39591378b07b763963881e50ccbcd7e1619fc2be58e3c1eca0099bf4c3e",
+      "size": 123087
+    },
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368255452_46475c30.png",
+      "sha256": "68f09017f514baf49521c423d2677aabf86800d8871091da0c518c54a0150790",
+      "size": 12889
+    },
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368256042_e6a1dfb2.png",
+      "sha256": "c94f1868e00154bfb266d4e4c37672592d21d916b7e07be5bf54ef5cc6991932",
+      "size": 17401
+    },
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368256537_8a204d79.png",
+      "sha256": "9917915bb60f3eded9832f77188528d9173d01ee760a9729282617f3914fda69",
+      "size": 19128
+    },
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368258785_439d45e9.png",
+      "sha256": "e69edab396880b67c732922a5db4fc2e3cb366204a9f07cdd876cc5a6dcb9cbb",
+      "size": 48672
+    },
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368258899_ade3e1e0.png",
+      "sha256": "1ee06a82130c252ebf8d96216ff997d4ac757255d9a770c0d530dc01b1a2fbe9",
+      "size": 61104
+    },
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368259165_cec79cd8.png",
+      "sha256": "41a516a352705de49231be0b0a384c2fadca3ecb0dd340ea03f2bc6b681e0ce4",
+      "size": 19504
+    },
+    {
+      "path": ".aistudio/artifacts/brain/feddeb15-2100-4d44-9f92-e3202dc3bca4/.tempmediaStorage/media_1793368259640_237d5e8c.png",
+      "sha256": "9e587815656f230d5daff879f93688bc1f6e90a80aabcbecaeff4f7535836113",
+      "size": 32552
+    },
     {
       "path": ".github/workflows/build-ai-studio-bundle.yml",
       "sha256": "44ae59eb941300787d59a5ee31065457492001051ec8e65a7449651072d475b6",
@@ -35,6 +75,76 @@
       "path": "android/.gitignore",
       "sha256": "065e4a92a240fe11a0ea230491ad9dabef143f5fd5a3e6884ad6f0395666a971",
       "size": 1824
+    },
+    {
+      "path": "android/.gradle/9.3.1/checksums/checksums.lock",
+      "sha256": "b29fbd88e31cdc915abed1b2108d15cc7340e3e88a294ddbc27ea5c73e6bb581",
+      "size": 17
+    },
+    {
+      "path": "android/.gradle/9.3.1/checksums/md5-checksums.bin",
+      "sha256": "887ec881f643adf23ff22d7db6566c38c172dcb09cedc1fad870dfd52aead923",
+      "size": 37847
+    },
+    {
+      "path": "android/.gradle/9.3.1/checksums/sha1-checksums.bin",
+      "sha256": "9ae58b77cfdf8aa7055cbd2df710c28746dfbeb268242203af90de74c3ad52c0",
+      "size": 88691
+    },
+    {
+      "path": "android/.gradle/9.3.1/executionHistory/executionHistory.bin",
+      "sha256": "a4de3fb55cfe9588e4924908f5a1aa5a158c48f95f8c571663bb46c53a8f6dde",
+      "size": 3847380
+    },
+    {
+      "path": "android/.gradle/9.3.1/executionHistory/executionHistory.lock",
+      "sha256": "bf70b5c62030e53a38128abeae0d5587d9c2ed5b0b580f6521a15fe597fe8eb1",
+      "size": 17
+    },
+    {
+      "path": "android/.gradle/9.3.1/fileChanges/last-build.bin",
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "size": 1
+    },
+    {
+      "path": "android/.gradle/9.3.1/fileHashes/fileHashes.bin",
+      "sha256": "377f45d2dedc8cf0e668627dbde9f0ae31b5e5b2fa61989506ce46c428bfbd7e",
+      "size": 504491
+    },
+    {
+      "path": "android/.gradle/9.3.1/fileHashes/fileHashes.lock",
+      "sha256": "ffd4def64aeb0c036879cad0dfb3b97530ebfe131a5977ad8525a9d0aad79031",
+      "size": 17
+    },
+    {
+      "path": "android/.gradle/9.3.1/fileHashes/resourceHashesCache.bin",
+      "sha256": "0be73a409196b1b0fece42b7cbe9389ef8410b6b7e3b89934c6972c7caec651c",
+      "size": 233113
+    },
+    {
+      "path": "android/.gradle/9.3.1/gc.properties",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "android/.gradle/buildOutputCleanup/buildOutputCleanup.lock",
+      "sha256": "a0b9212f68862957e77b8b71350bf72ba38057c889308a57168ba2071c39e930",
+      "size": 17
+    },
+    {
+      "path": "android/.gradle/buildOutputCleanup/cache.properties",
+      "sha256": "64516295c3e6358b69bcbfff14d84b87a96f3c0c051ac40b36a433168b2f6107",
+      "size": 51
+    },
+    {
+      "path": "android/.gradle/buildOutputCleanup/outputFiles.bin",
+      "sha256": "2917020d88d6b1cd3df938a4d0bc30f28122c81d33bffc5c8e1fe8e7ebe6db3d",
+      "size": 23825
+    },
+    {
+      "path": "android/.gradle/vcs-1/gc.properties",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
     },
     {
       "path": "android/app/.gitignore",
@@ -528,8 +638,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/data/db/TrainPilotDaos.kt",
-      "sha256": "5a6bbe5c601ceb68a8f005076cccc733042f72fa857058315a3603777f86a89c",
-      "size": 30878
+      "sha256": "a7e3a04dbb1b71fff55a2ef4456731f1a8904fad8f94f26ca5c5566176297dde",
+      "size": 32591
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/data/db/TrainPilotDatabase.kt",
@@ -593,8 +703,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/coach/CoachScreen.kt",
-      "sha256": "615049d857c253e2ec943ca8387548b25c0d12eae01c02a8343fef80e41b24be",
-      "size": 12763
+      "sha256": "4723d8f6d8107e6a0fbed0a383e816d5c97724a79728d6740ca42bd186956d8f",
+      "size": 13312
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/coach/CoachViewModel.kt",
@@ -733,18 +843,18 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/journal/JournalScreen.kt",
-      "sha256": "f4e12950c40fa6fab15f4915d50218246fe5e2314b1b8fe7ebcd9b25e2dd1dc0",
-      "size": 35572
+      "sha256": "9cd87bdc8624ab22413006585ecdc6290e79234bfe7debf9a779e40024b18717",
+      "size": 41646
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/journal/JournalViewModel.kt",
-      "sha256": "5a787642a663203197fb6836ff17c930cffe9ee0a222bc57aa73c9180db2415e",
-      "size": 13362
+      "sha256": "997935c695535b87de99b9b6c2c55df874cdb15e7a1b590e143d8cae5d7f579a",
+      "size": 13648
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/journal/NativeJournalRepository.kt",
-      "sha256": "dfbd8017272337a29c66f22a9bd3e70e4cbb23e77c94d0a4875efe98b25c1144",
-      "size": 5807
+      "sha256": "fd197f3a6b202915b2d539f5aa60fafad63c1bef7190e01458517ed5c0b00fb2",
+      "size": 6462
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/journal/NativeJournalText.kt",
@@ -778,8 +888,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativeStudioShellHeader.kt",
-      "sha256": "98e83aee90965d32b45ab8c8b21c4eb717ea4d5b6e6c34b5e443c64083d5a92b",
-      "size": 18211
+      "sha256": "f10a3341a3b0cff536594af77d0f06c083dc21d24a278253ac41ad1ec6080557",
+      "size": 18854
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/ProgramGpsStartDialog.kt",
@@ -793,8 +903,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/TrainPilotNavigation.kt",
-      "sha256": "55267c09fcec11605d03dbe2a311f9436ba73de00358984001b8f6468ba7d0cd",
-      "size": 31548
+      "sha256": "27b95a9cf106e99a63b999d7fa8d8fc0beef6ac2ca357cafc1f7f76c82e4c255",
+      "size": 31760
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/onboarding/NativeOnboardingPolicy.kt",
@@ -843,8 +953,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/programs/TrainingProgramsScreen.kt",
-      "sha256": "b47802fa8a5fe238fc7cf60f3902ce78e5343a6a980bca5f20ef9623d2433870",
-      "size": 23621
+      "sha256": "a0e747120831fc65b9ca010f7f65db6473fdeb264a598ed56b8f8ee6f9bf43f1",
+      "size": 27684
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/programs/TrainingProgramsViewModel.kt",
@@ -908,8 +1018,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/progress/ProgressScreen.kt",
-      "sha256": "979f1fef360cde16eadd72def2f25a8d86d2118e516f559809e80ad297a502f0",
-      "size": 37629
+      "sha256": "3d9a67b2b4d7c161c1ebe3223050f245b18ec5d36cafa96fbb9231aba5aa92f8",
+      "size": 40069
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/progress/ProgressViewModel.kt",
@@ -1018,8 +1128,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/workout/ActiveWorkoutScreen.kt",
-      "sha256": "339707e865866ec627d7b905e15c108c39de2e2cbc5a62e53da86dec4db4136f",
-      "size": 74011
+      "sha256": "ae126026e39c98ed49d7061c7ce54195b21429a16ccf5ccbdf634e5def3ff732",
+      "size": 80784
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/workout/ActiveWorkoutViewModel.kt",
@@ -2323,8 +2433,8 @@
     },
     {
       "path": "android/app/src/test/java/com/repforge/app/NativeJournalQueriesTest.kt",
-      "sha256": "e64a2e86f676306094a54c94bf383f3befb249aa509087fa618b7512adf8d3d7",
-      "size": 2559
+      "sha256": "1e243ea4e194f33bb346c781ffafde83684c20980076997fed2faef0edbb613f",
+      "size": 4392
     },
     {
       "path": "android/app/src/test/java/com/repforge/app/NativeJournalRouteMergeTest.kt",
