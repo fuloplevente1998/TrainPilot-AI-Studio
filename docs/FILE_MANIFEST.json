@@ -1,14 +1,25 @@
 {
-  "file_count_including_manifest": 878,
+  "file_count_including_manifest": 881,
   "max_files": 950,
-  "native_source": "648e971034201511d69585cd5deecaa27eddf942",
-  "pr279_source": "5ff8cbd0da6533d04e0696229cb013936ae39619",
-  "pr277_source": "9aa3721ca675cd66b4fa04d1c91e2b6a871c04ed",
+  "source_import_native": "648e971034201511d69585cd5deecaa27eddf942",
+  "source_import_pr279": "5ff8cbd0da6533d04e0696229cb013936ae39619",
+  "source_import_pr277": "9aa3721ca675cd66b4fa04d1c91e2b6a871c04ed",
+  "hashes_reflect": "current repository files, not only original imported snapshots",
   "files": [
     {
       "path": ".github/workflows/build-ai-studio-bundle.yml",
       "sha256": "44ae59eb941300787d59a5ee31065457492001051ec8e65a7449651072d475b6",
       "size": 1748
+    },
+    {
+      "path": ".github/workflows/native-navigation-qa.yml",
+      "sha256": "0f867dc15bd4d1340a4aaeb35c3aeeefac34e080510d3e9894402caf1b2e9189",
+      "size": 976
+    },
+    {
+      "path": ".github/workflows/refresh-ai-studio-manifest.yml",
+      "sha256": "c62ddcd4b71e4d08123c4f008af01c482438e085a87c3eb503c0e8d5d32d9784",
+      "size": 908
     },
     {
       "path": "AI_STUDIO_TASK.md",
@@ -752,13 +763,13 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativeMainHeader.kt",
-      "sha256": "ac03ae10d7ddaeda83663c59832517117f94ddec06d1473e63b0124296346621",
-      "size": 11369
+      "sha256": "9751aacfdb46b85a6eaf4043ed9bbd40954fe4a3f7c351629e867a772b2d1da1",
+      "size": 11363
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativeMainMenu.kt",
-      "sha256": "a074bc260d4494c42472709d236f3e5bd1e6f72538c894f7d12e5e684f61fe77",
-      "size": 4164
+      "sha256": "e9d42c07eb50cc6e4ea917bf24ef19ea1d81c6958765fd05b09fb26e5934d005",
+      "size": 4249
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativePlanningShortcuts.kt",
@@ -767,8 +778,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativeStudioShellHeader.kt",
-      "sha256": "5a3cc5825da2234c1c27b941ee49deceee3a1ee073eaf546acf5f8d9988549b6",
-      "size": 16387
+      "sha256": "98e83aee90965d32b45ab8c8b21c4eb717ea4d5b6e6c34b5e443c64083d5a92b",
+      "size": 18211
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/ProgramGpsStartDialog.kt",
@@ -782,8 +793,8 @@
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/navigation/TrainPilotNavigation.kt",
-      "sha256": "60942ebb66172b3da3a9bca2513184c27405a4864314426cbe1c3a30c29df60d",
-      "size": 31418
+      "sha256": "55267c09fcec11605d03dbe2a311f9436ba73de00358984001b8f6468ba7d0cd",
+      "size": 31548
     },
     {
       "path": "android/app/src/main/java/com/repforge/app/ui/onboarding/NativeOnboardingPolicy.kt",
@@ -1066,36 +1077,6 @@
       "size": 2110
     },
     {
-      "path": "android/app/src/main/res/drawable/ic_launcher_background.xml",
-      "sha256": "718ba51adf166bb55c3e9936bb8199a0148457f7f0191aaa2f37a94f3159d6ec",
-      "size": 5606
-    },
-    {
-      "path": "android/app/src/main/res/drawable/splash.png",
-      "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff",
-      "size": 4040
-    },
-    {
-      "path": "android/app/src/main/res/drawable/trainpilot_launcher_background.xml",
-      "sha256": "054aaecc7ffd1b6aa74cf8c6be1fe5a8de49e75874b10bb42ccfbfad1e1c9d52",
-      "size": 840
-    },
-    {
-      "path": "android/app/src/main/res/drawable/trainpilot_launcher_foreground.xml",
-      "sha256": "aa4e6a88f1000912ef3428abfe5525123f90ec62299184bde40717f9cda473b4",
-      "size": 1335
-    },
-    {
-      "path": "android/app/src/main/res/drawable/trainpilot_startup_initial.xml",
-      "sha256": "58dada1f9acadd7136ea926939bf8b53d28cc29dcfbbfb53441d0c7d1b0c0986",
-      "size": 3106
-    },
-    {
-      "path": "android/app/src/main/res/drawable/trainpilot_startup_logo.xml",
-      "sha256": "48480d9e7bce3a16072fa73705c18623497718203b26c7757ed8c0bd1b9b65f7",
-      "size": 3062
-    },
-    {
       "path": "android/app/src/main/res/drawable-land-hdpi/splash.png",
       "sha256": "08cc34ad7713fe7ed58bceaa37b2387b670c53cd60264b4bd6442db3098e75dc",
       "size": 7705
@@ -1191,6 +1172,36 @@
       "size": 192
     },
     {
+      "path": "android/app/src/main/res/drawable/ic_launcher_background.xml",
+      "sha256": "718ba51adf166bb55c3e9936bb8199a0148457f7f0191aaa2f37a94f3159d6ec",
+      "size": 5606
+    },
+    {
+      "path": "android/app/src/main/res/drawable/splash.png",
+      "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff",
+      "size": 4040
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_launcher_background.xml",
+      "sha256": "054aaecc7ffd1b6aa74cf8c6be1fe5a8de49e75874b10bb42ccfbfad1e1c9d52",
+      "size": 840
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_launcher_foreground.xml",
+      "sha256": "aa4e6a88f1000912ef3428abfe5525123f90ec62299184bde40717f9cda473b4",
+      "size": 1335
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_startup_initial.xml",
+      "sha256": "58dada1f9acadd7136ea926939bf8b53d28cc29dcfbbfb53441d0c7d1b0c0986",
+      "size": 3106
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_startup_logo.xml",
+      "sha256": "48480d9e7bce3a16072fa73705c18623497718203b26c7757ed8c0bd1b9b65f7",
+      "size": 3062
+    },
+    {
       "path": "android/app/src/main/res/font/jetbrains_mono.ttf",
       "sha256": "a187c78346862e42584d87a3b9d681b4f76860e8ccf0227ac970b1ccdc9df25c",
       "size": 57404
@@ -1211,11 +1222,6 @@
       "size": 535
     },
     {
-      "path": "android/app/src/main/res/mipmap-anydpi/trainpilot_launcher.xml",
-      "sha256": "7e14b659bcf90c551d26748e44a99f9d26ac8a2522c0c45553cc5c48a59fd3c5",
-      "size": 271
-    },
-    {
       "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
       "sha256": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c",
       "size": 265
@@ -1229,6 +1235,11 @@
       "path": "android/app/src/main/res/mipmap-anydpi-v26/trainpilot_launcher.xml",
       "sha256": "1fe397c81a8d9fae19ee1594ff36cc72ff9027ff11679e8c4a85e176a600f59b",
       "size": 287
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi/trainpilot_launcher.xml",
+      "sha256": "7e14b659bcf90c551d26748e44a99f9d26ac8a2522c0c45553cc5c48a59fd3c5",
+      "size": 271
     },
     {
       "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
@@ -1309,141 +1320,6 @@
       "path": "android/app/src/main/res/mipmap-xxxhdpi/trainpilot_launcher_bitmap.webp",
       "sha256": "9a704a68a79b3c458c6813602fae447ff2c529201ceb6f5a817ab1cd9cb977ae",
       "size": 4762
-    },
-    {
-      "path": "android/app/src/main/res/values/ic_launcher_background.xml",
-      "sha256": "cd40bafe618ff506f4088778b135cb4faa15f25e0c9b475e22d730c74b7be115",
-      "size": 120
-    },
-    {
-      "path": "android/app/src/main/res/values/native_calendar_planner.xml",
-      "sha256": "bb8183072d8737505683db6deb8a688700feb3c682e0f0b92cf5a2e54792e959",
-      "size": 1067
-    },
-    {
-      "path": "android/app/src/main/res/values/native_cardio_progress.xml",
-      "sha256": "086de224a8158cfc33fc63bbdcfe3ca1a48b0c5394bda104ec6f9ef31cd28486",
-      "size": 1553
-    },
-    {
-      "path": "android/app/src/main/res/values/native_google.xml",
-      "sha256": "7464a4d085c69a0f10734daff659c9fde1398394c38782cdd5ce6029e6b19b59",
-      "size": 942
-    },
-    {
-      "path": "android/app/src/main/res/values/native_google_maintenance.xml",
-      "sha256": "6876e7cd43ff9e86a76c961bdc3969b65a012039e45221aaf0271834a77bcc28",
-      "size": 1922
-    },
-    {
-      "path": "android/app/src/main/res/values/native_gps_recovery.xml",
-      "sha256": "f4be10bbc1f0003e9ca8b49fa7b8165a2143ce2cf7f5db900306009bd17ccfbc",
-      "size": 1934
-    },
-    {
-      "path": "android/app/src/main/res/values/native_health_auto_refresh.xml",
-      "sha256": "f5995d1e5851b07526e2e6729b3b0f3e41f70842d96083af3649db3ca7ec4365",
-      "size": 561
-    },
-    {
-      "path": "android/app/src/main/res/values/native_health_date_range.xml",
-      "sha256": "ffe65e06578106720bf1951189d189746b5f662ff6e10d74e0d964dd4553138f",
-      "size": 343
-    },
-    {
-      "path": "android/app/src/main/res/values/native_health_sync.xml",
-      "sha256": "5864dbfcff919668e0be4ea999e0be5d97b9d40687c9d2d1b840cbb5280c95c1",
-      "size": 1220
-    },
-    {
-      "path": "android/app/src/main/res/values/native_home_recovery.xml",
-      "sha256": "4dcbfbd9a756f9b68c811f092ae10d561f301c425e7e9ccca6ff4f5ac99ddf2b",
-      "size": 606
-    },
-    {
-      "path": "android/app/src/main/res/values/native_home_state.xml",
-      "sha256": "3a80561550321514a5c7119ac29033906c5b4c5addb19038ee64f39da13fbfc8",
-      "size": 515
-    },
-    {
-      "path": "android/app/src/main/res/values/native_journal_editor.xml",
-      "sha256": "8b18465a937b6b393b883696efecd6dc44e0e38bbd3c5fa24c5c3830ecab58e3",
-      "size": 2018
-    },
-    {
-      "path": "android/app/src/main/res/values/native_language.xml",
-      "sha256": "f05ba73fbfc5c2c610f8b29504a8e9381be6a0c64313b5bd30df6436be6167c1",
-      "size": 317
-    },
-    {
-      "path": "android/app/src/main/res/values/native_onboarding.xml",
-      "sha256": "4e3162e81fbe5bb8d9c7a2b6f27cf14c6c0d4b8990b67d730ac70a43419d9922",
-      "size": 1105
-    },
-    {
-      "path": "android/app/src/main/res/values/native_program_actions.xml",
-      "sha256": "266146676fc8707f10ed509c6ab0dcd26bf32cde873a727b117746a68f36f668",
-      "size": 984
-    },
-    {
-      "path": "android/app/src/main/res/values/native_program_prescription.xml",
-      "sha256": "377a27a2853895380235c4f62343529d12b93b0b570896afd73ee74b26b2a134",
-      "size": 1445
-    },
-    {
-      "path": "android/app/src/main/res/values/native_progress_photo_range.xml",
-      "sha256": "fc1b4120fb726e023c365d78c55b4c96d19a13800b20c47218c752bda052cc80",
-      "size": 1136
-    },
-    {
-      "path": "android/app/src/main/res/values/native_studio.xml",
-      "sha256": "b419b183474d24390030cb4379721b82bc3363be4155b375e245966b59d90cd1",
-      "size": 623
-    },
-    {
-      "path": "android/app/src/main/res/values/native_studio_muscle.xml",
-      "sha256": "4058799ffa4a76a817d7095d633bbabf174cee7b473cd48930856a58e508a8e8",
-      "size": 134
-    },
-    {
-      "path": "android/app/src/main/res/values/native_studio_progress_tabs.xml",
-      "sha256": "dc3b0d59f98fd5f68e5b9732682300000a560de70a2439397a8ddda9b0b732fe",
-      "size": 527
-    },
-    {
-      "path": "android/app/src/main/res/values/native_training_modes.xml",
-      "sha256": "31dfd2eb90acf21c3cb7f52a7ef2c4ec624c6271b1c53347cc51aada07a9e6c4",
-      "size": 7093
-    },
-    {
-      "path": "android/app/src/main/res/values/native_visual.xml",
-      "sha256": "ece8847647a6772585bb4d34676dd04a3d6c06d476486558e135ad11b0b0b740",
-      "size": 561
-    },
-    {
-      "path": "android/app/src/main/res/values/native_workout_health.xml",
-      "sha256": "eca43cec01235fcb5bc939591726ba0cb6047789d267ce9279a0228e190c7b6f",
-      "size": 2239
-    },
-    {
-      "path": "android/app/src/main/res/values/strings.xml",
-      "sha256": "48446d8c0d8c8e6c87c7d8549353390b54a1270736357070932354a3dce210af",
-      "size": 60255
-    },
-    {
-      "path": "android/app/src/main/res/values/styles.xml",
-      "sha256": "f9ff47db3f9c1832fc97f12790eeb48fcbbab5bc6a2bb7c18952635366f91341",
-      "size": 1320
-    },
-    {
-      "path": "android/app/src/main/res/values/trainpilot_launcher_background.xml",
-      "sha256": "c2a4815a5382d788793fe7effe222240061c6fb3194ff3995aa70d90f7888494",
-      "size": 129
-    },
-    {
-      "path": "android/app/src/main/res/values/trainpilot_startup.xml",
-      "sha256": "f04c3a94c0bd97f803d13c360c56d29cc7ccbb4fdf98c319c8c90c5c7c6b0ba0",
-      "size": 221
     },
     {
       "path": "android/app/src/main/res/values-de/native_calendar_planner.xml",
@@ -1789,6 +1665,141 @@
       "path": "android/app/src/main/res/values-ro/strings.xml",
       "sha256": "87b81e66ef0e581f1bad25a63722a089d80d3e51ad746e2ce5e7944536e8ba8f",
       "size": 60305
+    },
+    {
+      "path": "android/app/src/main/res/values/ic_launcher_background.xml",
+      "sha256": "cd40bafe618ff506f4088778b135cb4faa15f25e0c9b475e22d730c74b7be115",
+      "size": 120
+    },
+    {
+      "path": "android/app/src/main/res/values/native_calendar_planner.xml",
+      "sha256": "bb8183072d8737505683db6deb8a688700feb3c682e0f0b92cf5a2e54792e959",
+      "size": 1067
+    },
+    {
+      "path": "android/app/src/main/res/values/native_cardio_progress.xml",
+      "sha256": "086de224a8158cfc33fc63bbdcfe3ca1a48b0c5394bda104ec6f9ef31cd28486",
+      "size": 1553
+    },
+    {
+      "path": "android/app/src/main/res/values/native_google.xml",
+      "sha256": "7464a4d085c69a0f10734daff659c9fde1398394c38782cdd5ce6029e6b19b59",
+      "size": 942
+    },
+    {
+      "path": "android/app/src/main/res/values/native_google_maintenance.xml",
+      "sha256": "6876e7cd43ff9e86a76c961bdc3969b65a012039e45221aaf0271834a77bcc28",
+      "size": 1922
+    },
+    {
+      "path": "android/app/src/main/res/values/native_gps_recovery.xml",
+      "sha256": "f4be10bbc1f0003e9ca8b49fa7b8165a2143ce2cf7f5db900306009bd17ccfbc",
+      "size": 1934
+    },
+    {
+      "path": "android/app/src/main/res/values/native_health_auto_refresh.xml",
+      "sha256": "f5995d1e5851b07526e2e6729b3b0f3e41f70842d96083af3649db3ca7ec4365",
+      "size": 561
+    },
+    {
+      "path": "android/app/src/main/res/values/native_health_date_range.xml",
+      "sha256": "ffe65e06578106720bf1951189d189746b5f662ff6e10d74e0d964dd4553138f",
+      "size": 343
+    },
+    {
+      "path": "android/app/src/main/res/values/native_health_sync.xml",
+      "sha256": "5864dbfcff919668e0be4ea999e0be5d97b9d40687c9d2d1b840cbb5280c95c1",
+      "size": 1220
+    },
+    {
+      "path": "android/app/src/main/res/values/native_home_recovery.xml",
+      "sha256": "4dcbfbd9a756f9b68c811f092ae10d561f301c425e7e9ccca6ff4f5ac99ddf2b",
+      "size": 606
+    },
+    {
+      "path": "android/app/src/main/res/values/native_home_state.xml",
+      "sha256": "3a80561550321514a5c7119ac29033906c5b4c5addb19038ee64f39da13fbfc8",
+      "size": 515
+    },
+    {
+      "path": "android/app/src/main/res/values/native_journal_editor.xml",
+      "sha256": "8b18465a937b6b393b883696efecd6dc44e0e38bbd3c5fa24c5c3830ecab58e3",
+      "size": 2018
+    },
+    {
+      "path": "android/app/src/main/res/values/native_language.xml",
+      "sha256": "f05ba73fbfc5c2c610f8b29504a8e9381be6a0c64313b5bd30df6436be6167c1",
+      "size": 317
+    },
+    {
+      "path": "android/app/src/main/res/values/native_onboarding.xml",
+      "sha256": "4e3162e81fbe5bb8d9c7a2b6f27cf14c6c0d4b8990b67d730ac70a43419d9922",
+      "size": 1105
+    },
+    {
+      "path": "android/app/src/main/res/values/native_program_actions.xml",
+      "sha256": "266146676fc8707f10ed509c6ab0dcd26bf32cde873a727b117746a68f36f668",
+      "size": 984
+    },
+    {
+      "path": "android/app/src/main/res/values/native_program_prescription.xml",
+      "sha256": "377a27a2853895380235c4f62343529d12b93b0b570896afd73ee74b26b2a134",
+      "size": 1445
+    },
+    {
+      "path": "android/app/src/main/res/values/native_progress_photo_range.xml",
+      "sha256": "fc1b4120fb726e023c365d78c55b4c96d19a13800b20c47218c752bda052cc80",
+      "size": 1136
+    },
+    {
+      "path": "android/app/src/main/res/values/native_studio.xml",
+      "sha256": "b419b183474d24390030cb4379721b82bc3363be4155b375e245966b59d90cd1",
+      "size": 623
+    },
+    {
+      "path": "android/app/src/main/res/values/native_studio_muscle.xml",
+      "sha256": "4058799ffa4a76a817d7095d633bbabf174cee7b473cd48930856a58e508a8e8",
+      "size": 134
+    },
+    {
+      "path": "android/app/src/main/res/values/native_studio_progress_tabs.xml",
+      "sha256": "dc3b0d59f98fd5f68e5b9732682300000a560de70a2439397a8ddda9b0b732fe",
+      "size": 527
+    },
+    {
+      "path": "android/app/src/main/res/values/native_training_modes.xml",
+      "sha256": "31dfd2eb90acf21c3cb7f52a7ef2c4ec624c6271b1c53347cc51aada07a9e6c4",
+      "size": 7093
+    },
+    {
+      "path": "android/app/src/main/res/values/native_visual.xml",
+      "sha256": "ece8847647a6772585bb4d34676dd04a3d6c06d476486558e135ad11b0b0b740",
+      "size": 561
+    },
+    {
+      "path": "android/app/src/main/res/values/native_workout_health.xml",
+      "sha256": "eca43cec01235fcb5bc939591726ba0cb6047789d267ce9279a0228e190c7b6f",
+      "size": 2239
+    },
+    {
+      "path": "android/app/src/main/res/values/strings.xml",
+      "sha256": "48446d8c0d8c8e6c87c7d8549353390b54a1270736357070932354a3dce210af",
+      "size": 60255
+    },
+    {
+      "path": "android/app/src/main/res/values/styles.xml",
+      "sha256": "f9ff47db3f9c1832fc97f12790eeb48fcbbab5bc6a2bb7c18952635366f91341",
+      "size": 1320
+    },
+    {
+      "path": "android/app/src/main/res/values/trainpilot_launcher_background.xml",
+      "sha256": "c2a4815a5382d788793fe7effe222240061c6fb3194ff3995aa70d90f7888494",
+      "size": 129
+    },
+    {
+      "path": "android/app/src/main/res/values/trainpilot_startup.xml",
+      "sha256": "f04c3a94c0bd97f803d13c360c56d29cc7ccbb4fdf98c319c8c90c5c7c6b0ba0",
+      "size": 221
     },
     {
       "path": "android/app/src/main/res/xml/backup_rules.xml",
@@ -2337,8 +2348,8 @@
     },
     {
       "path": "android/app/src/test/java/com/repforge/app/NativeMainMenuTest.kt",
-      "sha256": "c8733bfae8be5fb2d60d9c11f1431717ea93c587acbbde4d4ec887f2ec91706a",
-      "size": 6469
+      "sha256": "1b874504ac834f92520ce35adef67ad9bac4124de99702e1ddc4437a54483a22",
+      "size": 6747
     },
     {
       "path": "android/app/src/test/java/com/repforge/app/NativeMeasuredEditingTest.kt",
@@ -2706,6 +2717,11 @@
       "size": 668
     },
     {
+      "path": "android/gradle.properties",
+      "sha256": "fa370ac81cc1aaf58f2a4640efdbb93db44db87be86e4563326547184ec6e039",
+      "size": 1116
+    },
+    {
       "path": "android/gradle/wrapper/gradle-wrapper.jar",
       "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
       "size": 43583
@@ -2714,11 +2730,6 @@
       "path": "android/gradle/wrapper/gradle-wrapper.properties",
       "sha256": "d5175eaa933ae7aebb126f5c99024f511a396132e8bacdfe74c66daf8292920d",
       "size": 251
-    },
-    {
-      "path": "android/gradle.properties",
-      "sha256": "fa370ac81cc1aaf58f2a4640efdbb93db44db87be86e4563326547184ec6e039",
-      "size": 1116
     },
     {
       "path": "android/gradlew",
@@ -3296,14 +3307,14 @@
       "size": 1335
     },
     {
-      "path": "android/wear/src/main/res/mipmap-anydpi/trainpilot_launcher.xml",
-      "sha256": "7e14b659bcf90c551d26748e44a99f9d26ac8a2522c0c45553cc5c48a59fd3c5",
-      "size": 271
-    },
-    {
       "path": "android/wear/src/main/res/mipmap-anydpi-v26/trainpilot_launcher.xml",
       "sha256": "1fe397c81a8d9fae19ee1594ff36cc72ff9027ff11679e8c4a85e176a600f59b",
       "size": 287
+    },
+    {
+      "path": "android/wear/src/main/res/mipmap-anydpi/trainpilot_launcher.xml",
+      "sha256": "7e14b659bcf90c551d26748e44a99f9d26ac8a2522c0c45553cc5c48a59fd3c5",
+      "size": 271
     },
     {
       "path": "android/wear/src/main/res/values/strings.xml",
@@ -4349,6 +4360,11 @@
       "path": "tools/build_ai_studio_bundle.py",
       "sha256": "f38a8f99bea78fb796a484f2fb0d5e6f1ca40371e4f33063c2864d9ffd0a5244",
       "size": 14677
+    },
+    {
+      "path": "tools/check_and_refresh_manifest.py",
+      "sha256": "24edd9bf1f6c547cdb13c63e098033a427a5f61d96865c23bca6531faa20350a",
+      "size": 1371
     },
     {
       "path": "tools/native-checks/catalog-reference.cjs",
