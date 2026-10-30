@@ -20,7 +20,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - uses: android-actions/setup-android@v3
+      - name: Use Android SDK installed on GitHub runner
+        shell: bash
+        run: |
+          echo "Android SDK: ${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
+          test -d "${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
       - name: Run actual native main navigation unit tests
         shell: bash
         working-directory: android
