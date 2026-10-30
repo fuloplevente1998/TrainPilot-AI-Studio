@@ -52,7 +52,7 @@ class NativeProgressPhotoRangeUiTest {
 
     private fun enterProgress() {
         scenario = fixture.launch()
-        compose.waitUntil(30_000) { exists("navigation_progress") }
+        compose.waitUntil(30_000) { exists("navigation_journal") }
         compose.openStudioTab("progress")
         compose.waitUntil(30_000) { exists("progress_list") }
     }

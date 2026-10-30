@@ -32,6 +32,12 @@ internal fun ComposeTestRule.revealSettingsControl(tag: String, section: String,
  * always assert the native tab is visible before clicking it.
  */
 internal fun ComposeTestRule.openStudioTab(destination: String) {
+    if (destination == "progress") {
+        openStudioTab("journal")
+        waitUntil(15_000) { onAllNodesWithTag("journal_open_progress").fetchSemanticsNodes().isNotEmpty() }
+        onNodeWithTag("journal_open_progress").performClick()
+        return
+    }
     val tab = onNodeWithTag("navigation_$destination")
     try {
         tab.assertIsDisplayed()

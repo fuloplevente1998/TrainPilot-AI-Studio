@@ -143,11 +143,11 @@ class NativeHomeMetricLayoutUiTest {
                 TrainPilotTheme(TrainPilotUserSettings()) {
                     androidx.compose.foundation.layout.Box(Modifier.width(320.dp)) {
                         if (studioShell) com.repforge.app.ui.navigation.NativeStudioShellHeader(
-                            route, "home", "de", "graphite_gold", route != "health",
+                            route, "home", "de", "graphite_gold", route != "programs",
                             onHome = { route = "home" }, onSelect = { route = it },
                             onSelectLanguage = {}, onTheme = {}, onSettings = {})
                         else com.repforge.app.ui.navigation.NativeTopNavigation(route, "home", "de",
-                            enabled = route != "health", onSelect = { route = it })
+                            enabled = route != "programs", onSelect = { route = it })
                     }
                 }
             }
@@ -160,7 +160,7 @@ class NativeHomeMetricLayoutUiTest {
                 brandLayouts.none { it.hasVisualOverflow })
         }
         for ((route, label) in listOf("home" to "Startseite", "training" to "Training",
-            "journal" to "Protokoll", "progress" to "Fortschritt", "health" to "Gesundheit")) {
+            "journal" to "Protokoll", "health" to "Gesundheit", "programs" to "Programme")) {
             compose.onNodeWithTag("navigation_$route").performScrollTo().assertIsDisplayed().performClick()
                 .assertIsSelected()
             val layouts = mutableListOf<androidx.compose.ui.text.TextLayoutResult>()
@@ -171,7 +171,7 @@ class NativeHomeMetricLayoutUiTest {
                 layouts.joinToString { "size=${it.size},widthOverflow=${it.didOverflowWidth},heightOverflow=${it.didOverflowHeight},paragraphWidth=${it.multiParagraph.width},constraints=${it.layoutInput.constraints}" },
                 layouts.none { it.hasVisualOverflow })
         }
-        for (route in listOf("home", "training", "journal", "progress", "health")) {
+        for (route in listOf("home", "training", "journal", "health", "programs")) {
             compose.onNodeWithTag("navigation_$route").assertIsNotEnabled()
         }
     }

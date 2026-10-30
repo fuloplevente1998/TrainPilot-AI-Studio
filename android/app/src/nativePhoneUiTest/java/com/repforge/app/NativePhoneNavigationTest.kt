@@ -78,6 +78,18 @@ class NativePhoneNavigationTest {
         compose.waitForIdle()
     }
     private fun tab(route: String) {
+        if (route == "progress") {
+            tab("journal")
+            compose.waitUntil(15_000) {
+                compose.onAllNodesWithTag("journal_open_progress").fetchSemanticsNodes().isNotEmpty()
+            }
+            compose.onNodeWithTag("journal_open_progress").performClick()
+            compose.waitUntil(15_000) {
+                compose.onAllNodesWithTag("progress_list").fetchSemanticsNodes().isNotEmpty()
+            }
+            compose.waitForIdle()
+            return
+        }
         val destination = compose.onNodeWithTag("navigation_$route")
         // The main header scrolls; the active-workout secondary header is fixed.
         // Already visible navigation needs no scrollable ancestor.
@@ -229,7 +241,7 @@ class NativePhoneNavigationTest {
         tab("progress")
         compose.onNodeWithTag("trainpilot_brand_dumbbell", useUnmergedTree = true)
             .assertExists()
-        compose.onNodeWithTag("navigation_progress").assertIsSelected()
+        compose.onNodeWithTag("navigation_journal").assertIsSelected()
         compose.onNodeWithTag("progress_list").performScrollToNode(hasTestTag("progress_total_volume_card"))
         compose.onNodeWithTag("progress_total_volume_card").assertIsDisplayed()
         screenshot("studio_progress_overview", theme = "graphite_gold")
@@ -322,7 +334,7 @@ class NativePhoneNavigationTest {
         capture("p1_anatomy_zoom")
         compose.onNodeWithTag("progress_anatomy_close").performClick()
         compose.onNodeWithTag("progress_anatomy_dialog").assertDoesNotExist()
-        compose.onNodeWithTag("navigation_progress").assertIsSelected()
+        compose.onNodeWithTag("navigation_journal").assertIsSelected()
         tab("health")
         compose.waitUntil(30_000) {
             compose.onAllNodesWithText(com.repforge.app.ui.text.nativeResources(context, "hu")
