@@ -7,8 +7,8 @@
   "files": [
     {
       "path": ".github/workflows/build-ai-studio-bundle.yml",
-      "sha256": "534cfedc3a63698ff1e650fe232bf1d7b0a1d8f0060ebc4d425263718514740e",
-      "size": 1578
+      "sha256": "44ae59eb941300787d59a5ee31065457492001051ec8e65a7449651072d475b6",
+      "size": 1748
     },
     {
       "path": "AI_STUDIO_TASK.md",
