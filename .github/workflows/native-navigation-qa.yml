@@ -1,0 +1,29 @@
+name: Native navigation JVM verification
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/native-navigation-qa.yml"
+      - "android/app/src/main/java/com/repforge/app/ui/navigation/**"
+      - "android/app/src/test/java/com/repforge/app/NativeMainMenuTest.kt"
+      - "android/app/src/main/java/com/repforge/app/ui/navigation/TrainPilotNavigation.kt"
+permissions:
+  contents: read
+jobs:
+  native-navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Run actual native main navigation unit tests
+        shell: bash
+        working-directory: android
+        run: |
+          chmod +x ./gradlew
+          ./gradlew :app:testDebugUnitTest --tests com.repforge.app.NativeMainMenuTest --no-daemon --stacktrace
