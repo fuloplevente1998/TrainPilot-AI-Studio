@@ -19,3 +19,8 @@ A működő régi WebView alkalmazás kizárólag az eredeti fuloplevente1998/Tr
 
 FONTOS: a WebView referencia NEM az új alkalmazás. Ne cseréld le a natív kódot WebView-ra.
 A régi 2×4 menü és a kísérleti alsó dock történeti referencia; a 2026-10-30-i döntés az 5+3 felső navigáció.
+
+## A két fejlesztési állapot külön kezelendő
+- A natív források eredetileg a 648e9710 commitból kerültek be; a külön repóban már saját UI-változtatások is vannak.
+- A tools/build_ai_studio_bundle.py és a Build TrainPilot AI Studio import GitHub Action **egyszeri bootstrap**: kézi újrafuttatása újramásolhatja az eredeti natív snapshotot, és felülírhatja az itt végzett UI-munkát. Ne indítsd újra célzott mentés/összevetés nélkül.
+- A natív módosítások a külön repó main ágán folytatódnak. A valós készüléken és régi adatokon végzett tesztelés ettől függetlenül szükséges.
