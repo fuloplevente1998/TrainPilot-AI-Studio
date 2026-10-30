@@ -58,15 +58,15 @@ class NativeJournalQueriesTest {
             dao.insertWorkout(row(3).copy(id = "w-gps", hasPr226 = false, startedEpochMs = 3000))
             val exId = dao.insertExercise(com.repforge.app.data.db.WorkoutHistoryExerciseEntity(
                 workoutHistoryId = "w-gps", orderIndex = 0, exerciseId = "run-outdoor",
-                nameHu = "Futás", nameEn = "Running", targetSets = 1, targetReps = "3000",
-                repUnit = "m", restSeconds = 0, loadType = "bodyweight",
-                measurementType = "distance", bilateral = false
+                nameHu = "Futás", nameEn = "Running",
+                repUnit = "m", loadType = "bodyweight",
+                measurementType = "distance", actualRir = null, setRir229 = false
             ))
             dao.insertSets(listOf(com.repforge.app.data.db.WorkoutHistorySetEntity(
                 workoutHistoryId = "w-gps", historyExerciseRowId = exId, exerciseId = "run-outdoor",
                 setId = "s-1", setNumber = 1, done = true, reps = "900", weight = null,
                 leftSeconds = null, rightSeconds = null, distanceMeters = 3200.0,
-                gpsRouteKey163 = null, gpsRouteKey193 = "route-193"
+                actualRir = null, gpsRouteKey163 = null, gpsRouteKey193 = "route-193"
             )))
 
             val prRows = dao.scanJournalWithQuickFilter(Long.MIN_VALUE, Long.MAX_VALUE, 1, 0, null, "", 32)
