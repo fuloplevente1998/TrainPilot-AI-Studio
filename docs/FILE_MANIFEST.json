@@ -2328,8 +2328,8 @@
     },
     {
       "path": "android/app/src/test/java/com/repforge/app/NativeJournalQueriesTest.kt",
-      "sha256": "1e243ea4e194f33bb346c781ffafde83684c20980076997fed2faef0edbb613f",
-      "size": 4392
+      "sha256": "c5421f29e440ac0e2e107f7997fae7b66df114816512a76a9357b583bc663483",
+      "size": 4374
     },
     {
       "path": "android/app/src/test/java/com/repforge/app/NativeJournalRouteMergeTest.kt",
