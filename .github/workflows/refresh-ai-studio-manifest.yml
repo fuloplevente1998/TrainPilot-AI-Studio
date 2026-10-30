@@ -1,0 +1,29 @@
+name: Check AI Studio 950-file budget and update hashes
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/FILE_MANIFEST.json"
+permissions:
+  contents: write
+jobs:
+  file-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Regenerate accurate SHA256 and enforce file budget
+        run: python3 tools/check_and_refresh_manifest.py
+      - name: Commit current manifest
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/FILE_MANIFEST.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh AI Studio imported file inventory"
+            git push origin HEAD:main
+          fi
