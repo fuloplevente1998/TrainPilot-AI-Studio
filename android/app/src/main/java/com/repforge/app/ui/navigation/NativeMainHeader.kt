@@ -170,7 +170,7 @@ internal fun NativeTopNavigation(route: String, settingsOrigin: String, language
                     "home" -> Icons.Default.Home
                     "training" -> Icons.Default.DirectionsRun
                     "journal" -> Icons.Default.Description
-                    "progress" -> Icons.Default.TrendingUp
+                    "programs" -> Icons.Default.List
                     else -> if (active) Icons.Default.Favorite else Icons.Default.FavoriteBorder
                 }
                 val shape = RoundedCornerShape(12.dp)

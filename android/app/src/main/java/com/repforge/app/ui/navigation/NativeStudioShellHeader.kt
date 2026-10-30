@@ -94,7 +94,9 @@ internal fun NativeStudioShellHeader(
     onSelect: (String) -> Unit,
     onSelectLanguage: (String) -> Unit,
     onTheme: () -> Unit,
-    onSettings: () -> Unit
+    onSettings: () -> Unit,
+    onCalendar: () -> Unit,
+    onCoach: () -> Unit
 ) {
     val colors = LocalTrainPilotColors.current
     val strings = nativeResources(LocalContext.current, language)
@@ -196,18 +198,6 @@ internal fun NativeStudioShellHeader(
                                 color = colors.accentText)
                         }
                     }
-                    Surface(Modifier.size(48.dp)
-                        .border(1.dp, colors.line, RoundedCornerShape(10.dp))
-                        .clip(RoundedCornerShape(10.dp))
-                        .clickable(enabled = enabled, onClick = onSettings)
-                        .testTag("navigation_settings"),
-                        shape = RoundedCornerShape(10.dp), color = colors.card2) {
-                        Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                            Icon(Icons.Default.Settings,
-                                contentDescription = NativeMainMenu.title("settings", language),
-                                tint = colors.text, modifier = Modifier.size(18.dp))
-                        }
-                    }
                 }
             }
             // 18:49 source five-tab row, with the real native navigation fences.
@@ -233,7 +223,7 @@ internal fun NativeStudioShellHeader(
                             "home" -> Icons.Default.Home
                             "training" -> Icons.Default.DirectionsRun
                             "journal" -> Icons.Default.Description
-                            "progress" -> Icons.Default.TrendingUp
+                            "programs" -> Icons.Default.List
                             else -> if (active) Icons.Default.Favorite else Icons.Default.FavoriteBorder
                         }
                         val shape = RoundedCornerShape(12.dp)
@@ -276,6 +266,50 @@ internal fun NativeStudioShellHeader(
                                     overflow = if (scrollable)
                                         TextOverflow.Clip else TextOverflow.Ellipsis)
                             }
+                        }
+                    }
+                }
+            }
+
+            // User-approved 5+3 shell: secondary shortcuts never replace the real NavHost.
+            // All three use the existing guarded destination selector and native screens.
+            Row(
+                modifier = Modifier.fillMaxWidth()
+                    .horizontalScroll(rememberScrollState())
+                    .padding(top = 2.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                val utilities = listOf(
+                    Triple("settings", Icons.Default.Settings, onSettings),
+                    Triple("calendar", Icons.Default.DateRange, onCalendar),
+                    Triple("coach", Icons.Default.TrendingUp, onCoach)
+                )
+                utilities.forEach { (destination, icon, action) ->
+                    val active = route == destination
+                    val shape = RoundedCornerShape(10.dp)
+                    Surface(
+                        modifier = Modifier.widthIn(min = 110.dp).heightIn(min = 48.dp)
+                            .border(if (active) 1.5.dp else 1.dp,
+                                if (active) colors.accent else colors.line, shape)
+                            .clip(shape)
+                            .clickable(enabled = enabled && !active, role = Role.Button,
+                                onClick = action)
+                            .testTag("navigation_$destination"),
+                        shape = shape,
+                        color = if (active) colors.accent.copy(alpha = .22f) else colors.card2
+                    ) {
+                        Row(
+                            Modifier.padding(horizontal = 10.dp, vertical = 10.dp),
+                            horizontalArrangement = Arrangement.spacedBy(6.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Icon(icon, contentDescription = null,
+                                tint = if (active) colors.accent else colors.muted,
+                                modifier = Modifier.size(18.dp))
+                            Text(NativeMainMenu.title(destination, language),
+                                style = MaterialTheme.typography.labelSmall,
+                                color = if (active) colors.accentText else colors.text,
+                                maxLines = 1)
                         }
                     }
                 }

@@ -342,7 +342,9 @@ fun TrainPilotAppScaffold(
                         }
                     },
                     onTheme = { settingsSection = "theme"; selectDestination("settings") },
-                    onSettings = { settingsSection = "general"; selectDestination("settings") }
+                    onSettings = { settingsSection = "general"; selectDestination("settings") },
+                    onCalendar = { selectDestination("calendar") },
+                    onCoach = { selectDestination("coach") }
                 )
                 if (currentRoute in NativeMainMenu.secondaryRoutes) {
                     NativeStudioSecondaryRouteBar(

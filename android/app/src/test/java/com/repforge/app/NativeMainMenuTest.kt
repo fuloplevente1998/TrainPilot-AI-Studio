@@ -10,7 +10,8 @@ class NativeMainMenuTest {
         assertTrue(NativeMainMenu.topTabsScrollable(359f, 1.0f))
         assertTrue(NativeMainMenu.topTabsScrollable(360f, 1.16f))
         assertTrue(NativeMainMenu.topTabsScrollable(480f, 2.0f))
-        assertFalse(NativeMainMenu.topTabsScrollable(360f, 1.15f))
+        assertTrue(NativeMainMenu.topTabsScrollable(360f, 1.15f))
+        assertFalse(NativeMainMenu.topTabsScrollable(480f, 1.15f))
         assertFalse(NativeMainMenu.topTabsScrollable(480f, 1.0f))
         assertEquals(0, NativeMainMenu.topTabScrollTarget(260, 0))
         assertEquals(65, NativeMainMenu.topTabScrollTarget(260, 1))
@@ -22,8 +23,10 @@ class NativeMainMenuTest {
         assertEquals(Int.MAX_VALUE, NativeMainMenu.topTabScrollTarget(Int.MAX_VALUE, 4))
     }
     @Test fun acceptedHierarchyHasFiveTabsWithSettingsOutsideTheTabBar() {
-        assertEquals(listOf("home", "training", "journal", "progress", "health"), NativeMainMenu.routes)
-        assertEquals(listOf("Kezdőlap", "Edzés", "Napló", "Fejlődés", "Egészség"), NativeMainMenu.labels("hu"))
+        assertEquals(listOf("home", "training", "journal", "health", "programs"), NativeMainMenu.routes)
+        assertEquals(listOf("Kezdőlap", "Edzés", "Napló", "Egészség", "Programok"), NativeMainMenu.labels("hu"))
+        assertEquals(listOf("settings", "calendar", "coach"), NativeMainMenu.topUtilities)
+        assertTrue("progress" in NativeMainMenu.secondaryRoutes)
         assertFalse("settings" in NativeMainMenu.routes)
         assertTrue("settings" in NativeMainMenu.secondaryRoutes)
     }
@@ -35,10 +38,11 @@ class NativeMainMenuTest {
         assertEquals("settings", NativeMainMenu.destination("settings", true))
     }
     @Test fun secondaryViewsKeepTheirPrimaryParent() {
-        for (route in listOf("active_workout", "quick_workout", "quick_outdoor", "programs", "exercise_library"))
+        for (route in listOf("active_workout", "quick_workout", "quick_outdoor", "exercise_library"))
             assertEquals("training", NativeMainMenu.selected(route))
         for (route in listOf("calendar", "coach")) assertEquals("home", NativeMainMenu.selected(route))
-        assertEquals("progress", NativeMainMenu.selected("progress"))
+        assertEquals("programs", NativeMainMenu.selected("programs"))
+        assertEquals("journal", NativeMainMenu.selected("progress"))
         assertEquals("health", NativeMainMenu.selected("weight_journal"))
     }
     @Test fun directWeightAddKeepsHealthParentAndNativeJournalTitle() {
