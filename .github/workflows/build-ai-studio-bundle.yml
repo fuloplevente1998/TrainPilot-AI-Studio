@@ -1,0 +1,44 @@
+name: Build TrainPilot AI Studio import
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-ai-studio-bundle.yml"
+      - "tools/build_ai_studio_bundle.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Clone pinned original snapshot
+        shell: bash
+        run: |
+          git clone --depth=1 --branch main https://github.com/fuloplevente1998/TrainPilot.git /tmp/trainpilot-original
+          actual="$(git -C /tmp/trainpilot-original rev-parse HEAD)"
+          expected="5f026a56b9b6d33c84afa77eb3927b11f0bd6f6a"
+          if [ "$actual" != "$expected" ]; then
+            echo "::error::Original source changed ($actual); abort to prevent mixed snapshots."
+            exit 1
+          fi
+      - name: Copy sources and verify under 950 files
+        env:
+          TRAINPILOT_SOURCE: /tmp/trainpilot-original
+        run: python3 tools/build_ai_studio_bundle.py
+      - name: Commit generated bundle to dedicated main
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Unchanged"
+            exit 0
+          fi
+          git commit -m "Import curated native phone/Wear project and PR277/279 design references"
+          git push origin HEAD:main
