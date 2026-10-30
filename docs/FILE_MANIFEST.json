@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/native-navigation-qa.yml",
-      "sha256": "0f867dc15bd4d1340a4aaeb35c3aeeefac34e080510d3e9894402caf1b2e9189",
-      "size": 976
+      "sha256": "d73e6d022208d61f9127be4e32337920cd58171fc8afa29bffe0204b2cc6bf9c",
+      "size": 1201
     },
     {
       "path": ".github/workflows/refresh-ai-studio-manifest.yml",
