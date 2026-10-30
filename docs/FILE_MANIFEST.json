@@ -1,0 +1,4394 @@
+{
+  "file_count_including_manifest": 878,
+  "max_files": 950,
+  "native_source": "648e971034201511d69585cd5deecaa27eddf942",
+  "pr279_source": "5ff8cbd0da6533d04e0696229cb013936ae39619",
+  "pr277_source": "9aa3721ca675cd66b4fa04d1c91e2b6a871c04ed",
+  "files": [
+    {
+      "path": ".github/workflows/build-ai-studio-bundle.yml",
+      "sha256": "534cfedc3a63698ff1e650fe232bf1d7b0a1d8f0060ebc4d425263718514740e",
+      "size": 1578
+    },
+    {
+      "path": "AI_STUDIO_TASK.md",
+      "sha256": "f0ae6c5c316ae35a4b8c542c42d454cccd2d8fb00828b1f01755b2d46978c243",
+      "size": 5265
+    },
+    {
+      "path": "README.md",
+      "sha256": "f3f2187016be285199c7f2917c5ca673357d60825afe336f2cad83acba247a2d",
+      "size": 1330
+    },
+    {
+      "path": "android/.gitignore",
+      "sha256": "065e4a92a240fe11a0ea230491ad9dabef143f5fd5a3e6884ad6f0395666a971",
+      "size": 1824
+    },
+    {
+      "path": "android/app/.gitignore",
+      "sha256": "99c54e51ee601a60fbde8016b2cbf717483bc2e92773be86c9247d02a7fa6ea4",
+      "size": 26
+    },
+    {
+      "path": "android/app/build.gradle",
+      "sha256": "7ee933c098e53546eb28197de323621b5717b6025ddb116a68bb4335a0e66ab2",
+      "size": 8093
+    },
+    {
+      "path": "android/app/build.gradle.kts",
+      "sha256": "ea2959d43c2be8d36e93d69abd763a985b6af9f6673b1de3bf6c4f89bddbb1d9",
+      "size": 3207
+    },
+    {
+      "path": "android/app/libs/SAMSUNG_OPEN_SOURCE_NOTICE.txt",
+      "sha256": "dca9293cf3a512c7373a6cfe1fbb32a3e7ae387254869923610bbb212e77870e",
+      "size": 11344
+    },
+    {
+      "path": "android/app/libs/samsung-health-data-api-1.1.0.aar",
+      "sha256": "f5d3d83cf00b97d0bb1b1db4da076e861eb1c3e6e704d89a34e68909d2f38654",
+      "size": 501608
+    },
+    {
+      "path": "android/app/native-upgrade-proguard.pro",
+      "sha256": "62a05608cd16db24ecf4b1105f9daa36c621d85100e34f1a48c1c585498fa3fc",
+      "size": 213
+    },
+    {
+      "path": "android/app/proguard-rules.pro",
+      "sha256": "27d2fe1fc0a1a25b0c0a0e0f27dd7088b244163089a19f2beced42c6d06d327b",
+      "size": 967
+    },
+    {
+      "path": "android/app/src/androidTest/AndroidManifest.xml",
+      "sha256": "0727f15194112a74c5f97c0ff3c969b5149c9ad40c56facf5c781ac9eaa542f6",
+      "size": 265
+    },
+    {
+      "path": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "sha256": "ff50b4c110a7434312f9af54171f9e8523b015836f707c9b387b76d4c38a97f8",
+      "size": 774
+    },
+    {
+      "path": "android/app/src/androidTest/java/com/repforge/app/PhoneWorkoutWebViewTest.java",
+      "sha256": "5220ec5d3ad050fe03be8fccc90ec6698c32862365ae077f38a98005e7204d77",
+      "size": 8780
+    },
+    {
+      "path": "android/app/src/main/AndroidManifest.xml",
+      "sha256": "0494f47bd6d2cf35a97dfdb34417dcc9141dfb46c5092f60433e29f9226f33be",
+      "size": 8012
+    },
+    {
+      "path": "android/app/src/main/assets/font-licenses/jetbrains_mono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "size": 4399
+    },
+    {
+      "path": "android/app/src/main/assets/font-licenses/plus_jakarta_sans-OFL.txt",
+      "sha256": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99",
+      "size": 4402
+    },
+    {
+      "path": "android/app/src/main/assets/font-licenses/space_grotesk-OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "size": 4495
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ActiveWorkoutViewModel.kt",
+      "sha256": "c93f65914cadec6db7eaf8b603e900e4863f917e4cba3429a3533aa769f56ce8",
+      "size": 8299
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/HealthConnectManager.kt",
+      "sha256": "bfa7df006853e6edf6157c77d572a2d6b2ab7ba925c1a5159f06ecd38a438213",
+      "size": 4100
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/HistoryViewModel.kt",
+      "sha256": "88a208b0ae7bd5b03c1c19ee05471e18572a50727f02253198256b22c1ce8b96",
+      "size": 2615
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/HomeViewModel.kt",
+      "sha256": "735b2b524bc35acf1183ecc329f9016017ae86295e48b2f9fd95f93754c28180",
+      "size": 1724
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/MainActivity.kt",
+      "sha256": "32e794635cce1bee60d1c4d079a197166b40f486a91e3ac151f6fca0f5fd2267",
+      "size": 2903
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/PersonalRecordCalculator226.kt",
+      "sha256": "99848990bf0badcf75402f0a20945eb22fe6af345a05f570e71d6b63545d99ab",
+      "size": 8433
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/PhoneOwnershipAndGps193.kt",
+      "sha256": "1ddbd1683c3b9291bcefeb9ba3ecdc61f342c6c0c3699192fd1871db04a425f5",
+      "size": 9906
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/PhoneWorkoutEngine.kt",
+      "sha256": "8662f44f021ab6192a88c852f462e59ae685e6f4f7c015aff70451531ce281cb",
+      "size": 15621
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/SettingsViewModel.kt",
+      "sha256": "f4e690fdbf7c4f8e1e0d6476868ca566fd0b4bd50a58bd35e7ffeb18b50ab4b0",
+      "size": 1536
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/SyncSpoolWorker.kt",
+      "sha256": "8317a165b22b0bfab2ed1d81196299615d2ae9e3af42dac0b0f0e5a42b16e7e1",
+      "size": 2271
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/TrainPilotApplication.kt",
+      "sha256": "cf1c1a30106f54de93416b08aff412a93b24c7fc73c0bb4e74fdc50e21bc0d18",
+      "size": 4212
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/WearCommandListenerService.kt",
+      "sha256": "056138e6f5efd88486f8c95dee5fbdffc73787aa9ad1019df21507ea5eebea18",
+      "size": 4925
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/WearSyncRepository.kt",
+      "sha256": "d7429cc6824919d2d0a198f92e7c14345c46f7a492761fa89f91f327f0a7de23",
+      "size": 4509
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/WorkoutForegroundService.kt",
+      "sha256": "32a2ec6025ab911ccc34fd6ba16ec9b34bcadd102ce12df45b2de99c57bafd5f",
+      "size": 8059
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ActiveWorkoutStore.kt",
+      "sha256": "28957884972ce1879890077018e641fb9f159903aaca8e71fa09ec385411f0f6",
+      "size": 4964
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/AppHapticsManager.kt",
+      "sha256": "c5943794f319c2bb7520774056574f393077574578ab5514b4018bcf3cd78f01",
+      "size": 1780
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ArchiveIO.kt",
+      "sha256": "94e497999f4473a732b860aa828d212d71e4a01eb6b6b609e4613896b0f60099",
+      "size": 5118
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/BackupRestoreManager.kt",
+      "sha256": "d178a91c5214ac447595a3e7004ae31d8f5ea6419e06c1a24d5be0ff149c6326",
+      "size": 33877
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/BleDiscoveryRepository.kt",
+      "sha256": "c9a05c126e2f53958b156206097a9a4a6ee8de0134a1698b3d4f4a59b43c42f0",
+      "size": 37673
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/BleWatchAndProtocols.kt",
+      "sha256": "4c32dd66c328bc90addd84c80b96b70eeb1b1b6507a01a144b062e6902c69a59",
+      "size": 9219
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/DistanceTrackingService.kt",
+      "sha256": "a4070c80c72c01a4b64b8539765fb5057e86dcd4dce4b92c1d4e1dce3cb8e09e",
+      "size": 18224
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/GoogleRequestPolicy.kt",
+      "sha256": "96f7506babde8cda6db249b36be85c7fa27231fe1addbc26a828940cdffac8e5",
+      "size": 3321
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/GoogleSyncRepository.kt",
+      "sha256": "776b33f24f1c640cc1e5a10d31a70632b03dcb282308787caa1edb622f1b2af7",
+      "size": 69182
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/GpsRouteStore.kt",
+      "sha256": "71c11650bf3789c7afae37078c084a50024ec718017d95a803cb7bac66f83f0b",
+      "size": 7436
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/HealthBackgroundServices.kt",
+      "sha256": "03a74efa63b948ac8ac6fc934a20f802aa2bb0834cfde3a3eeaa6ddcbaa17df8",
+      "size": 25918
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/HealthConnectJournal.kt",
+      "sha256": "00667b804d2667159094ad44b646d5c6c067978d770508bdf0f6f35830dcc029",
+      "size": 8562
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/HealthConnectRepository.kt",
+      "sha256": "412657ec10f31286e8428a7feda17cba4e21a48f88551610a94be21b213ef482",
+      "size": 52554
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/HealthJournalStore.kt",
+      "sha256": "7817d5ea35cc0490b1a52782e8e7709ae6e5f8e0b719b13f74b8d64668dfb7e9",
+      "size": 54219
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/HealthProjectionsAndEnergy.kt",
+      "sha256": "47e812ad7f5d8f32fd0966f51cda82ef501ad3d8ee448b2d5b3602b1850137b9",
+      "size": 9518
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/IntervalTimerService.kt",
+      "sha256": "1277b93592483510d102e9e0058ebbda6b35c144c1162717d7ef9af708080b49",
+      "size": 39697
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/MainActivity.kt",
+      "sha256": "7615dc062f5d210ced95db7d74658d858349be6ed96d64622ec472d9c5646365",
+      "size": 6410
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeCalendarSyncPlan.kt",
+      "sha256": "3163384eaaf303b96c9edf430b325301f00afc5fcff3ff5d5108e5dd6c34417a",
+      "size": 1420
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeCloudMergeGuard.kt",
+      "sha256": "dde89c3b281916b01480efeb0eb8c53a001b01ea5a4d8e03ae5a4c2d7dfef682",
+      "size": 2418
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeCloudPhotoDeletion.kt",
+      "sha256": "8b4e9c843350da19b078fb582aaa2fb34c7f2fc4bcdf40b73a6c9b06fef510c3",
+      "size": 6566
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeCloudPhotoStage.kt",
+      "sha256": "a42d6748a362eada98cacfedb3a70cfa83b1981db22e203deace9d2c23663b81",
+      "size": 7926
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeCustomExerciseEditor.kt",
+      "sha256": "179a532644783dd0fc8fa0154391e5f1fe258071107613cd62195d005f44f74e",
+      "size": 9581
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeDataReplacement.kt",
+      "sha256": "a0237e27b2c3541a4fcd8f65918396c9721f73e46f99068cb7b907c683f108af",
+      "size": 6724
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeExerciseDemo.kt",
+      "sha256": "26d323a7e13d2d24aaffe0c92668fceb4271021ff16662e372c9b62501bfbb00",
+      "size": 2291
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeExerciseFavorites.kt",
+      "sha256": "6f9737b91efc8071844d3f12145c43e7ae2c651eecd11c86a65488276df389d7",
+      "size": 2916
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeGoogleConsentBridge.kt",
+      "sha256": "56d041a12b6bbde28b62300376fab495bf60404d752386d61fe097ecfd39cbc8",
+      "size": 2363
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeGoogleOperationGate.kt",
+      "sha256": "ff077ad715a3638cf1011d08f3ab72703a3960ad66872468a33e4586c63ca3e7",
+      "size": 1863
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeGpsMeasurement.kt",
+      "sha256": "098ddd85572404c549a2663b9d009e8c7a6cb6cae49c07cb5f1391adf5f627f3",
+      "size": 7199
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeHealthBackupGate.kt",
+      "sha256": "ce82f0ee4df91f683e7f06fb03a38410a132437f9fe5718ada1e76c9765543d5",
+      "size": 866
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeHealthRefresh.kt",
+      "sha256": "3ac2ef09ad122cdae571d0c1b5dda38b740eff38814f7d1379a6553297b818b1",
+      "size": 13551
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeHealthSync.kt",
+      "sha256": "a1f32adbb3759a79febc69cd28bf6a62f495a65cb426c0c241865e4ba2217f83",
+      "size": 6368
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeIntervalPreset.kt",
+      "sha256": "eed2146d34d9ab8988c96ce4645b1b7a607a21cdc42ff0d24422eaa87a02ce76",
+      "size": 1375
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeJournalEditor.kt",
+      "sha256": "d8dfd96201f6a8f2df01a4eb184915f75a3df24b804527461f94d50f0d3e811c",
+      "size": 12632
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeLegacyDraft.kt",
+      "sha256": "508edb4b8546159c8bf890a72f394c078c44445e4e7360cf2e081f23c20feac1",
+      "size": 5150
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeMeasuredSet.kt",
+      "sha256": "a0a94589359c9ce98fdde94e0e0d8699b9b1571ea82e5771d30bad0da22145f9",
+      "size": 2308
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeMeasuredTime.kt",
+      "sha256": "1bd64397d739cb38f28af4784b11bed9343b9931fcf542cf48b18c44058e7979",
+      "size": 3111
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeOutdoorStart.kt",
+      "sha256": "f99af692c60955d224244a01341dfa14a01d0cea3b0036270aceb61fdef713f2",
+      "size": 1712
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativePlannerPolicy.kt",
+      "sha256": "7cb3aff323ae7a89f67f78f510c0b6249e21f7eeba37bec5648fec9b0ffdd4b1",
+      "size": 4860
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeProfileDayHistory128.kt",
+      "sha256": "d4984937710d5ddf9c229d420f7140e5e12e7b63461917d1badf7b2aa7388291",
+      "size": 11680
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeProfileHistory128.kt",
+      "sha256": "8a5d2e1540f4cf5b715653cf5702fa33ae122ee590cd1d75b639d87590c0fe07",
+      "size": 15885
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeProfileProgramPreview.kt",
+      "sha256": "0b868ceaf1639451da9b5216c4bf349af3413f3a93f309cf7c33663ad2588252",
+      "size": 10050
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeProgramActions.kt",
+      "sha256": "1f6724c573d8a881b9d4f7addd81f7751a023b05c7021e12471d38efe11828b1",
+      "size": 4274
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeProgramEditor.kt",
+      "sha256": "684039a594f5b3f148a34774da3309a4e461df4423b621c0b34ab8d3249222fc",
+      "size": 23368
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeProgramGpsChoice.kt",
+      "sha256": "75f49c2025578012b617038425381bb78c579704d75008485aa05dc70a700317",
+      "size": 1895
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeProgramPrescription.kt",
+      "sha256": "7a7731a2bf5051633fb690c7c4ba2449cd633ab8ceecf98e1651c55837538296",
+      "size": 4554
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeReplacementJournal.kt",
+      "sha256": "e0d736ae2ba3efee2cc0daf54823dd4cd16c3707b724c60dedae6c89ebc0fec3",
+      "size": 1969
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeSetStopwatch.kt",
+      "sha256": "988c9b5245cbe6029c51babac2721b14efa91a2f62e2bb195e8d811ce03b6996",
+      "size": 5308
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeTimerTarget.kt",
+      "sha256": "629f1c20253df85e7cb1a9daed60a2292eefa8ef8b5ca6b496b0b13eb4d19f46",
+      "size": 217
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeTrainingPrescription.kt",
+      "sha256": "eb67c7c71f70b92e520b75bfb5567d69a5351540f9c86e0cb10332bc1baf171d",
+      "size": 2235
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeTrainingProfile.kt",
+      "sha256": "fc4679f354e55bcd07a44ddccb41f40265f4c340b2a4963da265f0e23b190936",
+      "size": 3297
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeWeightTombstones18.kt",
+      "sha256": "08e24b0c4a5b6bbb1f3f579096e78f139426ab82c5e0d707fec7c9e61cf05033",
+      "size": 6056
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeWorkoutEditing.kt",
+      "sha256": "0363b02dc681f3620808c397e8f47fb602a8daabc7d6a737e824dc55d8236e22",
+      "size": 25958
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeWorkoutHealth.kt",
+      "sha256": "910f6dcea405194ba452e1ee5369c2a6371cc78d98b5593f9e4841594e87568d",
+      "size": 7621
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeWorkoutSession.kt",
+      "sha256": "3f5fd64e9c02a70d7f882b17b6b3779afdf1c9e4bbfa556a12a9712573ffd221",
+      "size": 21307
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/NativeWorkoutTarget.kt",
+      "sha256": "0220158c942a06bfe225f2ca08eef0d7b2fbad8ac838d2efe4c40b17ae1c2045",
+      "size": 2133
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/PersonalRecordCalculator226.kt",
+      "sha256": "681ffa0340e06817ca047f247a5ada1fe2147f28e0fae89310f5124da1c73ef1",
+      "size": 10003
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/PhoneOwnershipAndGps193.kt",
+      "sha256": "22ee76b80b90c7cdb8d93d9590dfb94c3210895801133f7a1acb4bd2af5f3860",
+      "size": 33579
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/PhoneSharedBridges.kt",
+      "sha256": "34a58c00736a320f8c2dc0d48d896f768d84c5be01480ad5a1515f9ff8bf30df",
+      "size": 9455
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/PhoneWorkoutEngine.kt",
+      "sha256": "7c8af26bc3d82fec35b61a60b285c1bcf9038b4b0090eae8f1d536dca10eb05d",
+      "size": 39752
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/PhoneWorkoutExecutionStore.kt",
+      "sha256": "e316818e21c53ebe61f838a68ffde4b0992d0ecabfb849e2a93afc815eff7ce2",
+      "size": 51749
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/PrivacyPolicyAndActivity.kt",
+      "sha256": "57e033106f830b530a6ee53adafdfe2d35589513e35d3be128a65fa5452c4424",
+      "size": 22166
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/SamsungHealthRepository.kt",
+      "sha256": "5ef0daf6d13098d654b597e21e79f641a8bf16efe6cb4b0a1be7a6dbdfb37e26",
+      "size": 9784
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/SamsungSdkReader.java",
+      "sha256": "25e0bfc2c67c12b6d65a5daae1beeb4ffcb823f6dd5acf2060bb56d9aa0a54be",
+      "size": 25839
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/StartupSplashAndFade.kt",
+      "sha256": "58e13888f54cf15000c5c40dec01c4f38561907029689810f53f3c9cc97314d5",
+      "size": 18831
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/TrainPilotWorkoutFinalization.kt",
+      "sha256": "d62d802a2cd6705db378c05f1074fc6f6d216a6e28fbca09eda558f2e4db352c",
+      "size": 19811
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/WearCommandListenerService.kt",
+      "sha256": "5b6151af6301288ac48af466e5b01beb2109d0304ef2c03f57bfd9892a335d8c",
+      "size": 9360
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/WearSyncRepository.kt",
+      "sha256": "10f191a961eb4de76c6eb4032336156968cac793bebd556bf6edf652148a72a4",
+      "size": 40482
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/WearSyncStoresAndHandoff.kt",
+      "sha256": "eba2915faa3701398489ab683d49c3583ffeba984746c92e1013400ee4322827",
+      "size": 13209
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/WorkoutPhotoRepository.kt",
+      "sha256": "ac879153475ea7d03d768f918f8b862a0d15cccc5438811e08ad6d93a1bf7177",
+      "size": 12362
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/db/NativeBuiltinCatalog.kt",
+      "sha256": "1633db4b9d5de0e83a63fe0269427ecf694b2fa2580fa0e0c7e04cf053c5b705",
+      "size": 5519
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/db/TrainPilotDaos.kt",
+      "sha256": "5a6bbe5c601ceb68a8f005076cccc733042f72fa857058315a3603777f86a89c",
+      "size": 30878
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/db/TrainPilotDatabase.kt",
+      "sha256": "02d8a9c4ee6eee5306fda19221467c4f518c29d0758166d080155c54652e11fd",
+      "size": 2853
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/db/TrainPilotEntities.kt",
+      "sha256": "0a218f96093fc039632039e8656e168c35747caa5f01e1e1b5c18c0e0c72d35f",
+      "size": 12673
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/migration/LegacyLocalStorageReader.kt",
+      "sha256": "94720bab175e3cb91440cdde5dcfba202fedaddc91a35c18e8aec83b1d50c137",
+      "size": 3722
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/migration/LegacyWebViewMigrator.kt",
+      "sha256": "8abea8d73f45dcf2ab5008701176a3ea562d3a6f5039aeb20480b753cef83602",
+      "size": 48521
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/migration/NativeBackupPrivacy.kt",
+      "sha256": "5c1cd607f34e8c6ee5465aca800f4d2211cc6d1eae256f60708bf5c287291149",
+      "size": 996
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/store/NativeTrainingModeChange.kt",
+      "sha256": "c390112ef8db302d4067905a7f17bb1f33c29b02c65427ece2d24b71b4eb994f",
+      "size": 6278
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/store/NativeTrainingModes.kt",
+      "sha256": "f03ebf06f336e267219b84893fd3aa4ac29842cacc2ac806d0e59c0a7a3ee2cb",
+      "size": 4799
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/data/store/TrainPilotSettingsStore.kt",
+      "sha256": "8cf13aa832baf57cbea22136778519b5e6d2877134c2f4a9c3bad44ec81c775d",
+      "size": 28852
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/calendar/CalendarScreen.kt",
+      "sha256": "4bb0bb1c2619706f625abb295cfb376ea987b051f59b6fdcffd68af55e6b72ea",
+      "size": 21031
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/calendar/CalendarViewModel.kt",
+      "sha256": "c03093ad1b29627db8c1ceab77483f813b6e8041a97f2240efad48ee53894017",
+      "size": 8717
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/calendar/NativeCalendarPlanner.kt",
+      "sha256": "87c01000cfd6f3e4a1db511a98a2640025ceee64341ee06db2a5ab99f8e61031",
+      "size": 3852
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/calendar/NativeCalendarRepository.kt",
+      "sha256": "cbf807d720b7929864bb143275cfbab4147a92f691350944ab384bdd670c34c3",
+      "size": 11171
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/CoachScreen.kt",
+      "sha256": "615049d857c253e2ec943ca8387548b25c0d12eae01c02a8343fef80e41b24be",
+      "size": 12763
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/CoachViewModel.kt",
+      "sha256": "101a8378ad125c16f1710b958af3883b13e9233622a6c3716a07c801db23affc",
+      "size": 6520
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeCoachAdviceRepository.kt",
+      "sha256": "3448e523d20d49c403d6c22e78bdcb9cd094e51bf96331d70c2adb71832c6153",
+      "size": 10168
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeCoachAdviceText.kt",
+      "sha256": "ccbd42729372bb7432e7f9b9d3d816fdcff178dbfc9680483dc304d61cb5d614",
+      "size": 4249
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeCoachExerciseAdvice.kt",
+      "sha256": "80b18f4afac19f31b696955556b17f15105a2bc96dd85b3fe2e2851d59072d1b",
+      "size": 11058
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeCoachReadiness.kt",
+      "sha256": "d2170f971fe9b25e71675461201030b76373841d2de5b8f012d8089c5dcd90d5",
+      "size": 6326
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeCoachSignals.kt",
+      "sha256": "0de2022c303c1537a9a8d567de6ee121ffe2ac2f3400dd60795ca6fcffeddd25",
+      "size": 4190
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeCoachTargets.kt",
+      "sha256": "e4799dcd69f6d302acb4230dc3fb6b24aa2d459e2e039c567f5bc595cc81b06a",
+      "size": 2984
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeCoachVariation.kt",
+      "sha256": "eaa866a9770de1e85f9ef7b65c14299f2f7628e6d293a12610aae7a8b9714d09",
+      "size": 8303
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/coach/NativeTrainingModeProgression.kt",
+      "sha256": "b08ba041a191d482d52980c04f6ce0009eca6c9ce244a1ffe73c97ca7df02607",
+      "size": 7263
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/components/TrainPilotSurfaces.kt",
+      "sha256": "aa9d6c7040d7b02dac3b765dba14724acb346e3a99ceadc9801050e913ca23f3",
+      "size": 7510
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/HealthDashboardScreen.kt",
+      "sha256": "0bed68a9f374cc6317751e595d5ce7a07477968cf8078b69d9692a43f6844f77",
+      "size": 88460
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/HealthDashboardViewModel.kt",
+      "sha256": "dd87f87ff8ebcac40c4861d5775440cd9e962d9644ffb68931d711af61d8d449",
+      "size": 42145
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/HealthRecordBrowser.kt",
+      "sha256": "df9067e8b0c9259b5b5e64ab9d1a5f94b11b5257af7df7938a99a1e892b3a5f4",
+      "size": 17353
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/NativeHealthAutoRefreshGate.kt",
+      "sha256": "f99793afb7d5247cc551a7f7145975025e03a395844709ad8a1e99ed3a0f6423",
+      "size": 2951
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/NativeHealthBackgroundPolicy.kt",
+      "sha256": "91566f8faca027141484037cfd52f96201c0c149d2fdd910a9a83e46a90be135",
+      "size": 3470
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/NativeHealthForegroundAdmission.kt",
+      "sha256": "d8518e6293964feb83bf08918b4b4a1a10a1ea83b87aca3b8a6b78e4508c0fd3",
+      "size": 4319
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/NativeHealthHistory.kt",
+      "sha256": "811fe754c0d677d3ca6f8826d65a2f5986946e3570a61e0d45402854ccbd3acc",
+      "size": 3050
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/NativeHealthMetrics.kt",
+      "sha256": "2004beaa6e4a9ee8ea8873bea27f2de210468531ac322de062421c551df3dbe8",
+      "size": 4311
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/health/NativeHealthRecords.kt",
+      "sha256": "c61ee1c22900a5d80da9e0937c83b4f33cc0f4388ea344b85bf0d3588fa34d74",
+      "size": 8131
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/home/HomeScreen.kt",
+      "sha256": "17ca366c49dddf9fabe8f448ea688817d34de94f3505377a4cd079e49012fe3c",
+      "size": 36659
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/home/HomeViewModel.kt",
+      "sha256": "c68bd7fe95f901cc168d120ef329d7d4228f0be7b78eec5e842d9a1126cb7a0b",
+      "size": 8199
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/home/NativeHomeRecoveryPresentation.kt",
+      "sha256": "02b69caab8bc42bec72b62eea588dd641dbaef296ad65d89418bcd4deea534b5",
+      "size": 4090
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/home/NativeHomeRepository.kt",
+      "sha256": "efc4f84b9b45c8d14afc24ad0f2b01a265c193209c683f3b2598731bcdc7d76f",
+      "size": 2632
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/home/NativeStudioHomeVitalCard.kt",
+      "sha256": "06bcb607e11ede78d764cc80401f20afbdc877da972bb6d35b4dcb9c9ef7b4ae",
+      "size": 5343
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/home/QuickWorkoutScreen.kt",
+      "sha256": "631b18f2ff161b81d71f33abff0d1d350a9da21718eceefbfeab7f7cc06a2e50",
+      "size": 12311
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/JournalEditorDialog.kt",
+      "sha256": "ec6fe149c3a4bd8c3dff0cea3aa0781cd9a1ad16adef573c1e345e278824769a",
+      "size": 15023
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/JournalHealthPanel.kt",
+      "sha256": "610402fcd856b4147feda2d652939c57a5783484cad5738959780652484073f9",
+      "size": 8082
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/JournalScreen.kt",
+      "sha256": "f4e12950c40fa6fab15f4915d50218246fe5e2314b1b8fe7ebcd9b25e2dd1dc0",
+      "size": 35572
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/JournalViewModel.kt",
+      "sha256": "5a787642a663203197fb6836ff17c930cffe9ee0a222bc57aa73c9180db2415e",
+      "size": 13362
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/NativeJournalRepository.kt",
+      "sha256": "dfbd8017272337a29c66f22a9bd3e70e4cbb23e77c94d0a4875efe98b25c1144",
+      "size": 5807
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/NativeJournalText.kt",
+      "sha256": "3ead027e3087529437efbf407acd944d24ea5279a25db75450535ad3421bea2b",
+      "size": 220
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/WorkoutRouteCoordinates.kt",
+      "sha256": "9b4c07f9a539c38520807890adc3319af86cd7faca3f867badbd6998b002c928",
+      "size": 3144
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/journal/WorkoutRouteMapDialog.kt",
+      "sha256": "1a773eebaad56c76aa64c092bbbb119cbea77af841bdf04314e75c36bf75f92b",
+      "size": 8114
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativeMainHeader.kt",
+      "sha256": "ac03ae10d7ddaeda83663c59832517117f94ddec06d1473e63b0124296346621",
+      "size": 11369
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativeMainMenu.kt",
+      "sha256": "a074bc260d4494c42472709d236f3e5bd1e6f72538c894f7d12e5e684f61fe77",
+      "size": 4164
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativePlanningShortcuts.kt",
+      "sha256": "a670b5dcfa9da1375d006a4ea2681fe0d7aa5fb7db1ab31cb56cf9d29d0fa029",
+      "size": 1748
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/navigation/NativeStudioShellHeader.kt",
+      "sha256": "5a3cc5825da2234c1c27b941ee49deceee3a1ee073eaf546acf5f8d9988549b6",
+      "size": 16387
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/navigation/ProgramGpsStartDialog.kt",
+      "sha256": "15bdda1e12028082587687b28eb60e1b986d51fc888a15fd744d8874a373887f",
+      "size": 1696
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/navigation/TrainPilotBrandLogo.kt",
+      "sha256": "bf9136ca0bff6083276bfe2ee6ca6f77a82898b11f2e0f27e03eace2d9366923",
+      "size": 1429
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/navigation/TrainPilotNavigation.kt",
+      "sha256": "60942ebb66172b3da3a9bca2513184c27405a4864314426cbe1c3a30c29df60d",
+      "size": 31418
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/onboarding/NativeOnboardingPolicy.kt",
+      "sha256": "6921479139c27a472e77806d153b734626181bced83d4f32c5e4eab23b806a1e",
+      "size": 2383
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/onboarding/NativeOnboardingScreen.kt",
+      "sha256": "93e734fe7b94c4b4bc7a13559fafd5de9433ad9c632b412d55389df2ba049d6e",
+      "size": 5358
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/CustomExerciseDialog.kt",
+      "sha256": "053f36e858524519b6c289b43cfdd1330fca2977fd3e68b3d5026aea5a0e0707",
+      "size": 10561
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/ExerciseLibraryScreen.kt",
+      "sha256": "e5d489e81ff6331b003f02434d9c5b05aa9a6ef24e0dc6042822cb0db93b21c1",
+      "size": 23917
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/ExerciseLibraryViewModel.kt",
+      "sha256": "468ea690fdb72a15b61ad994a2eb5617e69c748c01d2d9207cccd7dba9f8d541",
+      "size": 5523
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/PersonalProgramPreviewDialog.kt",
+      "sha256": "6ed4af2212ef05aa7a790b1a3741e297b196602f4354c70d49f72e6e4375cca0",
+      "size": 10552
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/ProgramEditorDialog.kt",
+      "sha256": "0e15f0a32f0e9dca2b8187167f814e62a16c736e866370e857b2a3e985096e89",
+      "size": 13528
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/ProgramPrescriptionDialog.kt",
+      "sha256": "e7e740201bfd2072f44dc6862ef6816b22c953d04519a7f5433636d4314dfba0",
+      "size": 5525
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/TrainingLandingScreen.kt",
+      "sha256": "8bf1e4fb4ca9d5527daed6f231c602d32858456e16f8da438a2ffd05b1980d42",
+      "size": 18106
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/TrainingProgramsScreen.kt",
+      "sha256": "b47802fa8a5fe238fc7cf60f3902ce78e5343a6a980bca5f20ef9623d2433870",
+      "size": 23621
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/programs/TrainingProgramsViewModel.kt",
+      "sha256": "a918bf730a415fd35e7428a7416eb32dd6a06e00f9c7ae9dacc7997224235a98",
+      "size": 15337
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeCardioCalendarRefresh.kt",
+      "sha256": "119e85b3cd2a2b77c0a1405ee960da042fc0eac31c3f8b90c2530b897cdf615d",
+      "size": 1289
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeCardioModel.kt",
+      "sha256": "3b1f9172801b4893b4d2956188759e15ced3d5a0cdbcb13323e45ab6069e674c",
+      "size": 25374
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeCardioProgressAdapter.kt",
+      "sha256": "c04f083d7f3cc19083375cd55625020d1bce3946969fc3b3aa66f5c87c93215a",
+      "size": 12592
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeCardioProgressPanel.kt",
+      "sha256": "b26640e7b7d196aaa216d67b8b67679657a6264814f71abf291874b74097cef9",
+      "size": 12735
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeMuscleLoadVisual.kt",
+      "sha256": "830a23263ebc90b6a5715fe1b121806f60bc44a5ee4dd7573deef10139266d85",
+      "size": 6356
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeProgressPhotoGallery.kt",
+      "sha256": "7c591c9d4392443d8c3756179273ea348259114d92afa1a45ca670edd97448d7",
+      "size": 12735
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeProgressQuery.kt",
+      "sha256": "02a90095cdf862471064031a505266cfff033406bc1f5d85db4e4b344bde8022",
+      "size": 5357
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeStrengthRange.kt",
+      "sha256": "43ce03305a528892e69949d9201e59cd6be9e42dece56dd61e219d0e1fe34a7f",
+      "size": 1041
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeStudioMuscleCard.kt",
+      "sha256": "7c7073781fd669e85e685fcd5b0a2e36fb8bb3aa99a96b2de53890ca88bb3e30",
+      "size": 9454
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeVolumeProjection.kt",
+      "sha256": "a9958f25be25eccbdb0682a384fe7aa9ac4fb7533b78995fab69e1fec0c6dcd1",
+      "size": 3432
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/NativeWeightJournalRepository.kt",
+      "sha256": "71f6d1d1d7d19de25019e5199c2b399970b8b3abeba45e397350506d2596d86f",
+      "size": 4892
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/ProgressScreen.kt",
+      "sha256": "979f1fef360cde16eadd72def2f25a8d86d2118e516f559809e80ad297a502f0",
+      "size": 37629
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/ProgressViewModel.kt",
+      "sha256": "7ac77c604e270c4720da5ad7be809b32fd1eea41bd38251e039a822fd58473f8",
+      "size": 19401
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/StudioProgressTabs.kt",
+      "sha256": "446dbe747e5670ba70baca14b809f34878bafceed8f74aeaa11adf8754655a13",
+      "size": 6332
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/WeightJournalScreen.kt",
+      "sha256": "b16ea410a31ee98abe5a0cb41870bc2728a1768b87b7c92421258508524da02f",
+      "size": 19065
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/progress/WeightJournalViewModel.kt",
+      "sha256": "cec45aa58f965bb064d82c7e6c9ebf961a3586e57f8af427940843b2c6efba76",
+      "size": 5083
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeGoogleConsentLauncher.kt",
+      "sha256": "3347c7b0c471504fa2bd96d6d5db50bc02e6d0f0b85202645b25b69e22e1cfed",
+      "size": 1435
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeGoogleMaintenance.kt",
+      "sha256": "cf0c43d93de81b19a6c920dd3553e5cc6712d4d96dafa555fdcf4822322e6189",
+      "size": 2196
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeGoogleMaintenanceUi.kt",
+      "sha256": "b0ad3cee84e6f13595c015776a57f3aeb6b88b4b66970252e5969a4d7a5b281e",
+      "size": 3450
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeLanguagePicker.kt",
+      "sha256": "3a93337a193bbd78b2efee42923fc547c265e971f8a9217b1edb916bbef62564",
+      "size": 4086
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeThemePicker.kt",
+      "sha256": "5387358ff56db720c2d8b4b73a620173f2cd7b3e3935b1e1f317975469fc6d6f",
+      "size": 5759
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeTimerDefaultsDialog.kt",
+      "sha256": "9d4a2d546afd8dd1d7d8d068b03969df110bf54bf894f7abe176ed1f0e78e3dc",
+      "size": 5972
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeTrainingModeComparison.kt",
+      "sha256": "7bb2bd776f1e8b0a5bd7c416a1c5826e50582da18ecc316fc79021ab594aa007",
+      "size": 8361
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/NativeTrainingModePicker.kt",
+      "sha256": "b397a8177dfcd626040a48335c302f4fded683a495d1ef02c5d18b3a88e57fcd",
+      "size": 16366
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/ReplacementRecoveryPanel.kt",
+      "sha256": "01d4bc520786618553585099b59945173c4f50d4d8741b0aff17897aba38730d",
+      "size": 2211
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/SettingsScreen.kt",
+      "sha256": "db9debf944091510fef8587f3ec90f7a0c15805d8305a86733296dd12a13abda",
+      "size": 42538
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/SettingsViewModel.kt",
+      "sha256": "2b7c30dd011e881bef6d8e3c57b597ec21983eeba0aa906b402b66cea88963f4",
+      "size": 18327
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/settings/TrainingProfileDialog.kt",
+      "sha256": "a96c157749e4b7760d1a57c856473364f97738673c7f4953be6d566bfef726dc",
+      "size": 4406
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/text/NativeLocalizedResources.kt",
+      "sha256": "94cdabb5c05236f3bb1974336f8a4e08154b35afb845735f25ab16499b133c82",
+      "size": 899
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/theme/NativeStudioTypography.kt",
+      "sha256": "b5071bc3dc3711f5fc4b1c59acc2f197b393f8e6c8a79281046515869938a2e4",
+      "size": 2116
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/theme/NativeThemeTokens.kt",
+      "sha256": "2d9e4be087ea49b6ad8d57288c89230ba1f46fea6d2d02ecf6ad360bed2c7b8b",
+      "size": 3984
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/theme/TrainPilotTheme.kt",
+      "sha256": "f82a36befce1ce29e94d48d068b51a3beb5147086d77a2c90f4a9433b8c8f856",
+      "size": 3304
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/theme/TrainPilotVisualSystem.kt",
+      "sha256": "62cee74a87383d62dd62726acbeb56aa48e3be31e815188ae1bd319fdbc1ff2c",
+      "size": 810
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/workout/ActiveWorkoutScreen.kt",
+      "sha256": "339707e865866ec627d7b905e15c108c39de2e2cbc5a62e53da86dec4db4136f",
+      "size": 74011
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/workout/ActiveWorkoutViewModel.kt",
+      "sha256": "b55d5ce90450277b93b093cb058cbb2c5d5e037efc866819f15df0736265e2bb",
+      "size": 55234
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/workout/NativeGpsPermissionRecovery.kt",
+      "sha256": "23ee7e0afaf80588f33b57bcb59803c5e1f92ebbecf328d09c69ee5c560d49a2",
+      "size": 8655
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/app/ui/workout/NativeTrainingModeProposal.kt",
+      "sha256": "e152f6bf39ab060aefb5fd6fbf648dee41989265e403752d3c14429d9ebd9421",
+      "size": 5885
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/components/TrainPilotComponents.kt",
+      "sha256": "c7b4d98f249a9f0042cfb956a9d0640e913334a06da1599b79e08cdb81598345",
+      "size": 18975
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/navigation/TrainPilotNavGraph.kt",
+      "sha256": "4e36f38a4d244656b085df8fddf817d476eee685d5aa19e69264cc682236d716",
+      "size": 3441
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/screens/ActiveWorkoutScreen.kt",
+      "sha256": "9e3319c95298bfc9a3518f34f7e47b14f26e70c701217e291c8ca148c6c6618e",
+      "size": 6487
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/screens/HistoryScreen.kt",
+      "sha256": "4c031b8aff175fcc02d455b226183a335cc552743c64598a1e4e5051aa43d6ce",
+      "size": 4043
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/screens/HomeScreen.kt",
+      "sha256": "e20d5be9b6e1f3f4efb29204b4a8a0375546d2ed20b0c25d2cb060e0f71bfc4f",
+      "size": 4079
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/screens/SettingsScreen.kt",
+      "sha256": "f5219fca2e338aa1a61852d54d787a3fc8f036a159729ad6d1772d8394dfaef7",
+      "size": 4512
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/theme/Color.kt",
+      "sha256": "457f43c806f041ed0f7c6544fac7745a367b42a344b41f248d4d1db98a9e2e38",
+      "size": 1011
+    },
+    {
+      "path": "android/app/src/main/java/com/repforge/ui/theme/Theme.kt",
+      "sha256": "b844513796583724bed2f4951ac7f60425160a9dd4b18a70a745fe5f94b0ff13",
+      "size": 2110
+    },
+    {
+      "path": "android/app/src/main/res/drawable/ic_launcher_background.xml",
+      "sha256": "718ba51adf166bb55c3e9936bb8199a0148457f7f0191aaa2f37a94f3159d6ec",
+      "size": 5606
+    },
+    {
+      "path": "android/app/src/main/res/drawable/splash.png",
+      "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff",
+      "size": 4040
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_launcher_background.xml",
+      "sha256": "054aaecc7ffd1b6aa74cf8c6be1fe5a8de49e75874b10bb42ccfbfad1e1c9d52",
+      "size": 840
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_launcher_foreground.xml",
+      "sha256": "aa4e6a88f1000912ef3428abfe5525123f90ec62299184bde40717f9cda473b4",
+      "size": 1335
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_startup_initial.xml",
+      "sha256": "58dada1f9acadd7136ea926939bf8b53d28cc29dcfbbfb53441d0c7d1b0c0986",
+      "size": 3106
+    },
+    {
+      "path": "android/app/src/main/res/drawable/trainpilot_startup_logo.xml",
+      "sha256": "48480d9e7bce3a16072fa73705c18623497718203b26c7757ed8c0bd1b9b65f7",
+      "size": 3062
+    },
+    {
+      "path": "android/app/src/main/res/drawable-land-hdpi/splash.png",
+      "sha256": "08cc34ad7713fe7ed58bceaa37b2387b670c53cd60264b4bd6442db3098e75dc",
+      "size": 7705
+    },
+    {
+      "path": "android/app/src/main/res/drawable-land-mdpi/splash.png",
+      "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff",
+      "size": 4040
+    },
+    {
+      "path": "android/app/src/main/res/drawable-land-xhdpi/splash.png",
+      "sha256": "22f87e1e3bc89aa01a7dbc39c9a4db058cd0bf4ad3fe9f55712bf69eb997f4bf",
+      "size": 9251
+    },
+    {
+      "path": "android/app/src/main/res/drawable-land-xxhdpi/splash.png",
+      "sha256": "42aa26392546fcdee1b8d3ac6d4b41bfcceb41dc6a4f3a3c30c24a8a8f4db862",
+      "size": 13984
+    },
+    {
+      "path": "android/app/src/main/res/drawable-land-xxxhdpi/splash.png",
+      "sha256": "60393ce8636fd263e4e1fea3fd4ab2de948c6295e898fda9b50ac4e5283be809",
+      "size": 17683
+    },
+    {
+      "path": "android/app/src/main/res/drawable-nodpi/progress_anatomy_main.webp",
+      "sha256": "fca3541aa7b03d529e055a6b25a5d152e90dabc16398d11717ec2d488e6a67bb",
+      "size": 265126
+    },
+    {
+      "path": "android/app/src/main/res/drawable-nodpi/progress_muscle_arms_main.png",
+      "sha256": "a1b02e2d537b05c25ba0b70195e695bd8f6777885b70d27df34626ef1f35f608",
+      "size": 41815
+    },
+    {
+      "path": "android/app/src/main/res/drawable-nodpi/progress_muscle_back_main.png",
+      "sha256": "83f51440eba3a804d9388d789aedcbcf888db2a46e5593892edf1b1e050878e4",
+      "size": 62450
+    },
+    {
+      "path": "android/app/src/main/res/drawable-nodpi/progress_muscle_chest_main.png",
+      "sha256": "aa03995815a573e60c441f2729a36d1d24aadfb203c1e13534fabf5dbb5a55f9",
+      "size": 22070
+    },
+    {
+      "path": "android/app/src/main/res/drawable-nodpi/progress_muscle_core_main.png",
+      "sha256": "04f8963280c9b8d9afa76fe60b499349ab191b810b67d299124b28a5125b5d81",
+      "size": 49328
+    },
+    {
+      "path": "android/app/src/main/res/drawable-nodpi/progress_muscle_legs_main.png",
+      "sha256": "8d7968655c1a950f3ed667bcf46c0fac3c0483d22d41c2bb798fe94b8698fb19",
+      "size": 83241
+    },
+    {
+      "path": "android/app/src/main/res/drawable-nodpi/progress_muscle_shoulders_main.png",
+      "sha256": "b4c7a2ea435aeca139938194bf35028951e7338ab5d299b9115690be2220b19f",
+      "size": 32845
+    },
+    {
+      "path": "android/app/src/main/res/drawable-port-hdpi/splash.png",
+      "sha256": "c5015f4ba3628392b538386c5e210f0b94f352a3160adab934fd0311972137ca",
+      "size": 7934
+    },
+    {
+      "path": "android/app/src/main/res/drawable-port-mdpi/splash.png",
+      "sha256": "07fa579e1c83e04ba7f9cbcbfcf41b68e15fe3638f2c44a04e58b809103e6b69",
+      "size": 4096
+    },
+    {
+      "path": "android/app/src/main/res/drawable-port-xhdpi/splash.png",
+      "sha256": "b73049cb37fe76d6c11b87a796766bf6af0c85483b31eb6a921657b0d764a4b9",
+      "size": 9875
+    },
+    {
+      "path": "android/app/src/main/res/drawable-port-xxhdpi/splash.png",
+      "sha256": "0c7f1212f25b7b90e9a6e1d320013e4ff3d3e03e634cbb07b7b7981cac51627f",
+      "size": 13346
+    },
+    {
+      "path": "android/app/src/main/res/drawable-port-xxxhdpi/splash.png",
+      "sha256": "3db071a03b2f8ffe0dfd4170fc59842d53cd15bba5e88af59401d58efabf7827",
+      "size": 17489
+    },
+    {
+      "path": "android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+      "sha256": "9b352ec90e4dd80d581244ce324e88a10f86a537eebb95c2d2726cc0576c86e8",
+      "size": 2050
+    },
+    {
+      "path": "android/app/src/main/res/drawable-v31/trainpilot_startup_icon.xml",
+      "sha256": "faeff50bdfbe7581db62ef19038df5cac35629b7d5c4e5225c6b8c30e487604e",
+      "size": 192
+    },
+    {
+      "path": "android/app/src/main/res/font/jetbrains_mono.ttf",
+      "sha256": "a187c78346862e42584d87a3b9d681b4f76860e8ccf0227ac970b1ccdc9df25c",
+      "size": 57404
+    },
+    {
+      "path": "android/app/src/main/res/font/plus_jakarta_sans.ttf",
+      "sha256": "3632e5fe3fbece3917f7347ba91fbb6fa06d120af55b387f1e2067c170f92faf",
+      "size": 29468
+    },
+    {
+      "path": "android/app/src/main/res/font/space_grotesk.ttf",
+      "sha256": "fb761573c86732cc6a62fbdb7ac2134d532e683df3c9f969c50dee586aea834d",
+      "size": 31964
+    },
+    {
+      "path": "android/app/src/main/res/layout/activity_main.xml",
+      "sha256": "5d770feb791313b947020cbfc57e5c733c556dac5e9e49261a1190e527073253",
+      "size": 535
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi/trainpilot_launcher.xml",
+      "sha256": "7e14b659bcf90c551d26748e44a99f9d26ac8a2522c0c45553cc5c48a59fd3c5",
+      "size": 271
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha256": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c",
+      "size": 265
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "sha256": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c",
+      "size": 265
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-anydpi-v26/trainpilot_launcher.xml",
+      "sha256": "1fe397c81a8d9fae19ee1594ff36cc72ff9027ff11679e8c4a85e176a600f59b",
+      "size": 287
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "sha256": "72b71c3581ca3b5a23b1c168d69b9d855b3f184fa079902a01f088eb4f0607d5",
+      "size": 2786
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+      "sha256": "32baa10d2632a4417454a579f992bd640e0a3cec79321423559b2c9940de58a9",
+      "size": 3450
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "sha256": "bfcc1b0fa931b14bb241372c76ab4f04374b67d02363c98d9cb12edfdacdf5f3",
+      "size": 4341
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "sha256": "27ed3603010ebc278f64f8645741ab132ff517abb5308eb9df6c8e42a48956b2",
+      "size": 1869
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+      "sha256": "58e78a618778926b1f6d9472a6468de878de8530970934e94aab5ba4ba08cc00",
+      "size": 2110
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "sha256": "0166fc333074c373fbd0ce6b5defd71552166165ac778121ca9c9dff6b83f0fc",
+      "size": 2725
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "sha256": "d35dbfff175b83c13ef59cf924abfc810f7b6a158595d7417c5498ea8c7c7ed1",
+      "size": 3981
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+      "sha256": "6f88083b8166cc559102f7044688de7525287632ebe09ac45d001ac8bf4b3eae",
+      "size": 5036
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "sha256": "40911a00922868686854a4804b93fd6e56b503664696de03f450bff690affb6d",
+      "size": 6593
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "sha256": "ed346eb1e3f0280f15709393705899b3ff55c20b88f4e0308006b3c33cf5fe14",
+      "size": 6644
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "sha256": "4a82bc1e9923576275869998925ce0ae021a79aa18b24a0dd87ad6b61ca85053",
+      "size": 9793
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "sha256": "1ee4cd9ff371dcb2e3938097e434f6fb8731688ed7165e61fc63693ad5b2f455",
+      "size": 10455
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "sha256": "87cb2f2ffe992652bb4fa768c73719a37b5852ab17fbf8e170e888f7a42b0761",
+      "size": 9441
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "sha256": "bd24fd383253bf8d43f0a81f11c071d76d1d555114376dd647cd9fb38fa0a9da",
+      "size": 15529
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "sha256": "ab93096331e7cd8ec379f73f1e9adcaaa9ee1115c9f4ff10411a811fb9700174",
+      "size": 15916
+    },
+    {
+      "path": "android/app/src/main/res/mipmap-xxxhdpi/trainpilot_launcher_bitmap.webp",
+      "sha256": "9a704a68a79b3c458c6813602fae447ff2c529201ceb6f5a817ab1cd9cb977ae",
+      "size": 4762
+    },
+    {
+      "path": "android/app/src/main/res/values/ic_launcher_background.xml",
+      "sha256": "cd40bafe618ff506f4088778b135cb4faa15f25e0c9b475e22d730c74b7be115",
+      "size": 120
+    },
+    {
+      "path": "android/app/src/main/res/values/native_calendar_planner.xml",
+      "sha256": "bb8183072d8737505683db6deb8a688700feb3c682e0f0b92cf5a2e54792e959",
+      "size": 1067
+    },
+    {
+      "path": "android/app/src/main/res/values/native_cardio_progress.xml",
+      "sha256": "086de224a8158cfc33fc63bbdcfe3ca1a48b0c5394bda104ec6f9ef31cd28486",
+      "size": 1553
+    },
+    {
+      "path": "android/app/src/main/res/values/native_google.xml",
+      "sha256": "7464a4d085c69a0f10734daff659c9fde1398394c38782cdd5ce6029e6b19b59",
+      "size": 942
+    },
+    {
+      "path": "android/app/src/main/res/values/native_google_maintenance.xml",
+      "sha256": "6876e7cd43ff9e86a76c961bdc3969b65a012039e45221aaf0271834a77bcc28",
+      "size": 1922
+    },
+    {
+      "path": "android/app/src/main/res/values/native_gps_recovery.xml",
+      "sha256": "f4be10bbc1f0003e9ca8b49fa7b8165a2143ce2cf7f5db900306009bd17ccfbc",
+      "size": 1934
+    },
+    {
+      "path": "android/app/src/main/res/values/native_health_auto_refresh.xml",
+      "sha256": "f5995d1e5851b07526e2e6729b3b0f3e41f70842d96083af3649db3ca7ec4365",
+      "size": 561
+    },
+    {
+      "path": "android/app/src/main/res/values/native_health_date_range.xml",
+      "sha256": "ffe65e06578106720bf1951189d189746b5f662ff6e10d74e0d964dd4553138f",
+      "size": 343
+    },
+    {
+      "path": "android/app/src/main/res/values/native_health_sync.xml",
+      "sha256": "5864dbfcff919668e0be4ea999e0be5d97b9d40687c9d2d1b840cbb5280c95c1",
+      "size": 1220
+    },
+    {
+      "path": "android/app/src/main/res/values/native_home_recovery.xml",
+      "sha256": "4dcbfbd9a756f9b68c811f092ae10d561f301c425e7e9ccca6ff4f5ac99ddf2b",
+      "size": 606
+    },
+    {
+      "path": "android/app/src/main/res/values/native_home_state.xml",
+      "sha256": "3a80561550321514a5c7119ac29033906c5b4c5addb19038ee64f39da13fbfc8",
+      "size": 515
+    },
+    {
+      "path": "android/app/src/main/res/values/native_journal_editor.xml",
+      "sha256": "8b18465a937b6b393b883696efecd6dc44e0e38bbd3c5fa24c5c3830ecab58e3",
+      "size": 2018
+    },
+    {
+      "path": "android/app/src/main/res/values/native_language.xml",
+      "sha256": "f05ba73fbfc5c2c610f8b29504a8e9381be6a0c64313b5bd30df6436be6167c1",
+      "size": 317
+    },
+    {
+      "path": "android/app/src/main/res/values/native_onboarding.xml",
+      "sha256": "4e3162e81fbe5bb8d9c7a2b6f27cf14c6c0d4b8990b67d730ac70a43419d9922",
+      "size": 1105
+    },
+    {
+      "path": "android/app/src/main/res/values/native_program_actions.xml",
+      "sha256": "266146676fc8707f10ed509c6ab0dcd26bf32cde873a727b117746a68f36f668",
+      "size": 984
+    },
+    {
+      "path": "android/app/src/main/res/values/native_program_prescription.xml",
+      "sha256": "377a27a2853895380235c4f62343529d12b93b0b570896afd73ee74b26b2a134",
+      "size": 1445
+    },
+    {
+      "path": "android/app/src/main/res/values/native_progress_photo_range.xml",
+      "sha256": "fc1b4120fb726e023c365d78c55b4c96d19a13800b20c47218c752bda052cc80",
+      "size": 1136
+    },
+    {
+      "path": "android/app/src/main/res/values/native_studio.xml",
+      "sha256": "b419b183474d24390030cb4379721b82bc3363be4155b375e245966b59d90cd1",
+      "size": 623
+    },
+    {
+      "path": "android/app/src/main/res/values/native_studio_muscle.xml",
+      "sha256": "4058799ffa4a76a817d7095d633bbabf174cee7b473cd48930856a58e508a8e8",
+      "size": 134
+    },
+    {
+      "path": "android/app/src/main/res/values/native_studio_progress_tabs.xml",
+      "sha256": "dc3b0d59f98fd5f68e5b9732682300000a560de70a2439397a8ddda9b0b732fe",
+      "size": 527
+    },
+    {
+      "path": "android/app/src/main/res/values/native_training_modes.xml",
+      "sha256": "31dfd2eb90acf21c3cb7f52a7ef2c4ec624c6271b1c53347cc51aada07a9e6c4",
+      "size": 7093
+    },
+    {
+      "path": "android/app/src/main/res/values/native_visual.xml",
+      "sha256": "ece8847647a6772585bb4d34676dd04a3d6c06d476486558e135ad11b0b0b740",
+      "size": 561
+    },
+    {
+      "path": "android/app/src/main/res/values/native_workout_health.xml",
+      "sha256": "eca43cec01235fcb5bc939591726ba0cb6047789d267ce9279a0228e190c7b6f",
+      "size": 2239
+    },
+    {
+      "path": "android/app/src/main/res/values/strings.xml",
+      "sha256": "48446d8c0d8c8e6c87c7d8549353390b54a1270736357070932354a3dce210af",
+      "size": 60255
+    },
+    {
+      "path": "android/app/src/main/res/values/styles.xml",
+      "sha256": "f9ff47db3f9c1832fc97f12790eeb48fcbbab5bc6a2bb7c18952635366f91341",
+      "size": 1320
+    },
+    {
+      "path": "android/app/src/main/res/values/trainpilot_launcher_background.xml",
+      "sha256": "c2a4815a5382d788793fe7effe222240061c6fb3194ff3995aa70d90f7888494",
+      "size": 129
+    },
+    {
+      "path": "android/app/src/main/res/values/trainpilot_startup.xml",
+      "sha256": "f04c3a94c0bd97f803d13c360c56d29cc7ccbb4fdf98c319c8c90c5c7c6b0ba0",
+      "size": 221
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_calendar_planner.xml",
+      "sha256": "edb224a7be28d4f5e340ad77b3de10c6025f85182537de51bc140cd7f885da6e",
+      "size": 1049
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_cardio_progress.xml",
+      "sha256": "621f214da7803bff1ae6fa40654266194e0e4dca75bef44d26f2053b77ccb9ce",
+      "size": 1565
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_google.xml",
+      "sha256": "b60ecbedc8a9fd4af441e8671f68d43471ce239255bc94b72cc2bd6e96d6f62f",
+      "size": 954
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_google_maintenance.xml",
+      "sha256": "a895fe1c00d11c56f259599bc439d3b346accb411b2399be15b6fe7327a6ccae",
+      "size": 1873
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_gps_recovery.xml",
+      "sha256": "fd6b6304abae1c366db3975294d6a354fa4bd54b188f450e0a492929b74ab5c6",
+      "size": 1961
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_health_auto_refresh.xml",
+      "sha256": "275d4041731b14da3eed0e22b5a79901f658cbe3b62f0661986bd914edfa640b",
+      "size": 634
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_health_date_range.xml",
+      "sha256": "b343c9bb23a24be703184d190ce6df3e16f44d51bf3f85614a5e1c9accbe4cb3",
+      "size": 340
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_health_sync.xml",
+      "sha256": "8249ecad690f173c36d1607246bd330030f16d670a6b686d8819f21caaeba207",
+      "size": 1239
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_home_recovery.xml",
+      "sha256": "ff708d3461a72f85da9a09ef6cf9ee4d0420c1cc91514289ea3968834e93cb9f",
+      "size": 624
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_home_state.xml",
+      "sha256": "be955f0f5b9dfe1c328e1a2c6ed6f1b42101c036de00eddcd5019f73021b332a",
+      "size": 523
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_journal_editor.xml",
+      "sha256": "371e50b2d74b8030fab91d1f81b704b558c6e6f4c7e7d73cae6b9e5db6ffe60b",
+      "size": 2006
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_language.xml",
+      "sha256": "73edf5649d22fea6222196e39dd1c581a3617e43cc1a68c8f38b5f75e56ac4aa",
+      "size": 315
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_onboarding.xml",
+      "sha256": "bf63e35766bef7cb30052aeb73d93e1438fe21b8e7a7895a4a7fe2f382eb64f4",
+      "size": 1125
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_program_actions.xml",
+      "sha256": "f1dc69df2972e7f6017d97b8602e9d2cc30296896e401729c316e6f0389cf8e9",
+      "size": 960
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_program_prescription.xml",
+      "sha256": "f1b5a4500071585b8a9b8d7eba7d4c659b594988722e6594e38469b80e70fcb5",
+      "size": 1395
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_progress_photo_range.xml",
+      "sha256": "3fdc22aa26210640705ac477480b5bc8f5799ffb366a137f532d5434c1ba5e65",
+      "size": 1118
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_studio.xml",
+      "sha256": "d85bdfd3bb3d109657b3b5eda2593adb965ec2f562397bac6be2f2faac2d039a",
+      "size": 641
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_studio_muscle.xml",
+      "sha256": "8bf7c80034c9f7bb533010320ef124b5c3b21e7f0a176072e980fc27ae827f19",
+      "size": 135
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_studio_progress_tabs.xml",
+      "sha256": "ad598cd4b7f0537349d56a03659ca091cb63b00b679272c14b2f74ff99456f89",
+      "size": 512
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_training_modes.xml",
+      "sha256": "4b7bdb4c3255fe68ede7dcc7b935f893c8952c50d8e79df1b8df5d589b52abe7",
+      "size": 6919
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_visual.xml",
+      "sha256": "df1234d6e99698631de0194add543c08b193b14ab062249061feecb7b4935d86",
+      "size": 562
+    },
+    {
+      "path": "android/app/src/main/res/values-de/native_workout_health.xml",
+      "sha256": "87789f707f929c4ada33f3ec166bebae153f2ce167796dea0a42231834e411a0",
+      "size": 2348
+    },
+    {
+      "path": "android/app/src/main/res/values-de/strings.xml",
+      "sha256": "96d0c140ee9a3b63d707066ad7a336ba8d737e517651166d4c26edc0dc14fbfb",
+      "size": 59878
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_calendar_planner.xml",
+      "sha256": "9349aa59966c2fd24ee4526f3bfdd148b92f31c69f33eff5f1f79544cc1ce1e7",
+      "size": 1040
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_cardio_progress.xml",
+      "sha256": "e18151a65559f017d25afc4ea3b4bdc4e4c6ea912be703a5e076edf3dcdbb158",
+      "size": 1468
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_google.xml",
+      "sha256": "294f66c0c1b2adb287742f9c32bd995c8cf044bdd2f55094e8683f8aa0a426e3",
+      "size": 854
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_google_maintenance.xml",
+      "sha256": "f85c27a6fa4db8ecef365a375a6eb5a1637c3b65c4adf31a62b68182d9a104c0",
+      "size": 1768
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_gps_recovery.xml",
+      "sha256": "4a8e1b1da9ecddaa90b36b8de400e5308013d29c574fe6e1824dc4af742d35cb",
+      "size": 1767
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_health_auto_refresh.xml",
+      "sha256": "cfc6b5daa5277dd45d642dd210aecee81b94e03e8e27dc8a1fc3773cba0ce477",
+      "size": 552
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_health_date_range.xml",
+      "sha256": "dc6ab5fef18e605d64945cf20982bd12c67566c99d2de930f7184fc63f1eb704",
+      "size": 332
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_health_sync.xml",
+      "sha256": "1838abce9c2a978c7935c02bc60e66731342099c7da27bd84f573e3d73ed11d7",
+      "size": 1033
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_home_recovery.xml",
+      "sha256": "b5667f60c46e3c10e19779998e384ebf4564ea7631bcfff06eddc42c9f942bf7",
+      "size": 590
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_home_state.xml",
+      "sha256": "c33fd9bc016abce1e749339dc962b18274f513d5943214f09536c9e557be861b",
+      "size": 483
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_journal_editor.xml",
+      "sha256": "1befa6ed190f832e698d2a72bdf1664c77edcb08311d768b2a348b44d253aa5d",
+      "size": 1882
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_language.xml",
+      "sha256": "42f0e370ba0c09b2e3f0437fd1a1a17d064690255965c5b43e61b01361b34512",
+      "size": 313
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_onboarding.xml",
+      "sha256": "580248f979762538280a7ad2495befb47ecb5331066c2cdc261dd66a324bfecb",
+      "size": 1031
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_program_actions.xml",
+      "sha256": "bca467be8914acfc5ce93628448e7e63e7d07fbc61132c30febb29f588c99486",
+      "size": 958
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_program_prescription.xml",
+      "sha256": "c14a0919fa8b00b63d7b45bd3e4aeffd1c1d9e3354d92187a83f8e24d5871259",
+      "size": 1329
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_progress_photo_range.xml",
+      "sha256": "26dbddf2c6cf751779b84a4c9d11cafe8e83aacb8dd45587b60f14532291af95",
+      "size": 1088
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_studio.xml",
+      "sha256": "803487947053e1fb0020a8ebb6c9eb1b3889a1dfdfac1c51c8fde4e82132db71",
+      "size": 604
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_studio_muscle.xml",
+      "sha256": "c076cc6b80e886d43bc7324810ce635d7995089ffda2d25ac6913f02c071b0e0",
+      "size": 130
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_studio_progress_tabs.xml",
+      "sha256": "ca311737192c7a5b47386740ccf758bd0ab43408fe21a0031ac7a10fcb87754d",
+      "size": 511
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_training_modes.xml",
+      "sha256": "44586c2e481a73e07da0cd574e6d90e640d9818105469a6f50dd3c34f072978f",
+      "size": 6589
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_visual.xml",
+      "sha256": "7616594ab50a1d3882691f186b35ec6ce1a31f3d495aba6906e1bb37c26fb82d",
+      "size": 536
+    },
+    {
+      "path": "android/app/src/main/res/values-en/native_workout_health.xml",
+      "sha256": "2c8a0147f48792ff010dc2833e640e334beb789ddc768f843eec571ea7783d89",
+      "size": 2143
+    },
+    {
+      "path": "android/app/src/main/res/values-en/strings.xml",
+      "sha256": "95cc92651bf4c346fdeda30c6dd7a4c85341558f04bc11051fe929145ab9b0cd",
+      "size": 57065
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_calendar_planner.xml",
+      "sha256": "b3fd2a6c04aaad405fcf4f4589f02f08c89b33ba2e953df9e6e35cbe4971dcfb",
+      "size": 1100
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_cardio_progress.xml",
+      "sha256": "bbbd1a5dc2673415394ad7b9233dcf7b5b3cab08a510a17f059c80e17947e841",
+      "size": 1625
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_google.xml",
+      "sha256": "5b90feb571f51ef9a8216158b2b14aacf02cb06322f785e2bae2d91718bae330",
+      "size": 913
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_google_maintenance.xml",
+      "sha256": "9eb905314aec0b56fe1463762e4196dcd770a91488eb33f80087dd8d91a1e529",
+      "size": 1909
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_gps_recovery.xml",
+      "sha256": "9f08505448e49620c6aaa9e2be22ab18ee296e757f9f887e02a09ce9ea40b346",
+      "size": 1963
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_health_auto_refresh.xml",
+      "sha256": "8cd95cb5cb89a64a4dc44020e3b4373a2cb43929b9c989cea6cfdf16843649f0",
+      "size": 612
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_health_date_range.xml",
+      "sha256": "b56207c0cef321d216a1542370bdc2d2854fde0367edd4dc281e81c9a7b4e3a9",
+      "size": 358
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_health_sync.xml",
+      "sha256": "02221168a911fe9c0d0d38024662f4962a8d500dc0555c314488684e657fb89b",
+      "size": 1204
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_home_recovery.xml",
+      "sha256": "c875e5445a450168bc4590cc4a4472d29ea9b3778fa3b6cdc02f8ba5e52223dc",
+      "size": 604
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_home_state.xml",
+      "sha256": "aaf701a635ed22696bdd709d6d2de8cf623f56ef4b242f32df3eff5adbdfb446",
+      "size": 535
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_journal_editor.xml",
+      "sha256": "be6824c87ce1d14b6b431532c771c29cf044d75e53bf78d380ec4af77860ac75",
+      "size": 2056
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_language.xml",
+      "sha256": "caa9db28650d9c4a0cc2d15c3d0847563544fb39def694b40444043422a58626",
+      "size": 316
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_onboarding.xml",
+      "sha256": "2447edea8a7d0b96c81541d2af625c49f11b87c6239f59046af286e4c8913e3b",
+      "size": 1121
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_program_actions.xml",
+      "sha256": "58e81c260cbcbbdb8dde3db31e9bddfaf13c4b6524539be586b2b1529b00158e",
+      "size": 966
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_program_prescription.xml",
+      "sha256": "ca15359daa640fecb040c4ac7170643f443141f7f96dc7b5f99c4ce1484c0979",
+      "size": 1443
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_progress_photo_range.xml",
+      "sha256": "4a44a0a9195806c49a4415b63c8dd9ff4bad170e5a3e25f5a06134bb792c7397",
+      "size": 1182
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_studio.xml",
+      "sha256": "6bc16c4da9ec020820eec5ebaf4501193c75fa8c7c2518c431ea9352260d1174",
+      "size": 632
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_studio_muscle.xml",
+      "sha256": "e2c39a65ab38305ec6b316333162e85bab34a11946488b4b5751b36c517dc582",
+      "size": 143
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_studio_progress_tabs.xml",
+      "sha256": "e4aea69db6a5163ecee9ab9635f4e1e24f38beca03e8a4981483ace2f9f13b8c",
+      "size": 512
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_training_modes.xml",
+      "sha256": "6719bf2eba22e20b3a9f518308e065d9202325a7a6d098ea12d77974a8569080",
+      "size": 6902
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_visual.xml",
+      "sha256": "4345ab61a5518b0882c91070bd15c6605526e083ea9aeb05bfcd2df5350143d8",
+      "size": 567
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/native_workout_health.xml",
+      "sha256": "bf42f4f19aff1f3d2cd30a08d324724f230c1834fa722fb483514f5d96ad852d",
+      "size": 2338
+    },
+    {
+      "path": "android/app/src/main/res/values-ro/strings.xml",
+      "sha256": "87b81e66ef0e581f1bad25a63722a089d80d3e51ad746e2ce5e7944536e8ba8f",
+      "size": 60305
+    },
+    {
+      "path": "android/app/src/main/res/xml/backup_rules.xml",
+      "sha256": "2c5c697984f4c52b526337ab61113f5843e0bfc6af4722374916ffe6da38dd9a",
+      "size": 293
+    },
+    {
+      "path": "android/app/src/main/res/xml/data_extraction_rules.xml",
+      "sha256": "88b6e2cc012edef4c9ee75932b042c96f431c4bb88f0fd52b7295d9fa2149707",
+      "size": 970
+    },
+    {
+      "path": "android/app/src/main/res/xml/file_paths.xml",
+      "sha256": "60d45b0f7ba41343c75cea22f160b253643244cede9b8af4be82b6d311abfe86",
+      "size": 377
+    },
+    {
+      "path": "android/app/src/main/resources/native-catalog-main-7473.json",
+      "sha256": "f8d0acae90ab384eb8abe356233fc99b675a5a566a95c4be30a58dde50f51481",
+      "size": 233664
+    },
+    {
+      "path": "android/app/src/main/resources/native-planner-main-7473.json",
+      "sha256": "fbd6af26a6ea006aaa0e6c52fb5c7f14ce42dbe581873ea088e68aee90b570f4",
+      "size": 43541
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/AndroidManifest.xml",
+      "sha256": "c8fe08b06e479efc7e3d00476fffe693a3e943e2b874b3c6a1ba5156fc180751",
+      "size": 111
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeCalendarPlannerReadinessGuardTest.kt",
+      "sha256": "a8e8fc22f0186468542c025068131f88b76d1913fe5a2d39df4ddbe571b46554",
+      "size": 7285
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeCalendarPlannerUiTest.kt",
+      "sha256": "c063f60536922c328e6059a51aaf245f73138571511796bc411d403979c04df3",
+      "size": 9846
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeCardioProgressUiTest.kt",
+      "sha256": "8436ee9dfa4b735604eec6048653836723b238ed1d6de9f18ee81bb7d9e0a3fe",
+      "size": 8692
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeDataIntegrityArchiveTest.kt",
+      "sha256": "61bea471fe850714508244715ec824297bf48cf190fd9c2bab69a0fae6486449",
+      "size": 13073
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeGoogleMaintenanceUiTest.kt",
+      "sha256": "7f1d8ec835c4adf6e5feb20755eb56b62a73567a67f4bb58800fa6ea79d91012",
+      "size": 6139
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeGpsPermissionRecoveryUiTest.kt",
+      "sha256": "75c28c7dec5dc9b88217a7126e15bc654bb3aafec83a92ca426c26d5b265c198",
+      "size": 10410
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeHealthAutoRefreshUiTest.kt",
+      "sha256": "6d55c3b6e70cbe6f4ad8666537e6374559d2f2ee549eca814534090c69589d12",
+      "size": 10501
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeHealthDateRangeUiTest.kt",
+      "sha256": "cbae3bc7e53347967a2b5a3b7196bc7590bec41d362db066f96de318357f85d8",
+      "size": 8595
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeHealthSyncUiTest.kt",
+      "sha256": "6a73f1442a513d4aeb25f3b2a2fc8068b34df1ad8131c9a92ac481511404a4a2",
+      "size": 4091
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeHomeMetricLayoutUiTest.kt",
+      "sha256": "b878b32c664b444f329f73bbc3aa8a375680d5d1e86d2934a99c32adf4be4504",
+      "size": 10086
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeHomeRecoveryUiTest.kt",
+      "sha256": "804c3a4229dec293e13b526826a5b430c134b2a73f3232c6ced9a3586a3cdc22",
+      "size": 6471
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeJournalFeedbackUiTest.kt",
+      "sha256": "75b63483bd73f3846dd70d060453e98e74b83bd5f7e4cc50a2401b245cf410f7",
+      "size": 3930
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeLocalizationEmulatorFixture.kt",
+      "sha256": "7ba12b1b4534cda5be5d066be334c60e2621940305618d52746cda601e957362",
+      "size": 5789
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeLocalizationLanguageUiTest.kt",
+      "sha256": "6c38cb238f3b6b2f28fe6c2dfd207106365b8cb60e15a44a4697b5d363195d13",
+      "size": 7530
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeLocalizationSafetyUiTest.kt",
+      "sha256": "b7d1eba035168c08cbe3db2db9567a376be8373462684b4a340ae266e6fddaa1",
+      "size": 4294
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeLocalizationWorkoutUiTest.kt",
+      "sha256": "29bd838be590021c447bc36859d9938bb6a85740026e29d49b119e5aea6e22b2",
+      "size": 10616
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeOnboardingUiTest.kt",
+      "sha256": "3ce635babf68d6fcefcff7feccecdda7b895b6ca1c50dded4f8511fe24400956",
+      "size": 4812
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativePhoneNavigationTest.kt",
+      "sha256": "bc9019b130c0527473284f7cbfd2e145714eaf06c6eeae6e73e48e4764798fbd",
+      "size": 107134
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeProgramActionsUiTest.kt",
+      "sha256": "086956859b995a4828ec76c61afc69c549fa2c9dc3ecade63d7ff8c99b6470d9",
+      "size": 9014
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeProgressPhotoRangeUiTest.kt",
+      "sha256": "3c2a7cc593e120989ef610305ae41d2e4d453190658b2ecf24e4ae5ca355598d",
+      "size": 12146
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeStudioSectionNavigation.kt",
+      "sha256": "e84e98cdbbc7e733661ae4bf77b25712793286487ec0b825d8b8ef5874eca58a",
+      "size": 2007
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeTimerDefaultsUiTest.kt",
+      "sha256": "d267a984feb85a939e5d1c10d118875e25d6ae8345424513c0457a1d3c64bb9f",
+      "size": 3348
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeTrainingModeApprovalRaceTest.kt",
+      "sha256": "b2c244d8cce1812b05b5a7360d36e987132af060da69d53c25f23060028e4745",
+      "size": 4973
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeTrainingModeApprovalUiTest.kt",
+      "sha256": "e9011c5e66773a727cba9320fa477bee64fe8ed2995c524ea5f41fd07df21d21",
+      "size": 16969
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeTrainingModeCommitUiTest.kt",
+      "sha256": "e149c35c22d992a850cadb4f9c3f518821aa169beba26faa867d508fecc9e460",
+      "size": 5148
+    },
+    {
+      "path": "android/app/src/nativePhoneUiTest/java/com/repforge/app/NativeTrainingModesUiTest.kt",
+      "sha256": "72385573418a346c7e7236fd8d40217440bd43d7f1a9a1f67d0c483d89fc7218",
+      "size": 13628
+    },
+    {
+      "path": "android/app/src/nativeUpgrade/java/com/repforge/app/NativeMigrationProbe.kt",
+      "sha256": "d447edb65f16739564a513e135dbda3c2f831d4ceeadac2391e754986738c53c",
+      "size": 5216
+    },
+    {
+      "path": "android/app/src/test/AndroidManifest.xml",
+      "sha256": "d2250a8c83830ab695ec9da6eff07e2217e9430649fb4bdc201b2a88d69125b9",
+      "size": 267
+    },
+    {
+      "path": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "sha256": "d4045ae8fac1f0807e6b24eb34e68409a9a235df9d1a3f896fb8c9a49424363d",
+      "size": 402
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/LegacyMigrationAndIntegrityTest.kt",
+      "sha256": "1d54d7e2d4553b7d32c6b924853105eb26cc6c6d2bdbb8da39da1177c1bddd40",
+      "size": 3123
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/NativeSuiteTest.kt",
+      "sha256": "0d9f6629d9dd2abf20c95229486f74662df3d9a808bf5c1351a6f859f67737f1",
+      "size": 3465
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/PersonalRecordCalculator226Test.kt",
+      "sha256": "08cbcc79d7c1c2bd938d41253be7e1da8eddca5b23fc1a5c755e17314c28cef6",
+      "size": 3546
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/ArchiveIOTest.java",
+      "sha256": "47593361597335b6438721b368431d4e1f7964a1a8b6f8c5b545c273d6a5ccc2",
+      "size": 5158
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/BleScanPolicyTest.java",
+      "sha256": "debae836aff0ff079c66e6a4fb0ef28cabb8010d9f40d393de525c0c52e95cc9",
+      "size": 2269
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/DistanceAccumulatorTest.java",
+      "sha256": "24849ef8537725158f489e2acdcbc2ceeeaae5fdda8a8f66e24de98e69e07aa5",
+      "size": 1723
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/GoogleRequestPolicyTest.java",
+      "sha256": "dfa2c1152c4cf1db7aaf3c643d51f11421898eba864bcade7ab06d4133bcece3",
+      "size": 2640
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/GpsRouteCaptureTest.java",
+      "sha256": "db75eb0d503d7f7e05cbabfacaf7614b45eff9eb3ab499c32041bf6333ab72fb",
+      "size": 3350
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/GpsRouteLedger193Test.java",
+      "sha256": "fe55c1f919c52cccc73ecaf5e3ed59d0245433da7115384a204e705315e076b2",
+      "size": 13859
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/GpsRouteSpool193Test.java",
+      "sha256": "9e1f358fff9b079178cbf09dfcfae1d87b85bdbeb09a61b8acddf5246162528b",
+      "size": 6573
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/GpsRouteStoreTest.java",
+      "sha256": "622309ee8c38c5bdd8f09002bbc98148a3b40efc36070dd673df87a1a961724b",
+      "size": 7333
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/GpsRouteTraceTest.java",
+      "sha256": "d34e0e01a9a9032c7e0989c6d5fd2e1c502a43150990d4c8c3f8da37d098ca00",
+      "size": 4679
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/HealthBackgroundServiceTest.java",
+      "sha256": "48aab644b08d92a5f97cdbd4b5f446d3df8b6d895912f530fe347458fbe15d0d",
+      "size": 3388
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/HealthDailySourceTest.java",
+      "sha256": "c587b7a07d3ac00db3001a53359a45c0ae3f963a467cdbc01500c204e5c445b2",
+      "size": 1670
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/HealthJournalRestoreSizeTest.java",
+      "sha256": "bbe773309ba5bb337090e48b15beac12aea1c5b7d86679d74bfabe2062962ef4",
+      "size": 5967
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/HealthJournalStoreTest.java",
+      "sha256": "20e1ae964d7efb15eb5031fdea054043dc049a29ecbc7d5f60c544cf44dbc608",
+      "size": 16966
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/HealthWorkoutEnergyTest.java",
+      "sha256": "e976377c1d02e9e5ad1f28a6d8353f7d7a4491598dcfaa856073d7f3c1766e23",
+      "size": 4864
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/HeartRateMeasurementTest.java",
+      "sha256": "32c4c6c54966b7f4f308d551be90d194d6cea129a5d5acc1cebe718856d79688",
+      "size": 1473
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/IntervalHapticCuesTest.java",
+      "sha256": "ba9b14fc00ccba64baeafb6564b891b04ff9df06c89d315cb21589ab00ced2d9",
+      "size": 2074
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/IntervalTimelineTest.java",
+      "sha256": "c7b70a7c02e153aa648ae6606a87220ba855e99c70ceac4e9428fea7f7cd93de",
+      "size": 3761
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/JournalTestFixtures.kt",
+      "sha256": "7e0db90f33589e40c682e56437764934f910af913a9683b551c5cc06f40cd5cf",
+      "size": 997
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeA07CatalogResetParityTest.kt",
+      "sha256": "276ca38891b7c0b7bf00132c4f29d49321820756b21c2c9467835946dacc0a66",
+      "size": 9574
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeBackupImportTest.kt",
+      "sha256": "133147d49ba2c496880f3f802acd97d37fb8818422fc95fe987344510cad3f16",
+      "size": 9426
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeBuiltinCatalogTest.kt",
+      "sha256": "c370c759f6d7abc8bf4ea96b0f5499e41ed74184c7202cae06e08aba8d80f97b",
+      "size": 7927
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCalendarPlannerTest.kt",
+      "sha256": "12e49d81d9259d1f43297a8e8af9a62bb0e58e1d5bcdc835077e981f91c85fab",
+      "size": 6703
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCalendarSyncPlanTest.kt",
+      "sha256": "af5b78ee544f663b0cd9969a7e863f52c42f063756811b43b3e704cb33a2a0a5",
+      "size": 2017
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCalendarTest.kt",
+      "sha256": "370c3c8b3fff60b9294655df03ec4b7ce139087decb27f525a971a31576f2049",
+      "size": 9113
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCardioBindingTest.kt",
+      "sha256": "2eb61bb3515a2a87f43b0a809d0b24b0924c98fc47b76258df04b5ef90be2b37",
+      "size": 15327
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCardioCalendarRefreshTest.kt",
+      "sha256": "ffeb7133de083d048108cecba6c359073dbc360a6b81d84dcfd0296bab4be0d8",
+      "size": 4110
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCardioModelTest.kt",
+      "sha256": "5132da74285e9e2c24a42a88d790ea6928aa4e281b0855d8d9aade3570cc4e88",
+      "size": 28170
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCloudMergeGuardTest.kt",
+      "sha256": "efed077541452cb4a7e86f26a3b6b467967b16bec0a469301e5d47866799b169",
+      "size": 1383
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCloudPhotoRecoveryTest.kt",
+      "sha256": "edb65f690d14cc5f45dad17fd8d6389b7a560ca9a1f825aefd99d9a8e5aaf660",
+      "size": 30803
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCloudPhotoStageTest.kt",
+      "sha256": "e2411d0d696c8a71819a72cdd4ef4e1963e03de31b53a79f9153bf39ce064c11",
+      "size": 11626
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCoachAdviceParityTest.kt",
+      "sha256": "889cfa970aea061a5d4d76d941b2fc1bc303973dccfdb9ca6ae54d78de1d7830",
+      "size": 5407
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCoachAdviceRepositoryTest.kt",
+      "sha256": "e271338782c3224a3e3aef6b2170c162c55bc59122c7e1db3ca81449963e2034",
+      "size": 7530
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCoachReadinessTest.kt",
+      "sha256": "321256085a2784b4a0f58029a29ae1db02230a9def9aa93303a8bab585b8fea8",
+      "size": 4344
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCoachSignalsTest.kt",
+      "sha256": "a4bff31ba9cb4fa6c119bcc9cb6b212a7e6befc92945785a973b5c4544b83cc9",
+      "size": 3540
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCoachTargetsTest.kt",
+      "sha256": "5839daa216d0317aafaf076a4cfa3b9774f17c163e02f69b3a87bdd751056b4c",
+      "size": 4557
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCoachVariationTest.kt",
+      "sha256": "37a11a06df19d2dbba23bc96cad019b4ef2c82e740bad28671fc0790daaf22d1",
+      "size": 9348
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeCustomExerciseEditorTest.kt",
+      "sha256": "5bec6e5ea63afb21185198fccc7553c1d36b69b2192453bea2aec2a7e6b711f3",
+      "size": 10798
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeDataReplacementTest.kt",
+      "sha256": "258c5fc39aacd13064b7239fe0db4ff0cb03a0a0ef8299df86d1d2dfb49bd039",
+      "size": 8747
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeExerciseDemoTest.kt",
+      "sha256": "51717f1f96e619d4cd854fa0c85c7af2d5afe710a45e18aa1d4ea87ede407781",
+      "size": 3352
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeExerciseFavoritesTest.kt",
+      "sha256": "e4ef0983cef78370ac2ae08db4b9f2f197f275a2fe1c877de15469233fa7b4d9",
+      "size": 7453
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeGoogleAccountPolicyTest.kt",
+      "sha256": "c415c8b1d8d0138da33e0d2fe3a0a5f53dd9635224ddf74d92c8093a530283a6",
+      "size": 1877
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeGoogleConsentBridgeTest.kt",
+      "sha256": "08bf660db830e36d6b35c3890067b5a382f9d38f641688bcfba387cf50f2743d",
+      "size": 6731
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeGoogleMaintenanceTest.kt",
+      "sha256": "aba9f1fd61dcbe407d3f01a5ba3c476f4ba6d833e4a27208bb2a1e5398ac6ee9",
+      "size": 6826
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeGoogleOperationGateTest.kt",
+      "sha256": "30f028ca666a17f25a799936aefee6f8f88df8b9d78654139982f6192186ff60",
+      "size": 4403
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeGoogleRepositoryAdmissionTest.kt",
+      "sha256": "8df4781d5dfe267307fd7a37df0fa2ac6642621585b31b21d6d0c93454f32a56",
+      "size": 4937
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeGpsMeasurementTest.kt",
+      "sha256": "09f5a8da04907e707387c3043741a31b1e40029460de4f5abcf172cdd5b32111",
+      "size": 17739
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeGpsPermissionRecoveryDecisionTest.kt",
+      "sha256": "b1dbba443646936283f35ecc08e4241c1122665b290fb90df3de26e3dacbad70",
+      "size": 5809
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthAutoRefreshAdmissionTest.kt",
+      "sha256": "6488339c6ea0bafa7dff04cc114ec52f71cd2b43ad4358c90c36c029c23344cc",
+      "size": 1830
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthAutoRefreshBackupTest.kt",
+      "sha256": "b65422903e45fc6997e99b191481a930341b27d4726cb1a349a0fb095e8ec78a",
+      "size": 4300
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthAutoRefreshPublicationTest.kt",
+      "sha256": "3016e5939570beca3e9b2d1747007d8ae1a1e045efc85cedbb67e9397a6bc6e5",
+      "size": 4882
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthAutoRefreshTest.kt",
+      "sha256": "4504583e11fcce7533afaba683c68da5d84166007d108269c1a3ffe56fff7bb5",
+      "size": 5950
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthBackgroundPolicyTest.kt",
+      "sha256": "ebb29accebb7ef45179dbf99198ba023e812f66b3e56e8009f561a79c5bb8a9b",
+      "size": 2206
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthDateRangeTest.kt",
+      "sha256": "c2dc0d8ecac1668b26a9bf51091deb8c72d938dd31a6cc375be38bdd73dbb175",
+      "size": 8607
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthHistoryTest.kt",
+      "sha256": "a27207da6a88dcfdcc5211521d90940065fe629154459b69039c436b78330791",
+      "size": 6933
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthOverviewTest.kt",
+      "sha256": "4772ec43188481b20f26b129aa391613732e0fe40c7fbe200ff4acf94b14b201",
+      "size": 2587
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthRecordsTest.kt",
+      "sha256": "e224fe5fe1c6746e5579c8f2d24dc38557f0218e95524656a0110d1adfbe944a",
+      "size": 9214
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthRefreshTest.kt",
+      "sha256": "ea85a91f15894b6be4b43ee9a8c7733285c9a14704395ad2e0c6ca1109ddc640",
+      "size": 4113
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthRefreshWindowTest.kt",
+      "sha256": "73d7d9dffd3004525d746d0c64578c8bf8e58552714d8a329a1209dadf80aec5",
+      "size": 1394
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthSyncJournalTest.kt",
+      "sha256": "bf28c86f1c6903d8746a9820e933e3a7da1b91dcddd22bc8252b00d6c53e54fa",
+      "size": 9457
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHealthSyncTest.kt",
+      "sha256": "70799cdae104d3ba95cd7965c7f179f7b2717d98424a957a7ff27954ae5f7360",
+      "size": 11918
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHomeDailyCountTest.kt",
+      "sha256": "76f65ed416203478b4ae98fc7de94b4a04c9776c98f266d513fbc7f9e2a57f3d",
+      "size": 3459
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHomeRecoveryPresentationTest.kt",
+      "sha256": "42b740d371509eeaf633a83819e8adc2c95ae86936f5cac30188e87435be9ac0",
+      "size": 6859
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeHomeRepositoryTest.kt",
+      "sha256": "e97c5c5b47caccae87911ae43af1ce37f3b04f41b09467a3b758b213408b0fdc",
+      "size": 8401
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeIntervalPresetTest.kt",
+      "sha256": "3a3d42a324dbd91289d4166eb803089d352add0f199331756181937272909b22",
+      "size": 1636
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeJournalEditorTest.kt",
+      "sha256": "65e414c033f456201f3fdb19a0a8fac7ac533d08e4b21a6d1ecf7ee857850da0",
+      "size": 21623
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeJournalPagingTest.kt",
+      "sha256": "ebdbe99ef6e3601267c9739724abb3732b6e9cc32439836092d009e7c6dc1629",
+      "size": 8119
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeJournalQueriesTest.kt",
+      "sha256": "e64a2e86f676306094a54c94bf383f3befb249aa509087fa618b7512adf8d3d7",
+      "size": 2559
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeJournalRouteMergeTest.kt",
+      "sha256": "3936eeef77282726a562fd7f412c814b6a7dbca91ac468041120290d2a265317",
+      "size": 1416
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeLegacyDraftAdoptionTest.kt",
+      "sha256": "ca07193365a816893fa7248c48d42e315669b927ac92c518eabdf6802feecdf2",
+      "size": 7058
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeLegacyDraftTest.kt",
+      "sha256": "155a76dd28c3e1bce74651e7f98bff990c38f59fbc39d612480234cdcf46f351",
+      "size": 4827
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeMainDispatcherRule.kt",
+      "sha256": "b4deb710071f597cc4abcee2dcdd54175c669f87e2d349dff068c76993be4ec0",
+      "size": 1187
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeMainMenuTest.kt",
+      "sha256": "c8733bfae8be5fb2d60d9c11f1431717ea93c587acbbde4d4ec887f2ec91706a",
+      "size": 6469
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeMeasuredEditingTest.kt",
+      "sha256": "9aa7b6978d66827d6434bee432f6903698990c353a3a6a24b79c68417a114a2b",
+      "size": 21675
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeMetadataGateTest.kt",
+      "sha256": "782c2e1b351c686bb6f2f18b0fd2a2f997360536fb6a450bcdd3f2e3037b3170",
+      "size": 5971
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeOnboardingStateTest.kt",
+      "sha256": "dc6ede9154c8eee4e33b8f5881d55540a70fb3ae23c8cb6f5e2742dbf21f6c61",
+      "size": 7216
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativePersonalRecordHistory226Test.kt",
+      "sha256": "bd68099debefb5db00916b46d743e82b8e479294d1abe39a713a1a36e2265a89",
+      "size": 11334
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativePlannerExclusionSafetyTest.kt",
+      "sha256": "853490e7da0502e9434f293e3557f52fee54739f0b3760fe881ddc6e55cf96c7",
+      "size": 3615
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativePlannerTemplateParityTest.kt",
+      "sha256": "647ed50383e3c8e6bc4d367026b0084d8652522e29f04836b6de7ebfbaea95d3",
+      "size": 2723
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProfileDayHistory128Test.kt",
+      "sha256": "dff5756fb6dda478a39f75e7363d8d4fb5e7a24ec7f904c0ee662ab0b7360b8a",
+      "size": 13258
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProfileHistory128Test.kt",
+      "sha256": "9e6879a8f121422a71b06e340475ef70ad766adbc13480364b44661029f2bfcf",
+      "size": 16319
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProfilePracticed128Test.kt",
+      "sha256": "1a6cb336c8d0022aeca6b49021f2f1f4ac24dc7743d236e98050cd2aee3bb535",
+      "size": 11277
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProfileProgramPreviewTest.kt",
+      "sha256": "7378649964a61a713ce84415aa51e21b70215d1e8d68df0ac93eb95573c0fe38",
+      "size": 17316
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProgramActionsTest.kt",
+      "sha256": "26c49024c6dd9e4aadc191e2c93accefe4bc4b10475d0149d2dcd4ac5cab7ef1",
+      "size": 10012
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProgramEditorTest.kt",
+      "sha256": "61a7287902ed4776fe43d7b467eba0765b55caaf702376e4aa08c86020a1ae34",
+      "size": 19388
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProgramEditorThreadingTest.kt",
+      "sha256": "ea5b4c6931d8c72f71f2e329950d416a5c46c30c5def72015f6cb17803e8ed9b",
+      "size": 2954
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProgramGpsStartTest.kt",
+      "sha256": "0a99d2967b2430b578a74c39141d9644588c0d5653549a97bde9d35e965f07cf",
+      "size": 5362
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProgramPrescriptionTest.kt",
+      "sha256": "d3fecdd927435cd0f47ff594ffcf8aca94aea83bb29792a9d732b397ee42e7d8",
+      "size": 5032
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProgressPhotoRangeTest.kt",
+      "sha256": "dfa5412cf85b77fd667cc01984f68e9272f68322f1b046116f496cb335aaac63",
+      "size": 5495
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeProgressQueryTest.kt",
+      "sha256": "78f59786c1af5e76a9cd59d05d991a317fb0dd4730cab6fb69e34dc15872a07c",
+      "size": 16421
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeQuickWorkoutTest.kt",
+      "sha256": "a4db1e4f550b9733dfa87643165ac358fe181c4a940ee2521007b73274fe4687",
+      "size": 13252
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeReplacementRecoveryTest.kt",
+      "sha256": "ad8a92a8b4f0e9a1f63f52f762117eb25e078082793e977cc7f500a39a48adbc",
+      "size": 8726
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeRestControlTest.kt",
+      "sha256": "baabaea16626ff4af219c3b065f8d48a6cb68f9a6baaab39149166fba1fdfa79",
+      "size": 13084
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeSamsungGrantScopeTest.kt",
+      "sha256": "5b1b453cdb8c965050d460ef771413af7a1aca73daed5b36a20a04215d1cb374",
+      "size": 1099
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeSetStopwatchTest.kt",
+      "sha256": "6bf16398b2e76f1f016a397fb8acdf345ad0d039ea115a9b49ba82e5e29c9470",
+      "size": 14536
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeSettingsProtectionTest.kt",
+      "sha256": "8f397ba2d2516c0dad1055416ced5328e65c27ad8a475242cc912b90c1fb2e1d",
+      "size": 4644
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeStrengthSnapshotTest.kt",
+      "sha256": "38200e485f56a128a92ee6d8467566e1eb6cb269597a51be6c63fa822092bb43",
+      "size": 1222
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeThemeParityTest.kt",
+      "sha256": "23d78209d0c3f5f0ee23716f6fd6750c0c7a72a811a2a45ef41e34b040968479",
+      "size": 2140
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeThemeTokensTest.kt",
+      "sha256": "9e0b472b618301a6416d3122fb263f726d5d0e12e339f138759d85bc151bd5ae",
+      "size": 3902
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTimerDefaultsTest.kt",
+      "sha256": "7cbbdab5057a76d27f6177668eee8b377a9f7600c536ce61a44d7a9fcc5e9e7b",
+      "size": 5012
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTrainingModeChangeTest.kt",
+      "sha256": "f4d30e910251d572418d4f5daded175122a9ca3cda5761355a6ca1b4d0e80dbf",
+      "size": 7410
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTrainingModeProgressionTest.kt",
+      "sha256": "914cfe07a40afd9b5a3ccb67c16e514232ea0e874a5d77beafc11d770ef9be1d",
+      "size": 6967
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTrainingModeProposalTest.kt",
+      "sha256": "ebd5fe2cbdec9979ee1759b57aeb3a3221219bfe35f6116d622f47cc8650e9ce",
+      "size": 4076
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTrainingModesStoreTest.kt",
+      "sha256": "874598611374414af184675e9a2af25b24b9e9e60a2d4363a8d92accf15eb5bb",
+      "size": 8076
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTrainingModesTest.kt",
+      "sha256": "a5efdf46f0019178ae678a3a3b8e98a625b56e316273c81301f264a02b3cf1a9",
+      "size": 5414
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTrainingPrescriptionParityTest.kt",
+      "sha256": "89b83d9cc36470515374e136e32d9a02c9fdb08143c3e09e1a0da8665f582378",
+      "size": 1681
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeTrainingProfileTest.kt",
+      "sha256": "0b08b27e0b968eb5543f5dd8123b5810c2347143daad2d8969f098702bcc996e",
+      "size": 7213
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWeightDeletionReplayTest.kt",
+      "sha256": "3ef81596be6e233271c34c3ec6f2c7aa43e3c1980825d6d0befd843df58e0033",
+      "size": 11375
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWeightJournalPagingTest.kt",
+      "sha256": "d1a2dae782376942524f4a5c9262f9c6a3023a41bd1037eea050e490a676dd17",
+      "size": 10697
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWeightJournalRepositoryTest.kt",
+      "sha256": "6c10ac808ef2d587d24be8345a0687cd41c6de208879c0232ee6c6b14768c2bb",
+      "size": 8460
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWorkoutDiscardTest.kt",
+      "sha256": "47aeaea225783405eb7943b9f7a9d2d9eb53889c00e05c55d03b1bc635b00527",
+      "size": 9943
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWorkoutEditingTest.kt",
+      "sha256": "817304483d930bd3791bdee5a639e3eb3b47437faa3a9ca4aa6910387f1f6aa1",
+      "size": 10805
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWorkoutFinalizationTest.kt",
+      "sha256": "6207d7b4215648ee4afc156963919f408ace5a06ec67f6936071384d51cdaa1c",
+      "size": 15075
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWorkoutHealthTest.kt",
+      "sha256": "32a227b1e73c04205e9681dae474140faf655e6e061ddcf1751f8f9090424402",
+      "size": 10040
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWorkoutSessionTest.kt",
+      "sha256": "2c9c70c99ff12a0aef037c62ae1ed8dca137e57d1d7ea75215b4d72cf55fda28",
+      "size": 4328
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWorkoutStartValuesTest.kt",
+      "sha256": "1d0e2aed136db083b201831d02b6f13dae99b30e86e2dbc98e27da4bb2a37781",
+      "size": 4972
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeWorkoutTargetTest.kt",
+      "sha256": "dc08c0614c98e9f948f82978339b7d6cfdb4f85bf4ddd47a2bfcb2c628c8b810",
+      "size": 3618
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/NativeZipRoundTripTest.kt",
+      "sha256": "76ae016324798def94e8cf6b2983c8ec876c6589e95759685e0c97972aec6c4d",
+      "size": 5385
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/OwnershipJournal193Test.java",
+      "sha256": "f5d2752f07aeda38c93f1be488e9ad1045f455a13ffe61673f741a4073bffa22",
+      "size": 8344
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneGpsRoute193Test.java",
+      "sha256": "c3fd4925f1b567d9ab764babdba9056ef8773bf8c7b634c2a35403260f07ad7b",
+      "size": 8988
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneOwnership193Test.java",
+      "sha256": "bd353d7f2be4e1478b9df7f465816bb14cc863ca1a5b549211036da53cecb8e9",
+      "size": 5079
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneOwnershipResume193Test.java",
+      "sha256": "8328222748b6bde54589a59cdcbf246dd94294f2ed3e6f7f417b053838482fc7",
+      "size": 10782
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneTimerCheckpoint193Test.java",
+      "sha256": "922c60ccca0f74026e7191e39061ecbfe3996d7859f1bee1721735e784d8359a",
+      "size": 5595
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneWorkoutBridgeTest.java",
+      "sha256": "718832027043e4a163be3de93c284b80f0de294824afaacc3256ce00bb6c8a76",
+      "size": 2300
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneWorkoutExecutionServiceTest.java",
+      "sha256": "b7c72597abdef2b488d8932aff5daebae0dd0c81be54a3d905c4d4ea8a2bee9e",
+      "size": 20647
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneWorkoutExecutionStoreTest.java",
+      "sha256": "1e63b7b261f8b6519d9148093e7a70511661b922bc55740a2bf60c2469a97dc0",
+      "size": 20112
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneWorkoutPlansTest.java",
+      "sha256": "d8b3bfbddc4c5514738e11c1739c8b48043ccc25aad5d1389359e3d39fda7fa9",
+      "size": 8149
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/PhoneWorkoutTimeTest.java",
+      "sha256": "6f29a9810dc0bfba38f6623f2b7d958d7bf8bda6c235722e72ae85eb2964576e",
+      "size": 7926
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/RdfitProtocolTest.java",
+      "sha256": "ecfa498af250ac0e0c21700a9f4e1b6fd4ee5008bc0d2721f9690b7681d383a2",
+      "size": 4052
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/SamsungHealthJournalTest.java",
+      "sha256": "66b0748849839ff360947cd67d57f6067d8169bedb7ab83fbaaad640a8326e8c",
+      "size": 5894
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/SamsungHealthReaderTest.java",
+      "sha256": "a70f12a399998be46e41b98024e6ea807f12829f1c56153d8b88629a814c8d8a",
+      "size": 12622
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/StartupFadeTest.java",
+      "sha256": "af38f76338c90304df2f0cdff1d1cd458956aee1df4a02d196f7ef1f2909a05b",
+      "size": 5336
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/StartupPaintTest.java",
+      "sha256": "fee931acb027567850311ea838ebe8f71a6cd05cf066a2ff9047061e1737f865",
+      "size": 2242
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/StartupScreenIconTest.java",
+      "sha256": "2dd8bc4edacefba44a6f36ba9bf37f54f5a1491437037c5b7956bb4c01acb839",
+      "size": 4110
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/WearCommandQueueStoreTest.java",
+      "sha256": "28e8940e957c56e725d8af325bbb8fc63ac236fcf0a9f05c6d9d32f248e92e43",
+      "size": 6939
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/WearWorkoutHandoffTest.java",
+      "sha256": "0077885c4f7e34b3b9db72b052189961937e1d459c611f5b5c4397f9b5cff1b0",
+      "size": 1713
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/data/migration/LegacySnapshotParserTest.kt",
+      "sha256": "4742bd9d8e8f7343a50d40a2bb5cd8f55f2f46beb4f0a35bcd7b751807efef7f",
+      "size": 1713
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/ui/text/NativeLocalizationResourcesTest.kt",
+      "sha256": "78b88057628909850b1356f5294c5336fcb4c71adcfea1de0205b366519629b1",
+      "size": 4912
+    },
+    {
+      "path": "android/app/src/test/java/com/repforge/app/ui/theme/NativeThemeContrastParityTest.kt",
+      "sha256": "bec32e18dae3c707a855d408ae625d261057b7683258fc87ff37f2a41cf2ac7e",
+      "size": 6079
+    },
+    {
+      "path": "android/app/src/test/reference/planner-main-7473-exclusion.cjs",
+      "sha256": "4708650c8727fdd518760a05e13370d0c127d8f3cd2d6adb7123a2a27f6be25b",
+      "size": 3622
+    },
+    {
+      "path": "android/app/src/test/resources/main-7473b30-themes.json",
+      "sha256": "9d33dfeb59f4fcb059d7f6ed8dcb56ddcdb7031be4ee658356e4507da8ab6e01",
+      "size": 2430
+    },
+    {
+      "path": "android/app/src/test/resources/native-coach-main-7473.json",
+      "sha256": "597187f5db161139a82c017214670965209efe6adc154eb661ec6bf6722eecf4",
+      "size": 183168
+    },
+    {
+      "path": "android/app/src/test/resources/native-planner-cases-main-7473.json",
+      "sha256": "190032ed48410e7e1c4ec681461cd95309fa914088e44d4ba0bb2231a6cc07fd",
+      "size": 7925
+    },
+    {
+      "path": "android/app/src/test/resources/native-practiced-main-7473.json",
+      "sha256": "4f7669e0b6c61941b753cd1fe5886b045cef27b55f05f374032fe13f85eb0ffb",
+      "size": 10991
+    },
+    {
+      "path": "android/app/src/test/resources/native-prescription-main-7473.json",
+      "sha256": "ba47f6abe1421320c468a354c55bf13a134251f96faa76d8c3a550104b08df76",
+      "size": 9571
+    },
+    {
+      "path": "android/build.gradle",
+      "sha256": "f57c7fa7e018449aa77ed715437f8ca3cbbc8581bd1be68ba3aa0de3db2173c9",
+      "size": 668
+    },
+    {
+      "path": "android/gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+      "size": 43583
+    },
+    {
+      "path": "android/gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "d5175eaa933ae7aebb126f5c99024f511a396132e8bacdfe74c66daf8292920d",
+      "size": 251
+    },
+    {
+      "path": "android/gradle.properties",
+      "sha256": "fa370ac81cc1aaf58f2a4640efdbb93db44db87be86e4563326547184ec6e039",
+      "size": 1116
+    },
+    {
+      "path": "android/gradlew",
+      "sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3",
+      "size": 8762
+    },
+    {
+      "path": "android/gradlew.bat",
+      "sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f",
+      "size": 2966
+    },
+    {
+      "path": "android/migration-fixtures/legacy-v1371.json",
+      "sha256": "ffd2c2faa081852b4ce558ff0b8feb699fbb63b03b74d9e87b65d815796c81bc",
+      "size": 194171
+    },
+    {
+      "path": "android/migration-seed/build.gradle",
+      "sha256": "2a730cc6f07562b97be3424a29ad6d057cf9bd02f0f7abcf493a650dbc7069b6",
+      "size": 1181
+    },
+    {
+      "path": "android/migration-seed/src/main/AndroidManifest.xml",
+      "sha256": "132971ca63c2f15d517c34b8fa21722e979795c3ec1819abc9ad2cd1902dcfba",
+      "size": 425
+    },
+    {
+      "path": "android/migration-seed/src/main/java/com/repforge/migrationseed/LegacySeedInstrumentation.java",
+      "sha256": "346112409de4ba34a2a0757e65120bc619b211304ec94c7e037c77b74e6df4db",
+      "size": 7434
+    },
+    {
+      "path": "android/settings.gradle",
+      "sha256": "351fed44ef82e897beb8979a171e5f5793824926cb0356cb219f104fdb8458b6",
+      "size": 301
+    },
+    {
+      "path": "android/shared/build.gradle",
+      "sha256": "784a1db47f2d9dabd8fc1421a3385e70ac2418ab1e009fb6e3adad0f08cbac97",
+      "size": 1179
+    },
+    {
+      "path": "android/shared/src/main/AndroidManifest.xml",
+      "sha256": "8ef94a6aec2218c5fd02408d018f6d52602c0ef4473dd1c115c5c6964f1e63e1",
+      "size": 121
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/GpsRouteLedger193.kt",
+      "sha256": "7a165ffb4bff5e75ebc5d73b20949bab42d94047dc5f158fa091dcdff4ddca4f",
+      "size": 25630
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/GpsRoutePacket193.kt",
+      "sha256": "beed6e63e7c8c1486a94c3f9d8795e3ea9f49b7580286f719b088eeabf2d43c0",
+      "size": 7067
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/GpsRouteSampler193.kt",
+      "sha256": "42cc6cf51ad135b8ca0e4a2272270d58d249b01be674197a2525a8dd55c2cb55",
+      "size": 8830
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/GpsRouteSpool193.kt",
+      "sha256": "c65120ca386cc82163e14401fcff4d5fdfc7600e4dcabbb671cbfbf669b451ba",
+      "size": 15746
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/IntervalTimeline193.kt",
+      "sha256": "0c5c08e74995558f95477f0f52647ffc239c030837937867da7eb8ee2a1f5135",
+      "size": 11005
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/LegacySyncIdentity18.kt",
+      "sha256": "e10a0c7a52c73b86cfe6701d2b329ff6770c237e0ec81b2d400f763064301c35",
+      "size": 6565
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/OwnershipJournal193.kt",
+      "sha256": "c804aaca0e702392a0eefe1fb1dd995f14b39276d6e92c753e810608d8acc016",
+      "size": 12540
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/OwnershipTransport193.kt",
+      "sha256": "bd91373ae9c517379e8ef565496b4e2228691b65c5a0ed54fdab0fa5544a8ebd",
+      "size": 4606
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/WorkoutOwnership193.kt",
+      "sha256": "745134a1f10a8a40d1ab816b18d8f96ed5b13015c6136a657962993108d3e910",
+      "size": 11183
+    },
+    {
+      "path": "android/shared/src/main/java/com/repforge/shared/WorkoutSharedContracts.kt",
+      "sha256": "ed7ac45b417afe7c9b82eece60e4cb35b8757cad8172ff1ed844e652d06dff80",
+      "size": 8332
+    },
+    {
+      "path": "android/variables.gradle",
+      "sha256": "542fb04c1d1570b9faa44dd831194dcafc9cdffac1e47b46ca4677ef28330571",
+      "size": 690
+    },
+    {
+      "path": "android/wear/README.md",
+      "sha256": "22fcf591de56070a51d2567e270956528f1ff0af8497c58ce85f8c9e8a90be1e",
+      "size": 2688
+    },
+    {
+      "path": "android/wear/SOURCE_VERSION.json",
+      "sha256": "daa59f2aa91a8737bbf366c77786c5e30409f4246fd9a397a2518b813aeabc6e",
+      "size": 140
+    },
+    {
+      "path": "android/wear/build.gradle",
+      "sha256": "d6af8685f9173203b79fb21508b51ad18267177638ee60e9213ad49f54b7a33b",
+      "size": 3795
+    },
+    {
+      "path": "android/wear/build.gradle.kts",
+      "sha256": "4996e666faa9558d76de0cb7a47e1287aa8646c208dfde550599a1eb1a6fdaaf",
+      "size": 1922
+    },
+    {
+      "path": "android/wear/ci/P1_199_MAIN_RELEASE_GATE.md",
+      "sha256": "91b0dd88ceabd51fa1f2e8c174786f48fc60bf6f8c91fdec5543b39c5fb2718f",
+      "size": 3907
+    },
+    {
+      "path": "android/wear/ci/check-round-ui-shards.py",
+      "sha256": "d73b8a245d0f932b04463ffee3ed3f97f725f593cdc4080026161342a6022cef",
+      "size": 3395
+    },
+    {
+      "path": "android/wear/ci/release-gates.test.cjs",
+      "sha256": "7c6b43462d6099d232ff5cf2490a8421be203f199952cb96565584acd3c8e728",
+      "size": 2676
+    },
+    {
+      "path": "android/wear/ci/release-metadata.cjs",
+      "sha256": "3c4e762bd717ddb324007d4d16bd4cdac5e4eb0d514c5c6592f8634270ac295a",
+      "size": 1424
+    },
+    {
+      "path": "android/wear/ci/run-round-ui.sh",
+      "sha256": "eff4e3b16f6fd4c4acbe0790fd1f3a36820f5db1f46e073614f2c9baecd29afa",
+      "size": 2128
+    },
+    {
+      "path": "android/wear/proguard-rules.pro",
+      "sha256": "efdba4cfc9958ce10fbda72f9b27c2b2405963ff7229b326e083a2536e7c97f5",
+      "size": 202
+    },
+    {
+      "path": "android/wear/releases/README.md",
+      "sha256": "6853e03bbab3106279a58b2c11a529f1d489ae2de4ff9bb5653c848bb5dad9dd",
+      "size": 761
+    },
+    {
+      "path": "android/wear/releases/wear-v1.2.11.md",
+      "sha256": "64feefa16a799f14372891b84a1e939392019904176dc1551ff0ea62e77f8239",
+      "size": 1719
+    },
+    {
+      "path": "android/wear/releases/wear-v1.2.12.md",
+      "sha256": "f49e98016a4029a9f07d07e5ac5fedc01715180b8f64216d5d62c55ece41075b",
+      "size": 862
+    },
+    {
+      "path": "android/wear/releases/wear-v1.2.13.md",
+      "sha256": "e9c9b962dc49d0fa4ca85100b4d11923c165f7d184535cd1063f99a8b4c5f8a7",
+      "size": 579
+    },
+    {
+      "path": "android/wear/releases/wear-v1.2.14.md",
+      "sha256": "7b51a5ee804a7c277e06df5134e56f578d60de4433f26c2677d8362ee76428ef",
+      "size": 1444
+    },
+    {
+      "path": "android/wear/releases/wear-v1.2.15.md",
+      "sha256": "ea22c57e1136d8ef721a68952dd419ecdd14a3ea4a380df26301803384f57915",
+      "size": 1342
+    },
+    {
+      "path": "android/wear/releases/wear-v1.2.16.md",
+      "sha256": "7615775099253475dc1d2d38e3a617488ce8a8eea86c1570954e84dd670b5dab",
+      "size": 3678
+    },
+    {
+      "path": "android/wear/releases/wear-v1.2.17.md",
+      "sha256": "b1bc771b74ca5cf9bef973470fb537b613e73c5706aceac91961cae6a2e2fc97",
+      "size": 1074
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.0.md",
+      "sha256": "9398d700181dc3cd7c7f3951b6d1a5723ebd9e151474f92a2a8a3d929b632ffb",
+      "size": 1965
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.1.md",
+      "sha256": "db06746484c01f20ee4b0c6191c3ecfc7828fb2b73a0dc72485c67459d7f556d",
+      "size": 1311
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.2.md",
+      "sha256": "736e0233ddb04b15bb209e1b39cacffd58ab7f0d2cfb38174200df91a7addf7b",
+      "size": 1011
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.3.md",
+      "sha256": "1f12576402d9abf36493c481034938af1afd8bcc3b3bc10a204154f720ea133e",
+      "size": 1533
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.4.md",
+      "sha256": "f55b7c74b0d410e6c6bd342c0c19ed54568c53939d39534a8511288e6bb8d72d",
+      "size": 1973
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.5.md",
+      "sha256": "b65926a4f95dd024d35e9eaae962ff6fa3be2292dffa57f7dd988bcbf29dde1c",
+      "size": 941
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.6.md",
+      "sha256": "25f894e0a90b8299e85078f9755ccd201267fe0aaedb171ba4087e02d84b26b3",
+      "size": 1819
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.7.md",
+      "sha256": "e13c6294d55b948d895d8e15b97601e126537067c5134e20242caec28d07ba13",
+      "size": 1146
+    },
+    {
+      "path": "android/wear/releases/wear-v1.3.71.md",
+      "sha256": "c20d0263d2f080b8da0bdf99e564f197fc15dee886db42be34aa60f1831d020f",
+      "size": 836
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearAutomaticServiceTest.kt",
+      "sha256": "06b0406c91489a554dfc3ab4f9b489e20edf801b1f5fb47b46dd4e185faae476",
+      "size": 9482
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearFullScreenTest.kt",
+      "sha256": "a51c348c773b51f18f04203c47a7368b7129db7ae5cc3e0e81631970bbf3d4e3",
+      "size": 77132
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearGpsRecorderPlatform193Test.kt",
+      "sha256": "21e6a30af5ebbc4fb57fa1471013250a30b6ef98c8708f6735bfafe7c2a13a8d",
+      "size": 7493
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearGpsRoutePlatform193Test.kt",
+      "sha256": "0793555db8b8d3f97ca68e38815493b0517b42599a8af26cf82e6c899faf7a8d",
+      "size": 5555
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearHealthAccessTest.kt",
+      "sha256": "3a95b6d7e389feed46b2d1856ba357a167be793f99071b3bffaffa8e27a2dc60",
+      "size": 3296
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearOwnershipResumePlatform193Test.kt",
+      "sha256": "0fe8029562ac0410e1db9ff8cbba8a3e8d4cecb94a9a25f85c66c1eae9fdd41a",
+      "size": 8699
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearTouchLockPlatform189Test.kt",
+      "sha256": "00d5c0fb78e0216e9286fcb402dd342b237cce4218ec8bf35d7bb70bcd5dec35",
+      "size": 3226
+    },
+    {
+      "path": "android/wear/src/androidTest/java/com/repforge/app/wear/WearTouchLockStore189Test.kt",
+      "sha256": "df2141b95d4bef76d8423ef859f06934f742cc74609d536ef1430941d468bf57",
+      "size": 1625
+    },
+    {
+      "path": "android/wear/src/main/AndroidManifest.xml",
+      "sha256": "00cd0511bd916ce8bbf07c7e44748c726f65967ce58064d1a201a893b2dc6252",
+      "size": 4637
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/MainActivity.kt",
+      "sha256": "0db038dcefb628b1c1262d8e2aa99fb98f6f7d1642a7e7086901caac93113d60",
+      "size": 56931
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/TrainPilotComplicationService.kt",
+      "sha256": "2d376147843060b9de836aff51ec75f3f7d4641c2c5c76457139d66f1d72a8bd",
+      "size": 1466
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/TrainPilotTileService.kt",
+      "sha256": "4beac5056cf7420d925180e71f0c812d1dbc00049c672e2ea67cb302c0a855bf",
+      "size": 3634
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WatchHomeStore.kt",
+      "sha256": "97bb568787ba88cfacb6dfef25033376df87069ca8d6624ab1b871abf23c6e04",
+      "size": 10876
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WatchMiniJournal.kt",
+      "sha256": "e3d570dae5c8fef49463551a3c980dd1d4dfc30cdbde18a20ecfaab528e9c320",
+      "size": 5978
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearActionLayout.kt",
+      "sha256": "e3ec4a10d87b25bbdab3774d0e464469e5223ddd6a4e539d2c232f45b69619d0",
+      "size": 3302
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearAutomatic.kt",
+      "sha256": "bd3a55f91c26b9e67b24d78aa1589871bb2159e221dc73ae9b6474e5cbac43a3",
+      "size": 13165
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearAutomaticService.kt",
+      "sha256": "2b9981dddeb37364b46d530f28ef6a1bd757c39e11d5eee50328aba01467f1db",
+      "size": 20079
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearCalendarLayout.kt",
+      "sha256": "98a858047c7c0ceacbb6d5ae4792a22737509eb4d7b12d4f361405b260539f4b",
+      "size": 2533
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearClosureStore.kt",
+      "sha256": "e462ebbbf74cd4adb3a544bf6b9fc9804e0369bbf1df9077a3216f86a202b20d",
+      "size": 6722
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearCommandOutbox.kt",
+      "sha256": "58431a3472b47f66389f5791eab73753487bd7b6f217c7d2ca64258afddf5ab7",
+      "size": 11616
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearDataListenerService.kt",
+      "sha256": "e01142f3ad8fd3e6863903d1891fc0e6aededac8bcd0aead0262a05f1f850fa1",
+      "size": 3201
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearGps193.kt",
+      "sha256": "68cd309733575c51e4c531750c40221c5c1796d7ca7b11717727ea02622d38ba",
+      "size": 9524
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearGpsRouteService193.kt",
+      "sha256": "e9dd96720d2a2531f304cff6ecf179e51a6b36b77bec946b743cb69afe27d41a",
+      "size": 10033
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearGpsText193.kt",
+      "sha256": "522f9629f2448d810536bb6aeeef3c12a77bb6083cd74b597702d6bacb3ec998",
+      "size": 5472
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearHealthAccess.kt",
+      "sha256": "7395bc991dca9c492a839e118d9c37723f8eff9becb9f6ddfb979127c19be31d",
+      "size": 771
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearHealthFutures.kt",
+      "sha256": "bbfd51ab09ac2387e9d80c0e0c56cb0a2043a4bdbf31ebc8ffaa9da5825d61bf",
+      "size": 2673
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearHealthService.kt",
+      "sha256": "82e12bc5113d4932eb3e30ad63334d234bf5e7595edd6e9c9e74ac48b0585a11",
+      "size": 20571
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearHealthStore.kt",
+      "sha256": "a5848aca44e6db32134995635292bdac71700c93845c875b6210652e18bb0c98",
+      "size": 6039
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearHomeDashboard.kt",
+      "sha256": "b8bd7afd22f1e3e254ac6d8a48c36e4b5e104212d2fac5a0067cf81e425dda1a",
+      "size": 19571
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearHomeDashboardState.kt",
+      "sha256": "f43e4ae2d9e2dddf226272028c9315b269b6e8baa0418b2e80f3f33221e24025",
+      "size": 5857
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearHomeTheme.kt",
+      "sha256": "f7653b56b5e8dbd63717f872c6953b287e926b60e8b6fa99e594358f09a9bcff",
+      "size": 1885
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearLiveHealth.kt",
+      "sha256": "111b439f6efc833f6a4d537e900f5924422e5a18353d0cbf58f522131ea02a47",
+      "size": 1819
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearMeasurementStart.kt",
+      "sha256": "b33258b2a783bdfcd642655dc660731cff8d80a07497b9bb31d1899f8da26497",
+      "size": 1026
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearMenu216.kt",
+      "sha256": "63d4fac3e2a2a2309906d43ebb990fb445c9e14908f85e235e5d174d1a5a20fa",
+      "size": 3937
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearOwnership193.kt",
+      "sha256": "2d8d6b41f7e59553daea06ada2011b1b2df76923b7f1dd4d6ee8852a48bdb62d",
+      "size": 10232
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearOwnershipText193.kt",
+      "sha256": "8f99ad567fc82977601b956befd02a790dc01c42e53af4b093bfd7935218ec5f",
+      "size": 4722
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearPhoneAutomatic.kt",
+      "sha256": "556036692a4de84cf4aa95d5d316e6f0c86bdc4d034ecd070e89774283ca24d3",
+      "size": 1414
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearPhoneAutomaticProjection.kt",
+      "sha256": "a0f0be4980e6c0c305e5c2e783f970363300c86ba14c9d271fa4e7a28023069a",
+      "size": 2280
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearRecordingState.kt",
+      "sha256": "c11d6c218b6f7c5f41ba610c6d02969113a50931b5b801bbefc34985935fba10",
+      "size": 12522
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearRestProgress.kt",
+      "sha256": "c33ad6b8ac2c3a3d1acf112d4f3f0536f7d6554b79e4e28110ba1e04ed58f4aa",
+      "size": 437
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearRotaryEditor212.kt",
+      "sha256": "fe01185885b252bfd7673feb0f8c54eebc16428395b7bfd768d1606bd911e054",
+      "size": 1953
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearSaveSyncState.kt",
+      "sha256": "b60eb44a116be8a91f6b1ae28829835cace3251792bb403cdb2426f7598cbcf5",
+      "size": 5100
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearSaveSyncText.kt",
+      "sha256": "d99932e81cf485018b47cace118507e2df896579aa441e5dfdac35dc62e0751b",
+      "size": 3191
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearScreens.kt",
+      "sha256": "02d21f7f6afff7ff386eeed1282c3cc96541697cd8937b50edc2f8d767ad6e1b",
+      "size": 125402
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearStopwatchStore.kt",
+      "sha256": "b45283ba6ff6529a2f72b52abd9ed2284f8b1567a50e67a4c095de0641656e69",
+      "size": 3288
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearSurfaces.kt",
+      "sha256": "c7b6b7e116e24d0f2919b96a1b8c815e76935bcff5b3ea1d5cf7d838b0fdc1f8",
+      "size": 2244
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearTouchLock189.kt",
+      "sha256": "196ed6484175c1d099cccfb32169c64057cc17f6e8c41e1b8eaa09d49e5d1e7d",
+      "size": 2699
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearTouchLockedScreen189.kt",
+      "sha256": "0d34b9575cbab1750d194e61b06164294e93c7525e6a5e622db61cc0d9e260ee",
+      "size": 7909
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearTransferredTimer193.kt",
+      "sha256": "993e5daf5df6e3f49853876e86aae84751120a10ef77a9098c9771d0395e7320",
+      "size": 9993
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearUndo188.kt",
+      "sha256": "68f988f5242f5908345d186dce885b86d98adf168bee1db01ae9a357d9c104f7",
+      "size": 9403
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearWorkoutFeedback.kt",
+      "sha256": "2e837ba707eee49a0a962687efd89fd20729de03c90195b69b17c3222d0caf1c",
+      "size": 1643
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearWorkoutHandoff.kt",
+      "sha256": "fbccfe916e032b280f6d60661ca23d11cd32ff5f370db713309020e779fca407",
+      "size": 2058
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WearWorkoutPause.kt",
+      "sha256": "c97404a19c11e38a2cfcbd9e496f6c338f22921bc761139818ee24941c19f720",
+      "size": 2598
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/app/wear/WorkoutSnapshotStore.kt",
+      "sha256": "e5de76be23e09427ba50aaaa5b58f46bb56607c3e7617965c3aef13e9dcbdb9b",
+      "size": 19994
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/wear/PhoneMessageListenerService.kt",
+      "sha256": "769f3af561530fad6c8b56fe36d3cffe57d4250ce2e7e0f2331d73d0eb4a1851",
+      "size": 2257
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/wear/WearWorkoutManager.kt",
+      "sha256": "e0d48fbe7af57ea090bf6a8881661b6c85d521b591b5916e804cee2432e8aa35",
+      "size": 8011
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/wear/presentation/WearActiveWorkoutScreen.kt",
+      "sha256": "86e71c831012f9231ec1e89a64619e6be29e749f54575e123127ca1971f528a8",
+      "size": 5814
+    },
+    {
+      "path": "android/wear/src/main/java/com/repforge/wear/presentation/WearMainActivity.kt",
+      "sha256": "be32b1ecd820d271e5d9555e9cb1aad36946849b20f6b157ea8bb83e529b3ff8",
+      "size": 1134
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_tp_calendar.xml",
+      "sha256": "8fa8d8b422daffb3467f9e16af9451a3096d8f1587d06946a67b255e4db6fad0",
+      "size": 2423
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_tp_delete.xml",
+      "sha256": "a76f84ef9b987203481fdb9373f4193bf03c63c73c452c9fbc094464c8283dbf",
+      "size": 450
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_tp_heart.xml",
+      "sha256": "f35ae2ca025c0eaf882d99c9f733599085bd973558316e3379ebfcbed366ccf2",
+      "size": 593
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_tp_journal.xml",
+      "sha256": "4583765404bcd8e34d66a8551c6c6a66582f0c03e837f1fe9555c15df7d351ba",
+      "size": 2008
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_tp_phone.xml",
+      "sha256": "34d9736169e9801e10929739d9255427a11b1e4500c17fc4458a8ec34520a3e9",
+      "size": 447
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_tp_settings.xml",
+      "sha256": "c988f3adf43d7846ae6ac0df02944c8022371b3a8875ee142c61dd71762f5f14",
+      "size": 1022
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_tp_workout.xml",
+      "sha256": "2f5c2609dfb0021a08fcda66f294f69cb8e1a32a06f6b20824698cb2eb8b1394",
+      "size": 1560
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/ic_workout_recording.xml",
+      "sha256": "097a3108db844e0c01f774477465a2333dccf69fd123707766486a97c3d2b9a5",
+      "size": 307
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/trainpilot_launcher_background.xml",
+      "sha256": "054aaecc7ffd1b6aa74cf8c6be1fe5a8de49e75874b10bb42ccfbfad1e1c9d52",
+      "size": 840
+    },
+    {
+      "path": "android/wear/src/main/res/drawable/trainpilot_launcher_foreground.xml",
+      "sha256": "aa4e6a88f1000912ef3428abfe5525123f90ec62299184bde40717f9cda473b4",
+      "size": 1335
+    },
+    {
+      "path": "android/wear/src/main/res/mipmap-anydpi/trainpilot_launcher.xml",
+      "sha256": "7e14b659bcf90c551d26748e44a99f9d26ac8a2522c0c45553cc5c48a59fd3c5",
+      "size": 271
+    },
+    {
+      "path": "android/wear/src/main/res/mipmap-anydpi-v26/trainpilot_launcher.xml",
+      "sha256": "1fe397c81a8d9fae19ee1594ff36cc72ff9027ff11679e8c4a85e176a600f59b",
+      "size": 287
+    },
+    {
+      "path": "android/wear/src/main/res/values/strings.xml",
+      "sha256": "7b604b6968915225871ffc4e5a1147254aafbfe7a69b46dc38fc9f4cf5166403",
+      "size": 117
+    },
+    {
+      "path": "android/wear/src/main/res/values/styles.xml",
+      "sha256": "a6803a68f9365c79ae4f5bd67f27b7bc2fc0ff0d34fa4e62f667248c62662e1d",
+      "size": 198
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/PerSetRir229Test.kt",
+      "sha256": "73bc6011e04a9ed4f7409c7752dc786e85e502a9c5af7cd096ee62d0df3ce275",
+      "size": 2728
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WatchMiniJournalTest.kt",
+      "sha256": "3083daa53c569a70dc705b6ea85fb05a78dfcb78f8536b185a50ad6c0e63ee78",
+      "size": 6495
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/Wear129Test.kt",
+      "sha256": "93d292d26b7248fe6db2cd6e040856103890291bbb48701065a31aa2652014ef",
+      "size": 3539
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearActionLayoutTest.kt",
+      "sha256": "4caa3069b34a48288430eb1ad195b5cb334d6a6c2b96136c96a3ae154ef9c1f1",
+      "size": 4691
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearAutomaticTest.kt",
+      "sha256": "e538c005480910799bb784265983e8c5f8bc60ef7335dea5daa285cc39c6364a",
+      "size": 7329
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearAutomaticTimeTest.kt",
+      "sha256": "6c1abfae38bf7a1a40f5081ce5ef13413311af3046b057845c7f81809b98edfc",
+      "size": 2568
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearCalendarLayoutTest.kt",
+      "sha256": "7aa8f92b519b3861795d746d507929ecd5e1d364fb4920f517f3c4630c81058f",
+      "size": 4368
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearHealthFutureFixture.java",
+      "sha256": "09ff2d28cdc562990c0d796ac3856e36813a8b110e0da59a2a5bbcd33cb1220f",
+      "size": 372
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearHealthFuturesTest.kt",
+      "sha256": "d0327019b21ad260e7eb68987698bf2bc7daa3665d8e4785e08ce50b35e2298c",
+      "size": 5746
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearHomeDashboardStateTest.kt",
+      "sha256": "0333e0feaf70a8b7096f709fbef68ba00edf32d6c0184c4f14772e1508177deb",
+      "size": 5783
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearHomePhoneLayoutTest.kt",
+      "sha256": "ea7a73af9092004457567eb3a08aacf367d14db2aad80489d2a9807130f962f4",
+      "size": 865
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearMeasurementStartTest.kt",
+      "sha256": "60d7044cf74da001abd44835cd38c2994af0218cd9e674f74d50214045f2ab94",
+      "size": 1674
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearMenu216Test.kt",
+      "sha256": "02a5b7fcde5cf29c240572a67e5c2d2d5a3af59423c45fccc5e70ab607b44680",
+      "size": 1485
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearPendingHandoffTest.kt",
+      "sha256": "083ae05601fd468db7bebc4c45c2efea82eb16aa3640ee99c360e8798fb831eb",
+      "size": 1489
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearPhoneAutomaticProjectionTest.kt",
+      "sha256": "d03c56531a35af27179c0b6ade75244feb05a427f6e0dacba5303c38a88adde6",
+      "size": 3330
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearQuickWorkoutTest.kt",
+      "sha256": "d48d744f5981e046f3cc6a8751b74dfe385897fc952bc255fb244af100721e72",
+      "size": 4684
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearRecordingStateTest.kt",
+      "sha256": "7c97c97a1e4c50a87383387314b06337b1ab4450b052fcca1334e1e64fda89ae",
+      "size": 20701
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearRestProgressTest.kt",
+      "sha256": "e74158af3c3aa03c8e7745177ad79afe330c43eeb0e00ad1f53d82e5802cd63a",
+      "size": 1589
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearRotaryEditor212Test.kt",
+      "sha256": "37cd9aca9376c9a8e1f86d853b735dc72995655036f00f7ebfca7a5fcdb67947",
+      "size": 2625
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearSaveSyncTest.kt",
+      "sha256": "437cf0288c6770d84230cc66f8e326be19a9c9c318e1c0494614a32cd5776650",
+      "size": 7086
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearTransferredTimer193Test.kt",
+      "sha256": "2383d3b06bb17bf29d5190d64a3a24a29682d1ea04935e79e520d6a6620801db",
+      "size": 6531
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearUndo188Test.kt",
+      "sha256": "1c8c41a160fc5c782f34f632e208242954a469b397323c9ec0a8bbc195618ac4",
+      "size": 4386
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearUnlockGesture189Test.kt",
+      "sha256": "9663d3c8376c5b54142e7ae7790af05f6426fbb884b0b114cadee8ee84a64157",
+      "size": 1452
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearWorkoutFeedbackTest.kt",
+      "sha256": "a67a27866e1801484af3c9de90145cf4347de6101e3025acc967206394993b70",
+      "size": 1509
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearWorkoutHandoffTest.kt",
+      "sha256": "d70c619af6838fa4560ffca09c056ababc8cd7f3336d6585b2ff38c6ed32511a",
+      "size": 1013
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearWorkoutPauseTest.kt",
+      "sha256": "18b217c82fb7d42f868162bf061d141bf31f8097aa4f79f5fe50a2067225a653",
+      "size": 3532
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WearWorkoutTest.kt",
+      "sha256": "8a810f7b0ae45b40dfeeb8c19ad3842c08fdc556b1b4d716a1f7add95a70a0f5",
+      "size": 6544
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WorkoutOwnership193Test.kt",
+      "sha256": "dc3bdb9f27203cbd060e09ae32b99f69140305a2ae562af0d2b882b4c1aac1a7",
+      "size": 7643
+    },
+    {
+      "path": "android/wear/src/test/java/com/repforge/app/wear/WorkoutPrefill228Test.kt",
+      "sha256": "ebb21825a8b411da6813e7a64d224ce065885cb205d7892c2f31d11293c2a30d",
+      "size": 5031
+    },
+    {
+      "path": "docs/IMPORT_CHECKLIST.md",
+      "sha256": "a99b6e0b46f67ab631f04c4ea8ee3222e7bf74897feb5b9e01c3cdda6a6323ad",
+      "size": 1014
+    },
+    {
+      "path": "docs/NAVIGATION_5_PLUS_3.md",
+      "sha256": "bd6cf65e98ca0c86c1463b1de1493ff296991d3e2ef16b020293f2abfa728e73",
+      "size": 1144
+    },
+    {
+      "path": "docs/SOURCE_PROVENANCE.md",
+      "sha256": "d478fc922776b6b1cae928e206e4ec13df1b5f6da46072ec3e5381784c93cbf6",
+      "size": 729
+    },
+    {
+      "path": "docs/reference/HISTORICAL_MASTER_SPEC_2x4.md",
+      "sha256": "f882db21d5669b935ef43fe02669c3f6e40e0ef5de17873ed547cc5663bde53d",
+      "size": 18474
+    },
+    {
+      "path": "docs/reference/audits/NATIVE_FINAL_FEATURE_INVENTORY.json",
+      "sha256": "91a75fbb29c0fe73c735a7a3c122fea0e10e83b17b1716fc6606b5ba7d1765cb",
+      "size": 307300
+    },
+    {
+      "path": "docs/reference/audits/NATIVE_FINAL_FEATURE_INVENTORY.md",
+      "sha256": "5324582f52b925b0b2de05023a7f2bf5e50ceadb1b377f039c25b53f56574879",
+      "size": 187914
+    },
+    {
+      "path": "docs/reference/native/MIGRATION_STATE.md",
+      "sha256": "48b94d5f0770450489823aa0e7b400e68491df87d287edbc4b73efc2fbe65d4f",
+      "size": 12410
+    },
+    {
+      "path": "docs/reference/native/NATIVE_IMPORT_MANIFEST.md",
+      "sha256": "e824aaa6729b5891c08039dbac460018f3c38db27813b1fa3936c13cf943d12d",
+      "size": 25038
+    },
+    {
+      "path": "docs/reference/native/NATIVE_TOOLCHAIN_POLICY.md",
+      "sha256": "fa911e0bab53fc9af6860a584387efa0b80e01d5415f23758e65644dd9a574f6",
+      "size": 3007
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/01-visual-system.md",
+      "sha256": "9dd75e3a034c73b227e3b9392185b9e8ffc514df570f6a91b4d2310cca8bdd9c",
+      "size": 9890
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/02-screen-contracts.md",
+      "sha256": "6d4ec34a27b1b2858756dda7ab60414232b77b2dc734bf1339e9f16097b45838",
+      "size": 62578
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/03-source-bindings.md",
+      "sha256": "123f0d8a3bb984981385b0c8782c5988445f69081d313b46033930600ade270b",
+      "size": 38813
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/04-implementation-and-acceptance.md",
+      "sha256": "f49c9b15e9060d245d581719baf788b4ac0eed5cd3042d0e892b3b07a683d3ac",
+      "size": 19457
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/05-feature-preservation.md",
+      "sha256": "e52684c8ede9f2332ccae702287dbfb4246c290731503e7968b96cb5a3dadd4b",
+      "size": 7911
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/README.md",
+      "sha256": "9ce529a0a26e61cc5e60f6aa592fc7ff66b5f60f983e74d4a7360f68670b5eec",
+      "size": 7406
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/acceptance-register.json",
+      "sha256": "90d7b4df5d8a427156a37b7974d56a7bfe54f849ed53cbf765cb33d2eb7331d2",
+      "size": 10638
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/palette-inventory.json",
+      "sha256": "563cb2681b6f9dee29b137602b5710f88318f24bf12a9d452f5afc416b9a5b2f",
+      "size": 6984
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/screen-contracts.json",
+      "sha256": "ef23c5a2f15aa061d46adc396176ea4cc15e342d397b0174813e20142236f17f",
+      "size": 44847
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/source-bindings.json",
+      "sha256": "47ab0abe9181cb8158eb0d43b4b950149b820ed7ca9fcca30c881d38a2b6ea78",
+      "size": 16881
+    },
+    {
+      "path": "docs/reference/native/design/final-ui-ux/source-evidence.json",
+      "sha256": "70da16d8da614c9224f9cb19f048edb6bbe15a52d5c7c7820ba082d015c61c47",
+      "size": 53647
+    },
+    {
+      "path": "docs/reference/native/design/mockups/01-main-pages-and-planning.png",
+      "sha256": "9cce817d7c158c0e81ee1117eed5f965d4afaa7eff02794620d396f9f4d4ee87",
+      "size": 1784541
+    },
+    {
+      "path": "docs/reference/native/design/mockups/02-workouts-and-measurement.png",
+      "sha256": "89fc888fb731f1fade7577ab7d7b69c6380d13795f9bb00f98b00951111a1d98",
+      "size": 1793143
+    },
+    {
+      "path": "docs/reference/native/design/mockups/03-journal-maps-and-health.png",
+      "sha256": "50de2e9abbdce370a968fc9228ad105e4a90684a7138c40cfba24119535c6fe7",
+      "size": 1995575
+    },
+    {
+      "path": "docs/reference/native/design/mockups/04-editing-and-settings.png",
+      "sha256": "3b927da28ad69edad53264e60f9d1e74a0012de2c68205aef09bb6d9c2a2ad3b",
+      "size": 1932490
+    },
+    {
+      "path": "docs/reference/native/design/mockups/MANIFEST.json",
+      "sha256": "05daae89ea8e5e4e5abee1fb54ea2c9f8f75e70777a1202b4e6a517652dc2773",
+      "size": 924
+    },
+    {
+      "path": "docs/reference/native/docs/NATIVE_RESUME.md",
+      "sha256": "786a33faae41600e3c5b126f622476d18364662ed74cfd7fa89466e741f9e32e",
+      "size": 92856
+    },
+    {
+      "path": "docs/reference/native/docs/NATIVE_TRANSFER_2026-10-27.md",
+      "sha256": "1fe71aad6330adb05de8f14ade11d5a39e4a01649742c60f8c5e45a9191becf6",
+      "size": 53243
+    },
+    {
+      "path": "docs/reference/native/docs/STUDIO_UI_RESUME.md",
+      "sha256": "33d81c502570ce5fa28c7a7071e6ba89c4ad032e2420ed36aaaf9750436326db",
+      "size": 44497
+    },
+    {
+      "path": "docs/reference/native/docs/WORK_HANDOFF.md",
+      "sha256": "78f024b37bfea0b776ba25829ce04736ce3e1b49ae79d224ed696eb1432b63ea",
+      "size": 252787
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_CALENDAR_MULTIWEEK_HANDOFF.md",
+      "sha256": "0e1e68176612745d0685538b933750ef8b5aa817f290d9f47f85dedc58ae5f66",
+      "size": 4989
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_DATA_INTEGRITY_FINAL_CHAT_HANDOFF.md",
+      "sha256": "0e40cf2de3cfe0f74638be9676f3cce015d7750ca411f597593c03d5e0a04765",
+      "size": 9709
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_FINAL_DELIVERY.md",
+      "sha256": "07177536f67ed66fad5abe7a6024d3df39ee109107829f78c1283cde6d96784b",
+      "size": 7853
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_FINAL_FEATURE_INVENTORY_PLUS_HANDOFF.md",
+      "sha256": "e1d5f375d781c1f95d20ee2ff583b68d4e8ac61888eb24ac4588d65889590aaf",
+      "size": 7207
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_FINAL_UI_UX_CODEX_HANDOFF.md",
+      "sha256": "21c795b462b9147113973e68a8cc87be4f63b7a8b4c1823d325f9190bca7c008",
+      "size": 7718
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_HEALTH_SYNC_COMPLETION_CODEX_HANDOFF.md",
+      "sha256": "b320bb5d0950b2f2d4bda7be4d8a51e35e060570163fd6794175948360dbc5ff",
+      "size": 11704
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_MASTER_PLAN_AND_FIXES.md",
+      "sha256": "abfdd14c4461fb882bcf04a82eacd18b781fde1c187420e52f39013f855bbaaa",
+      "size": 83956
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_PHONE_UI_FINAL_CHAT_HANDOFF.md",
+      "sha256": "daadfa76ab0c7724693f4ce1d67d76a879930f2b7cf6600f253d226f06375e90",
+      "size": 8427
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_PROGRAM_ACTIONS_HANDOFF.md",
+      "sha256": "93c510068aff2c633a678eeb68bbd74fa0b15ae52bd8c2bf51df23ba078ca630",
+      "size": 4919
+    },
+    {
+      "path": "docs/reference/native/docs/plans/NATIVE_THEME_CONTRAST_PLUS_HANDOFF.md",
+      "sha256": "13ab50ce397cf5ed8f1517361209792101630fbd73875d66b9aa3eefa154c513",
+      "size": 7893
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_DATA_INTEGRITY_FINAL_GATE_HANDOFF.md",
+      "sha256": "717102e0dcb27e9bfe0a7c0dce5d373c2f873cfcd7b225e34e9592111f6aa353",
+      "size": 7449
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_FEATURE_PARITY_AUDIT.md",
+      "sha256": "806c3a9dcc6a2d1e734fe562d2bd436bd3ac0c0d4261ce03540318d5a1126e1c",
+      "size": 48003
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_FINAL_FEATURE_INVENTORY.json",
+      "sha256": "91a75fbb29c0fe73c735a7a3c122fea0e10e83b17b1716fc6606b5ba7d1765cb",
+      "size": 307300
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_FINAL_FEATURE_INVENTORY.md",
+      "sha256": "5324582f52b925b0b2de05023a7f2bf5e50ceadb1b377f039c25b53f56574879",
+      "size": 187914
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_PHONE_UI_FINAL_GATE_HANDOFF.md",
+      "sha256": "ec73b870aaca6483fbb1195af5640be8583fbe63432e8a85a7de24b77c0b8829",
+      "size": 7003
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_PROGRAM_ACTIONS_HANDOFF.md",
+      "sha256": "12db4dc4e816b68655f70939bd02dc39ec9572dac489e617b5c7d0ab4105d7e9",
+      "size": 7959
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_THEME_CONTRAST_REVIEW.md",
+      "sha256": "c9c649b20913522996597715f5a70d1af4f847f90dbbb78a664fc4a443040dca",
+      "size": 12279
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/NATIVE_TRAINING_MODE_APPROVAL_UI_FIX_HANDOFF.md",
+      "sha256": "982c900003c6f2be0871133483c06692bb70ff0437308a459128ffc19af3057d",
+      "size": 12579
+    },
+    {
+      "path": "docs/reference/native/docs/reviews/PR270_VISUAL_RECHECK_2026-10-29.md",
+      "sha256": "d13d9012a4d98df1d05a8fed0840ae96e2a274ed3957e87caf6b4ed18ba2c0c9",
+      "size": 3903
+    },
+    {
+      "path": "reference/pr277-design/IMPLEMENTATION_PLAN.md",
+      "sha256": "ef14dba0bed3a937d00e0e694d68cca3811dccfce6b7a25565d3e0e636973d16",
+      "size": 15735
+    },
+    {
+      "path": "reference/pr277-design/references/01-settings.png",
+      "sha256": "583fc39591378b07b763963881e50ccbcd7e1619fc2be58e3c1eca0099bf4c3e",
+      "size": 123087
+    },
+    {
+      "path": "reference/pr277-design/references/02-workout-start.png",
+      "sha256": "68f09017f514baf49521c423d2677aabf86800d8871091da0c518c54a0150790",
+      "size": 12889
+    },
+    {
+      "path": "reference/pr277-design/references/03-health-sources.png",
+      "sha256": "c94f1868e00154bfb266d4e4c37672592d21d916b7e07be5bf54ef5cc6991932",
+      "size": 17401
+    },
+    {
+      "path": "reference/pr277-design/references/04-active-workout.png",
+      "sha256": "9917915bb60f3eded9832f77188528d9173d01ee760a9729282617f3914fda69",
+      "size": 19128
+    },
+    {
+      "path": "reference/pr277-design/references/05-outdoor-measurement.png",
+      "sha256": "1ee06a82130c252ebf8d96216ff997d4ac757255d9a770c0d530dc01b1a2fbe9",
+      "size": 61104
+    },
+    {
+      "path": "reference/pr277-design/references/06-fullscreen-map.png",
+      "sha256": "e69edab396880b67c732922a5db4fc2e3cb366204a9f07cdd876cc5a6dcb9cbb",
+      "size": 48672
+    },
+    {
+      "path": "reference/pr277-design/references/07-journal-pr.png",
+      "sha256": "41a516a352705de49231be0b0a384c2fadca3ecb0dd340ea03f2bc6b681e0ce4",
+      "size": 19504
+    },
+    {
+      "path": "reference/pr277-design/references/08-programs.png",
+      "sha256": "9e587815656f230d5daff879f93688bc1f6e90a80aabcbecaeff4f7535836113",
+      "size": 32552
+    },
+    {
+      "path": "reference/pr277-design/references/README.md",
+      "sha256": "6743ad611ec181aa9b17528b896b80607ca6ed9771e8d9e440242d89f518a28c",
+      "size": 1638
+    },
+    {
+      "path": "reference/pr279-webview/implementation/IMPLEMENTATION_REPORT.md",
+      "sha256": "b197960a2ce1f16b6ffc6b9dc6ebc1802da6ee68e37c48cfd114d09a07f8dcb3",
+      "size": 10051
+    },
+    {
+      "path": "reference/pr279-webview/implementation/ci-evidence.json",
+      "sha256": "428397705bd1166fc4d9000d3c61fda8d2c769a52d360e7162e1c24b82a272d5",
+      "size": 13191
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/01-settings.jpg",
+      "sha256": "08504ccaae8ea6c4921a658f767f89262c7b70a8ab97ec4fbf40d0025b9bcda8",
+      "size": 188974
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/02-workout-start.jpg",
+      "sha256": "275e4e7e44019e11ad707abe4f6cce04d4ddc61c8d2b6aa8a8cfd891a94aacb6",
+      "size": 169391
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/03-health-sources.jpg",
+      "sha256": "cdecbc1eb2b6336905761f8f372f41691d45d93a223fd792bbe8d40bce6d801c",
+      "size": 174356
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/04-active-workout.jpg",
+      "sha256": "6a72b3d11f8d41e2331117c287447b6e15eef00f2162c22b8d8088e0c8786213",
+      "size": 204886
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/05-outdoor-measurement.jpg",
+      "sha256": "97d7313a98171f80f25e885f5f89d6790963fcde47dca023c191c14640b54230",
+      "size": 189066
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/06-fullscreen-map.jpg",
+      "sha256": "18d2079ca9939253e86b300e02ae0e6a34976e88ccbab019c1ef8736b444636a",
+      "size": 132330
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/07-journal-pr.jpg",
+      "sha256": "068610bc77829bf358590953f9cd785c9cc7800837c04de7a6e9421d5a3e4e64",
+      "size": 216946
+    },
+    {
+      "path": "reference/pr279-webview/implementation/comparisons/08-programs.jpg",
+      "sha256": "35edea1bbb2e4dcbd5d5125a3530784cfdcdbbfba511611bdbda971331ea9ef1",
+      "size": 177746
+    },
+    {
+      "path": "reference/pr279-webview/tests/active-workout-set-controls.cjs",
+      "sha256": "d11e0d2a35519b5b065c609df53c3b8ca880d6553944adefa63cd22e6d10db4c",
+      "size": 1298
+    },
+    {
+      "path": "reference/pr279-webview/tests/backup-consolidation.cjs",
+      "sha256": "93f6e1cb8ac63d1ccd58d4301f1fca453b71593af2f1cfd8b34d94f34ad7748e",
+      "size": 4327
+    },
+    {
+      "path": "reference/pr279-webview/tests/backup-export-native-2632.cjs",
+      "sha256": "dbd37c314a9a94e1ff236766adc1b3165c54dd3ef89f58d66e02b9ea6c13d66f",
+      "size": 1985
+    },
+    {
+      "path": "reference/pr279-webview/tests/backup-export-recovery.cjs",
+      "sha256": "440713c184d1c4cff26bef7af7d2f795f1c5c7f6596b61c26291efb038dbcf63",
+      "size": 3901
+    },
+    {
+      "path": "reference/pr279-webview/tests/backup.cjs",
+      "sha256": "98da190e25ff819b8fa6d23651d0049b079aa06049c4dad4d6d001c3703d0588",
+      "size": 3759
+    },
+    {
+      "path": "reference/pr279-webview/tests/calendar-delta-v101.cjs",
+      "sha256": "6d402ac1e604875e7a46366776bc53f694f82a9ff3a1a5f5b6dbee505b8ad30a",
+      "size": 2446
+    },
+    {
+      "path": "reference/pr279-webview/tests/calendar-plan-replacement.cjs",
+      "sha256": "2c9fc671281010da37cc0b8646b93ded1f3397ad77b81c4f9182fb6ab75f066e",
+      "size": 4141
+    },
+    {
+      "path": "reference/pr279-webview/tests/health-workout-energy.cjs",
+      "sha256": "6bc91a6d5441f8f18452821f4ca630c018e06c9ac1684e280c6d40e069a4a020",
+      "size": 3468
+    },
+    {
+      "path": "reference/pr279-webview/tests/phase3-journal-29-30.cjs",
+      "sha256": "e15dfcc90cad555fe83470dc42ca60c7ed3315d72fc53c61221a4fb5c4ee31fc",
+      "size": 3552
+    },
+    {
+      "path": "reference/pr279-webview/tests/phase4-coach-17-21.cjs",
+      "sha256": "4d0a8b2258f02d70d0b1a09c5bcd0e40487c4e85002acc6ac61b2c6337356a6e",
+      "size": 1065
+    },
+    {
+      "path": "reference/pr279-webview/tests/phase5-health-27.cjs",
+      "sha256": "42d282e405662b9336977f493307f6f2fdcc83e73a8620f1c564242512976cb9",
+      "size": 1205
+    },
+    {
+      "path": "reference/pr279-webview/tests/phase6-journal-media-health-42-43.cjs",
+      "sha256": "4ec429650d2ca2e58e321861352d3bb5368b2be69805ac50a5b75b9be1605fad",
+      "size": 3723
+    },
+    {
+      "path": "reference/pr279-webview/tests/phase7-performance-19.cjs",
+      "sha256": "08752d343b0edd1f9bee65a4c631075578cd60c5874f2031e6439f82d871fc4d",
+      "size": 1021
+    },
+    {
+      "path": "reference/pr279-webview/tests/progress-177-model.cjs",
+      "sha256": "bace1c8c12065072daa3ba75d3b22b0f17a0a4ba5b509e7d501aca9626759e31",
+      "size": 5342
+    },
+    {
+      "path": "reference/pr279-webview/tests/progressive-goal-clarity.cjs",
+      "sha256": "ad9340332a5bf56318ff772a3a9f1c5cf887b7d2da0c60f7ab8fbc2563b7ff44",
+      "size": 1052
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-actual-rir-197.cjs",
+      "sha256": "d700b7ec5557874c6725eab95ed0d343717f58a4636674df16e497cd304d22c3",
+      "size": 4452
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-cardio-107.cjs",
+      "sha256": "34e5196703a2e0f20976f88474939ab1c8d13c487b03a3856edc9caae90e2f06",
+      "size": 4042
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-coach-integrated-197.cjs",
+      "sha256": "50c1c4f9c6212d490af428d05816d52ec9ad9b81910844688d4e15c1b1b72350",
+      "size": 3960
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-mode-confirm-197.cjs",
+      "sha256": "874d8fb3484c94eb1d7f0b7f2a48f2454c4bfdffc9f0a52b06be060955f4bb01",
+      "size": 6685
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-mode-ui-197.cjs",
+      "sha256": "c1360763f02bf9d7a0ac53a878aaefb476bfffd8466bfae5553014ffa12d4a0e",
+      "size": 6617
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-modes-197.cjs",
+      "sha256": "e8e10048407f497445618430e777e0946d5d3782bba262971e9066fa80d38285",
+      "size": 5313
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-progression-197.cjs",
+      "sha256": "da9935a21a32765b2bcaa0777ad5fc2c7336d349addf512e2afba6e957d24b4a",
+      "size": 5515
+    },
+    {
+      "path": "reference/pr279-webview/tests/training-rest-persistence-197.cjs",
+      "sha256": "5e46201b8dbb0d9814ee77a7d58f2cbf828855c2c1b740da4c1040c6fcbb7c16",
+      "size": 3352
+    },
+    {
+      "path": "reference/pr279-webview/tests/v150-compact-ui.cjs",
+      "sha256": "1f580e2bba7d1c0eed1955e53189576bc3493a01ccf285b84864af7dedd6ff50",
+      "size": 1024
+    },
+    {
+      "path": "reference/pr279-webview/tests/v150-quick-workout.cjs",
+      "sha256": "6097155aace3685f80f4405fd8e4e1fd8fb762ff0a4aecfd9d16bb656eb5aae1",
+      "size": 2063
+    },
+    {
+      "path": "reference/pr279-webview/tests/v150.cjs",
+      "sha256": "09f8e12f6b7aa85a26fcc8f6ce3f8406670e9bea9c44f188c31ba7277e0ed4ae",
+      "size": 511
+    },
+    {
+      "path": "reference/pr279-webview/tests/v151-unified-design.cjs",
+      "sha256": "0bac57f6fcdb72b82f6e690f4f495310724739ca214dc99697207ff256bc94b0",
+      "size": 1068
+    },
+    {
+      "path": "reference/pr279-webview/tests/v151.cjs",
+      "sha256": "db0f460eed18c84524e15cdff078baeee2f1aab9d3f45ab9c6c9f6acb7719665",
+      "size": 795
+    },
+    {
+      "path": "reference/pr279-webview/tests/v1511-ui-polish.cjs",
+      "sha256": "5eb1fb2157dd863a354c512e78711d284b725fca42a34cd26d934ecadfe61efb",
+      "size": 2668
+    },
+    {
+      "path": "reference/pr279-webview/tests/v152.cjs",
+      "sha256": "f75ebe46314a596aafb538b341ebbdf1a918f66205f5c726bbc52b7b8546ce79",
+      "size": 1037
+    },
+    {
+      "path": "reference/pr279-webview/tests/v153.cjs",
+      "sha256": "074118f399015e5d8f94d3b6f17f338ba9a9a44d7c62cf1a196934ed6c34413d",
+      "size": 603
+    },
+    {
+      "path": "reference/pr279-webview/tests/v154.cjs",
+      "sha256": "58d928c129510f91785263dd080388808a7d5306fa67b9f112be214372e96275",
+      "size": 442
+    },
+    {
+      "path": "reference/pr279-webview/tests/v155-next-12.cjs",
+      "sha256": "300f9bd9972638e4a79c579061a291aa95d3edf4798cfc481afb8a75a6f35b79",
+      "size": 1126
+    },
+    {
+      "path": "reference/pr279-webview/tests/v155.cjs",
+      "sha256": "f329f352d670661dc74c1ef6199231903f1e75d00f47280db281167e7a10b9e5",
+      "size": 350
+    },
+    {
+      "path": "reference/pr279-webview/tests/v260-release.cjs",
+      "sha256": "43b0a84902e2958cfccf9848e1b77c0a517dfe915e444fab9a59de7b8df80eb9",
+      "size": 2798
+    },
+    {
+      "path": "reference/pr279-webview/tests/v260-responsive.cjs",
+      "sha256": "14744feee0bde1a8c6d75fd089994e5e6be55a1bac9bd87e1521ee6659adf64e",
+      "size": 2783
+    },
+    {
+      "path": "reference/pr279-webview/tests/v260-ui.cjs",
+      "sha256": "ffaf71c2ebb9e46d6ffb4e5b89cd201c40535d2f07e28e29e8b350579529520c",
+      "size": 6140
+    },
+    {
+      "path": "reference/pr279-webview/tests/v261.cjs",
+      "sha256": "0ea0ddc5bcc5e943de7092876d0d59ff8efa4632622a2d6b362c5ac1340390f8",
+      "size": 737
+    },
+    {
+      "path": "reference/pr279-webview/tests/v262.cjs",
+      "sha256": "fb179bc41171e1de2c69413ee09c853bbf264c0648cc595f95705495abe7aefe",
+      "size": 1785
+    },
+    {
+      "path": "reference/pr279-webview/tests/v263.cjs",
+      "sha256": "0daa89a8b3bf1f052c6cb25069cb759cedd465615986d6cb7161ce5e0e74f93b",
+      "size": 1583
+    },
+    {
+      "path": "reference/pr279-webview/tests/wear-phone-measurement-start.cjs",
+      "sha256": "f285b6d39341b96e8b3f8ea8323e078ac565d13d558d4dbbbebc2f63c219fce0",
+      "size": 19004
+    },
+    {
+      "path": "reference/pr279-webview/tests/workout-finalization-structure.cjs",
+      "sha256": "5153196ffff8a3e28fca667e7fc61cb9c06e5fe40c049cba607cede0e0588797",
+      "size": 764
+    },
+    {
+      "path": "reference/pr279-webview/www/CHANGELOG_v1.1.1.md",
+      "sha256": "c1a9e65b551044cad8c2075b8d8243932730b663e51e7f07d79076def71e443e",
+      "size": 312
+    },
+    {
+      "path": "reference/pr279-webview/www/CHANGELOG_v1.1.md",
+      "sha256": "4de40a223935118205aa833a7182c4674cd8cd490d319b00181491cc143ed1aa",
+      "size": 667
+    },
+    {
+      "path": "reference/pr279-webview/www/LUCIDE-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "size": 3208
+    },
+    {
+      "path": "reference/pr279-webview/www/app.js",
+      "sha256": "6d1f17d64ae7ab024ecd6c228e852a0e67cc119e0eb1d327871acc9d445614ab",
+      "size": 2227645
+    },
+    {
+      "path": "reference/pr279-webview/www/ble-discovery-111.css",
+      "sha256": "e9591db91ccaeb4a25acafdbdb9ff375dc5ab8d31f369b27c761dfa3a3690433",
+      "size": 2136
+    },
+    {
+      "path": "reference/pr279-webview/www/features-110.css",
+      "sha256": "29a66f87042fbb9097c38bd325e49241c071a30fe0d8c0cc405e419c70fd64dc",
+      "size": 12069
+    },
+    {
+      "path": "reference/pr279-webview/www/global-uiux-177.css",
+      "sha256": "1bd8d7244ebbbee586ca989060d0ed3e79f4f74fce0fc0c62ceaa3cf899461ca",
+      "size": 12889
+    },
+    {
+      "path": "reference/pr279-webview/www/gps-route-map-163.css",
+      "sha256": "aa355d25361f4cf6581b4950c350283930e448c8c9f3a253308b420c40cc5a1c",
+      "size": 6515
+    },
+    {
+      "path": "reference/pr279-webview/www/health-dashboard-168.css",
+      "sha256": "339ec67154e64211043f539f1a48693fb869299421b8c5b2661d49ee947387b7",
+      "size": 49288
+    },
+    {
+      "path": "reference/pr279-webview/www/health-journal-120.css",
+      "sha256": "11d9631426f7b4b1502751d3cb73dc8bed16c75bbfee219548fc978a0362f1c6",
+      "size": 5909
+    },
+    {
+      "path": "reference/pr279-webview/www/index.html",
+      "sha256": "6c2d4c18614af8912cc6f16774aaaf566c1f094c934c3dbb6ed74d6e5cba2f00",
+      "size": 217304
+    },
+    {
+      "path": "reference/pr279-webview/www/inter-license.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "size": 4380
+    },
+    {
+      "path": "reference/pr279-webview/www/issue67-polish.css",
+      "sha256": "db9ec825382bd7bcbf18b6a4c058d2260f737d87296266ae61ca95c2f7c09446",
+      "size": 6575
+    },
+    {
+      "path": "reference/pr279-webview/www/manifest.json",
+      "sha256": "540295bba4c034268a2aae18264699c39d8918b77b2b69d60a483a202a4bd7ae",
+      "size": 282
+    },
+    {
+      "path": "reference/pr279-webview/www/page-frame-109.css",
+      "sha256": "97ffe70e375be9c3ac5c5fa8b9dc29135b369cb8e305ee2c6eea7b16170e5b0a",
+      "size": 4187
+    },
+    {
+      "path": "reference/pr279-webview/www/privacy.html",
+      "sha256": "0582b9e925be36ad1db979d3498f0ded06bc29c21401101bf091669000e4a189",
+      "size": 21886
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-177.css",
+      "sha256": "ede803fa47d2d04e32a9119902032a7291c7580b075730d088aad5d32497896d",
+      "size": 22123
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-anatomy-177.webp",
+      "sha256": "fca3541aa7b03d529e055a6b25a5d152e90dabc16398d11717ec2d488e6a67bb",
+      "size": 265126
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-muscle-arms-177.png",
+      "sha256": "a1b02e2d537b05c25ba0b70195e695bd8f6777885b70d27df34626ef1f35f608",
+      "size": 41815
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-muscle-back-177.png",
+      "sha256": "83f51440eba3a804d9388d789aedcbcf888db2a46e5593892edf1b1e050878e4",
+      "size": 62450
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-muscle-chest-177.png",
+      "sha256": "aa03995815a573e60c441f2729a36d1d24aadfb203c1e13534fabf5dbb5a55f9",
+      "size": 22070
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-muscle-core-177.png",
+      "sha256": "04f8963280c9b8d9afa76fe60b499349ab191b810b67d299124b28a5125b5d81",
+      "size": 49328
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-muscle-legs-177.png",
+      "sha256": "8d7968655c1a950f3ed667bcf46c0fac3c0483d22d41c2bb798fe94b8698fb19",
+      "size": 83241
+    },
+    {
+      "path": "reference/pr279-webview/www/progress-muscle-shoulders-177.png",
+      "sha256": "b4c7a2ea435aeca139938194bf35028951e7338ab5d299b9115690be2220b19f",
+      "size": 32845
+    },
+    {
+      "path": "reference/pr279-webview/www/runtime-manifest.txt",
+      "sha256": "551e51ffc6829787cdbb32c017787dd25efda2a87a0e01eb48542a31e9376432",
+      "size": 7
+    },
+    {
+      "path": "reference/pr279-webview/www/styles.css",
+      "sha256": "2c1568a3d049639d6a258df122aef9790cce01f7f16365517db3e85dce1cab23",
+      "size": 47293
+    },
+    {
+      "path": "reference/pr279-webview/www/sw.js",
+      "sha256": "5384541e18287d4122d02699afb0e9fe5d24b9d75687ec8e2e8da51af4297fdc",
+      "size": 1563
+    },
+    {
+      "path": "reference/pr279-webview/www/training-107.css",
+      "sha256": "c363cebb0d273a9edaa7fef245af19346060159ae23255a66d18763a15b318eb",
+      "size": 26757
+    },
+    {
+      "path": "reference/pr279-webview/www/trainpilot-inter.woff2",
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+      "size": 352240
+    },
+    {
+      "path": "reference/pr279-webview/www/typography-137.css",
+      "sha256": "31e7b46701e6f5cb9c8032d29f6f02e29be1a6631302716eb9927ad29e10d7a9",
+      "size": 5329
+    },
+    {
+      "path": "reference/pr279-webview/www/workout-feedback-features.css",
+      "sha256": "3f282e1d45785cb01a805a2c2c5193f20a45047f6c0b14e8f64a4d1d7ff2b871",
+      "size": 2067
+    },
+    {
+      "path": "reference/stable-main/AGENTS.md",
+      "sha256": "8a7a1b417524d2fe3f87d07f8f828aac8de06ca771b1546fa2e6b73b1ce6f301",
+      "size": 10197
+    },
+    {
+      "path": "reference/stable-main/README.hu.md",
+      "sha256": "5c63a49cc719dbd10ad6ad27f2ba0b7a250fd2f58c07d8c5a0d8f30fad2ce966",
+      "size": 6591
+    },
+    {
+      "path": "reference/stable-main/RELEASE_NOTES.md",
+      "sha256": "c85ce1737d3d3620e7fb374704547c10a9d312fd4695e1f0a8f3a0aadc46faa0",
+      "size": 8734
+    },
+    {
+      "path": "reference/stable-main/SOURCE_VERSION.json",
+      "sha256": "b05e082aa7772bfb3662fd58fb2bebdc83885adfb1e7538672299b20324cb7d6",
+      "size": 202
+    },
+    {
+      "path": "reference/stable-main/docs/FEATURES.hu.md",
+      "sha256": "5169f2b595f61e784a2a8fd9b6389d5ddaf6e419de2692b20d86b7a25103636a",
+      "size": 5400
+    },
+    {
+      "path": "reference/stable-main/www/CHANGELOG_v1.1.1.md",
+      "sha256": "c1a9e65b551044cad8c2075b8d8243932730b663e51e7f07d79076def71e443e",
+      "size": 312
+    },
+    {
+      "path": "reference/stable-main/www/CHANGELOG_v1.1.md",
+      "sha256": "4de40a223935118205aa833a7182c4674cd8cd490d319b00181491cc143ed1aa",
+      "size": 667
+    },
+    {
+      "path": "reference/stable-main/www/LUCIDE-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "size": 3208
+    },
+    {
+      "path": "reference/stable-main/www/app.js",
+      "sha256": "47750fd38905860aa5910a14ff52a46421a3c78e19059c34cc5025da2538106d",
+      "size": 2199763
+    },
+    {
+      "path": "reference/stable-main/www/ble-discovery-111.css",
+      "sha256": "e9591db91ccaeb4a25acafdbdb9ff375dc5ab8d31f369b27c761dfa3a3690433",
+      "size": 2136
+    },
+    {
+      "path": "reference/stable-main/www/features-110.css",
+      "sha256": "29a66f87042fbb9097c38bd325e49241c071a30fe0d8c0cc405e419c70fd64dc",
+      "size": 12069
+    },
+    {
+      "path": "reference/stable-main/www/global-uiux-177.css",
+      "sha256": "1bd8d7244ebbbee586ca989060d0ed3e79f4f74fce0fc0c62ceaa3cf899461ca",
+      "size": 12889
+    },
+    {
+      "path": "reference/stable-main/www/gps-route-map-163.css",
+      "sha256": "211472f56bbae6f8bb769f536631f273bf028105d3d63fab0ff58499a18c4372",
+      "size": 4895
+    },
+    {
+      "path": "reference/stable-main/www/health-dashboard-168.css",
+      "sha256": "7b4c277e7cd906354d407e53da2a86c2713c9c9ba365436e5716310d97054742",
+      "size": 49122
+    },
+    {
+      "path": "reference/stable-main/www/health-journal-120.css",
+      "sha256": "11d9631426f7b4b1502751d3cb73dc8bed16c75bbfee219548fc978a0362f1c6",
+      "size": 5909
+    },
+    {
+      "path": "reference/stable-main/www/index.html",
+      "sha256": "9da5d0ef8746b53afe293d6ddd6e4238aa9953955740ff0e0a0687a9b7794ebb",
+      "size": 215306
+    },
+    {
+      "path": "reference/stable-main/www/inter-license.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "size": 4380
+    },
+    {
+      "path": "reference/stable-main/www/issue67-polish.css",
+      "sha256": "db9ec825382bd7bcbf18b6a4c058d2260f737d87296266ae61ca95c2f7c09446",
+      "size": 6575
+    },
+    {
+      "path": "reference/stable-main/www/manifest.json",
+      "sha256": "540295bba4c034268a2aae18264699c39d8918b77b2b69d60a483a202a4bd7ae",
+      "size": 282
+    },
+    {
+      "path": "reference/stable-main/www/page-frame-109.css",
+      "sha256": "97ffe70e375be9c3ac5c5fa8b9dc29135b369cb8e305ee2c6eea7b16170e5b0a",
+      "size": 4187
+    },
+    {
+      "path": "reference/stable-main/www/privacy.html",
+      "sha256": "0582b9e925be36ad1db979d3498f0ded06bc29c21401101bf091669000e4a189",
+      "size": 21886
+    },
+    {
+      "path": "reference/stable-main/www/progress-177.css",
+      "sha256": "b441695f637d776c6490307dda760e45ac12a8c3b76ffe81b8f78f137dcfd500",
+      "size": 22036
+    },
+    {
+      "path": "reference/stable-main/www/progress-anatomy-177.webp",
+      "sha256": "fca3541aa7b03d529e055a6b25a5d152e90dabc16398d11717ec2d488e6a67bb",
+      "size": 265126
+    },
+    {
+      "path": "reference/stable-main/www/progress-muscle-arms-177.png",
+      "sha256": "a1b02e2d537b05c25ba0b70195e695bd8f6777885b70d27df34626ef1f35f608",
+      "size": 41815
+    },
+    {
+      "path": "reference/stable-main/www/progress-muscle-back-177.png",
+      "sha256": "83f51440eba3a804d9388d789aedcbcf888db2a46e5593892edf1b1e050878e4",
+      "size": 62450
+    },
+    {
+      "path": "reference/stable-main/www/progress-muscle-chest-177.png",
+      "sha256": "aa03995815a573e60c441f2729a36d1d24aadfb203c1e13534fabf5dbb5a55f9",
+      "size": 22070
+    },
+    {
+      "path": "reference/stable-main/www/progress-muscle-core-177.png",
+      "sha256": "04f8963280c9b8d9afa76fe60b499349ab191b810b67d299124b28a5125b5d81",
+      "size": 49328
+    },
+    {
+      "path": "reference/stable-main/www/progress-muscle-legs-177.png",
+      "sha256": "8d7968655c1a950f3ed667bcf46c0fac3c0483d22d41c2bb798fe94b8698fb19",
+      "size": 83241
+    },
+    {
+      "path": "reference/stable-main/www/progress-muscle-shoulders-177.png",
+      "sha256": "b4c7a2ea435aeca139938194bf35028951e7338ab5d299b9115690be2220b19f",
+      "size": 32845
+    },
+    {
+      "path": "reference/stable-main/www/runtime-manifest.txt",
+      "sha256": "551e51ffc6829787cdbb32c017787dd25efda2a87a0e01eb48542a31e9376432",
+      "size": 7
+    },
+    {
+      "path": "reference/stable-main/www/styles.css",
+      "sha256": "c05bfc3b7c81fa8fdeaf6d6b4b533e2c9883a5440e9114b771d615a1dd546e2d",
+      "size": 29370
+    },
+    {
+      "path": "reference/stable-main/www/sw.js",
+      "sha256": "5384541e18287d4122d02699afb0e9fe5d24b9d75687ec8e2e8da51af4297fdc",
+      "size": 1563
+    },
+    {
+      "path": "reference/stable-main/www/training-107.css",
+      "sha256": "c363cebb0d273a9edaa7fef245af19346060159ae23255a66d18763a15b318eb",
+      "size": 26757
+    },
+    {
+      "path": "reference/stable-main/www/trainpilot-inter.woff2",
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+      "size": 352240
+    },
+    {
+      "path": "reference/stable-main/www/typography-137.css",
+      "sha256": "31e7b46701e6f5cb9c8032d29f6f02e29be1a6631302716eb9927ad29e10d7a9",
+      "size": 5329
+    },
+    {
+      "path": "reference/stable-main/www/workout-feedback-features.css",
+      "sha256": "e61fbeb9d0b2c4b984802348cfa0edd4c52f33f37cc36a883a14f51c0da167cc",
+      "size": 3310
+    },
+    {
+      "path": "tools/build_ai_studio_bundle.py",
+      "sha256": "f38a8f99bea78fb796a484f2fb0d5e6f1ca40371e4f33063c2864d9ffd0a5244",
+      "size": 14677
+    },
+    {
+      "path": "tools/native-checks/catalog-reference.cjs",
+      "sha256": "82c928c7b5d51fe86765b26152849cc74ec5e2ccfe2a0567ac4c5fe5215ed739",
+      "size": 7137
+    },
+    {
+      "path": "tools/native-checks/coach-reference.cjs",
+      "sha256": "e0ce824068ea79c8102e0e12d155b03ebe6c4f16f743211ce836c88c57033757",
+      "size": 9212
+    },
+    {
+      "path": "tools/native-checks/evidence-summary.py",
+      "sha256": "e1c209db65de74fd7520a0cbd192ca5afa486ca5723008c6172a23419e52a0ee",
+      "size": 32739
+    },
+    {
+      "path": "tools/native-checks/install-ci-adb-guard.py",
+      "sha256": "2d77f7aa791b378356520d4b7ddf74f6383c66965d40c196fb62927863ee414b",
+      "size": 1605
+    },
+    {
+      "path": "tools/native-checks/phone-ui-gate.py",
+      "sha256": "7fa5ed833c2b756a0b5c5effd0310afcf5a5ce930773494a34924ff0b92934ae",
+      "size": 15025
+    },
+    {
+      "path": "tools/native-checks/practiced-reference.cjs",
+      "sha256": "ebb221756f22376e375273045f749f544f35c20b2dc06baa490a50599fc2e296",
+      "size": 2406
+    },
+    {
+      "path": "tools/native-checks/prescription-reference.cjs",
+      "sha256": "b2f669cb308b3de0482b1d027ab600d94e257106deba678df648cbc34efa6386",
+      "size": 2435
+    },
+    {
+      "path": "tools/native-checks/stop-ci-emulator.py",
+      "sha256": "c3d60c6256a60d7649527f36b8c7c1166abffec84560ed5eb3aa0cc1ac5c3f80",
+      "size": 6710
+    }
+  ]
+}
